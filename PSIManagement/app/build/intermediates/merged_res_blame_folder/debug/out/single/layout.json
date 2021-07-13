@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\login_fragment.xml",
+        "source": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement\\app\\src\\main\\res\\layout\\login_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\main_activity.xml",
+        "source": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement\\app\\src\\main\\res\\layout\\main_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_main.xml",
+        "source": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement\\app\\src\\main\\res\\layout\\fragment_main.xml"
+    }
+]

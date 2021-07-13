@@ -1,0 +1,10 @@
+com/example/psimanagement/databinding/FragmentMainBinding.java
+ com.example.psimanagement.databinding.FragmentMainBinding
+com/example/psimanagement/databinding/MainActivityBinding.java
+ com.example.psimanagement.databinding.MainActivityBinding
+com/example/psimanagement/BuildConfig.java
+ com.example.psimanagement.BuildConfig
+com/example/psimanagement/databinding/ActivitySplashBinding.java
+ com.example.psimanagement.databinding.ActivitySplashBinding
+com/example/psimanagement/databinding/LoginFragmentBinding.java
+ com.example.psimanagement.databinding.LoginFragmentBinding
