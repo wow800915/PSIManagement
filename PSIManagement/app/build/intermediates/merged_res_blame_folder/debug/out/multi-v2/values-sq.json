@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sq\\values-sq.xml",
+            "outputFile": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement_project\\PSIManagement\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sq\\values-sq.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Ian\\.gradle\\caches\\transforms-2\\files-2.1\\00215220249970aa0e2b31d29115a82f\\navigation-ui-2.3.5\\res\\values-sq\\values-sq.xml",

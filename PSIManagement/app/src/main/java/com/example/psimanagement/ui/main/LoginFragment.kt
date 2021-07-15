@@ -6,7 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.psimanagement.R
@@ -18,25 +20,17 @@ class LoginFragment : Fragment() {
     companion object {
         fun newInstance() = LoginFragment()
     }
+    private val viewModel: MainViewModel by activityViewModels()
 
-    private lateinit var viewModel: MainViewModel
-//Binding1
-//    GRADLE有+這個
-//buildFeatures{
-//        viewBinding = true
-//    }
-
-//Binding2
-        private lateinit var binding: LoginFragmentBinding
+    private lateinit var binding: LoginFragmentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-//Binding3
+
         binding = LoginFragmentBinding.inflate(inflater, container, false)
         binding.btnLogin.setOnClickListener {
-            //cupcake navigation4
 
             viewModel.setUser(binding.etTest.text.toString())
             findNavController().navigate(R.id.action_loginFragment_to_mainFragment)
@@ -47,7 +41,7 @@ class LoginFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
+//        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

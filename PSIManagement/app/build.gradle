@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -30,10 +31,16 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-//  Binding1
+
+    buildFeatures {
+        dataBinding true
+    }
+
     buildFeatures{
         viewBinding = true
     }
+
+
 }
 
 dependencies {
@@ -47,7 +54,6 @@ dependencies {
 
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
-// cupcake navigation1
     implementation "androidx.navigation:navigation-fragment:2.0.0"
     implementation "androidx.navigation:navigation-ui:2.0.0"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
