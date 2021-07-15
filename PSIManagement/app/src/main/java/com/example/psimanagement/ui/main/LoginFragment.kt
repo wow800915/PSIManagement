@@ -28,7 +28,6 @@ class LoginFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
         binding = LoginFragmentBinding.inflate(inflater, container, false)
         binding.btnLogin.setOnClickListener {
 
@@ -36,6 +35,7 @@ class LoginFragment : Fragment() {
             findNavController().navigate(R.id.action_loginFragment_to_mainFragment)
             Log.d("IANIAN","loginFragment43 viewModel.getUser().toString():"+viewModel.getUser().toString())
         }
+        binding.title = "标题LOGINFRAGMENT"
         return binding.root
     }
 

@@ -1,11 +1,11 @@
 com/example/psimanagement/BR.java
  com.example.psimanagement.BR
+com/example/psimanagement/databinding/LoginFragmentBinding.java
+ com.example.psimanagement.databinding.LoginFragmentBinding
 com/example/psimanagement/databinding/FragmentMainBinding.java
  com.example.psimanagement.databinding.FragmentMainBinding
-com/example/psimanagement/DataBinderMapperImpl.java
- com.example.psimanagement.DataBinderMapperImpl
- com.example.psimanagement.DataBinderMapperImpl$InnerBrLookup
- com.example.psimanagement.DataBinderMapperImpl$InnerLayoutIdLookup
+com/example/psimanagement/databinding/ActivitySplashBinding.java
+ com.example.psimanagement.databinding.ActivitySplashBinding
 com/example/psimanagement/DataBindingTriggerClass.java
  com.example.psimanagement.DataBindingTriggerClass
 androidx/databinding/DataBinderMapperImpl.java
@@ -18,7 +18,9 @@ androidx/databinding/DataBindingComponent.java
  androidx.databinding.DataBindingComponent
 com/example/psimanagement/BuildConfig.java
  com.example.psimanagement.BuildConfig
-com/example/psimanagement/databinding/ActivitySplashBinding.java
- com.example.psimanagement.databinding.ActivitySplashBinding
-com/example/psimanagement/databinding/LoginFragmentBinding.java
- com.example.psimanagement.databinding.LoginFragmentBinding
+com/example/psimanagement/databinding/LoginFragmentBindingImpl.java
+ com.example.psimanagement.databinding.LoginFragmentBindingImpl
+com/example/psimanagement/DataBinderMapperImpl.java
+ com.example.psimanagement.DataBinderMapperImpl
+ com.example.psimanagement.DataBinderMapperImpl$InnerBrLookup
+ com.example.psimanagement.DataBinderMapperImpl$InnerLayoutIdLookup
