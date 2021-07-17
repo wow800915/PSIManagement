@@ -11,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import com.example.psimanagement.R;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -23,12 +25,21 @@ public final class FragmentMainBinding implements ViewBinding {
   public final Button btnTest;
 
   @NonNull
+  public final TextInputLayout costOfService;
+
+  @NonNull
+  public final TextInputEditText costOfServiceEditText;
+
+  @NonNull
   public final TextView tvTest;
 
   private FragmentMainBinding(@NonNull FrameLayout rootView, @NonNull Button btnTest,
+      @NonNull TextInputLayout costOfService, @NonNull TextInputEditText costOfServiceEditText,
       @NonNull TextView tvTest) {
     this.rootView = rootView;
     this.btnTest = btnTest;
+    this.costOfService = costOfService;
+    this.costOfServiceEditText = costOfServiceEditText;
     this.tvTest = tvTest;
   }
 
@@ -65,13 +76,26 @@ public final class FragmentMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.cost_of_service;
+      TextInputLayout costOfService = rootView.findViewById(id);
+      if (costOfService == null) {
+        break missingId;
+      }
+
+      id = R.id.cost_of_service_edit_text;
+      TextInputEditText costOfServiceEditText = rootView.findViewById(id);
+      if (costOfServiceEditText == null) {
+        break missingId;
+      }
+
       id = R.id.tv_test;
       TextView tvTest = rootView.findViewById(id);
       if (tvTest == null) {
         break missingId;
       }
 
-      return new FragmentMainBinding((FrameLayout) rootView, btnTest, tvTest);
+      return new FragmentMainBinding((FrameLayout) rootView, btnTest, costOfService,
+          costOfServiceEditText, tvTest);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

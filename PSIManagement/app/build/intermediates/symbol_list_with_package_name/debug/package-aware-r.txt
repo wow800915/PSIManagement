@@ -1846,6 +1846,8 @@ id contentPanel
 id contiguous
 id coordinator
 id cos
+id cost_of_service
+id cost_of_service_edit_text
 id counterclockwise
 id custom
 id customPanel

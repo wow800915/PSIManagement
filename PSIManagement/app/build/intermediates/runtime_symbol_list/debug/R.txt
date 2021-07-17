@@ -1845,6 +1845,8 @@ int id contentPanel 0x7f080076
 int id contiguous 0x7f080077
 int id coordinator 0x7f080078
 int id cos 0x7f080079
+int id cost_of_service 0x7f0801bc
+int id cost_of_service_edit_text 0x7f0801bd
 int id counterclockwise 0x7f08007a
 int id custom 0x7f08007b
 int id customPanel 0x7f08007c
