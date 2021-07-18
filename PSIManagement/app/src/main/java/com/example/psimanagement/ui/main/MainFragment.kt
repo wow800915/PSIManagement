@@ -49,19 +49,22 @@ class MainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val binding = FragmentMainBinding.inflate(inflater, container, false)
-        binding.btnTest.setOnClickListener {
-            findNavController().navigate(R.id.action_mainFragment_to_loginFragment)
+
+        binding.btnBackingPropertyTest.setOnClickListener {
+            binding.tvBackingPropertyTest.text = viewModel.backingPropertyTest
             sss = viewModel.getUser()
             Log.d("IANIAN",sss.toString())
         }
 
-        binding.btnBackingPropertyTest.setOnClickListener {
-            binding.tvBackingPropertyTest.text = viewModel.backingPropertyTest
-        }
+
         return binding.root
 
 //        // Inflate the layout for this fragment
 //        return inflater.inflate(R.layout.fragment_main, container, false)
+    }
+
+    fun goToLoginFragment(){
+        findNavController().navigate(R.id.action_mainFragment_to_loginFragment)
     }
 
     companion object {

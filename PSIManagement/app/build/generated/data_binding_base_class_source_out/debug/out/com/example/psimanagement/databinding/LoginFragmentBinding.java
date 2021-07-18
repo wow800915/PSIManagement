@@ -13,6 +13,7 @@ import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.example.psimanagement.R;
+import com.example.psimanagement.ui.main.LoginFragment;
 import com.example.psimanagement.ui.main.MainViewModel;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
@@ -22,6 +23,9 @@ import java.lang.Object;
 public abstract class LoginFragmentBinding extends ViewDataBinding {
   @NonNull
   public final Button btnLogin;
+
+  @NonNull
+  public final Button button;
 
   @NonNull
   public final TextInputEditText etTest;
@@ -47,11 +51,15 @@ public abstract class LoginFragmentBinding extends ViewDataBinding {
   @Bindable
   protected MainViewModel mMainViewModel;
 
+  @Bindable
+  protected LoginFragment mLoginFragment;
+
   protected LoginFragmentBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      Button btnLogin, TextInputEditText etTest, TextInputLayout ilayoutTest, ConstraintLayout main,
-      TextView textView2, TextView tvBackingPropertyTest, TextView tvTest) {
+      Button btnLogin, Button button, TextInputEditText etTest, TextInputLayout ilayoutTest,
+      ConstraintLayout main, TextView textView2, TextView tvBackingPropertyTest, TextView tvTest) {
     super(_bindingComponent, _root, _localFieldCount);
     this.btnLogin = btnLogin;
+    this.button = button;
     this.etTest = etTest;
     this.ilayoutTest = ilayoutTest;
     this.main = main;
@@ -72,6 +80,13 @@ public abstract class LoginFragmentBinding extends ViewDataBinding {
   @Nullable
   public MainViewModel getMainViewModel() {
     return mMainViewModel;
+  }
+
+  public abstract void setLoginFragment(@Nullable LoginFragment loginFragment);
+
+  @Nullable
+  public LoginFragment getLoginFragment() {
+    return mLoginFragment;
   }
 
   @NonNull

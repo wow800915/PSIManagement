@@ -10,6 +10,9 @@
         <variable
             name="mainViewModel"
             type="com.example.psimanagement.ui.main.MainViewModel" />
+        <variable
+            name="loginFragment"
+            type="com.example.psimanagement.ui.main.LoginFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -73,6 +76,16 @@
             android:layout_marginLeft="165dp"
             android:layout_marginTop="500dp"
             android:text="Login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="500dp"
+            android:text="Button"
+            android:onClick="@{() -> loginFragment.goToMainFragment()}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

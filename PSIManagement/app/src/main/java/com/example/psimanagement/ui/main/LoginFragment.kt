@@ -22,30 +22,40 @@ class LoginFragment : Fragment() {
     }
     private val viewModel: MainViewModel by activityViewModels()
 
-    private lateinit var binding: LoginFragmentBinding
+    private var binding: LoginFragmentBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         binding = LoginFragmentBinding.inflate(inflater, container, false)
-        binding.btnLogin.setOnClickListener {
+        binding!!.btnLogin.setOnClickListener {
 
-            viewModel.setUser(binding.etTest.text.toString())
+            viewModel.setUser(binding!!.etTest.text.toString())
             findNavController().navigate(R.id.action_loginFragment_to_mainFragment)
             Log.d("IANIAN","loginFragment43 viewModel.getUser().toString():"+viewModel.getUser().toString())
             Log.d("IANIAN", "viewModel.backingPropertyTest: ${viewModel.backingPropertyTest} ");
         }
-        binding.title = "标题LOGINFRAGMENT"
-
-        return binding.root
+        binding!!.title = "标题LOGINFRAGMENT"
+        return binding!!.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 //        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         // TODO: Use the ViewModel
+        binding?.apply {
+            lifecycleOwner = viewLifecycleOwner
+            mainViewModel = viewModel
+            loginFragment = this@LoginFragment
+        }
     }
+
+    fun goToMainFragment(){
+        findNavController().navigate(R.id.action_loginFragment_to_mainFragment)
+    }
+
+
 
 
 }

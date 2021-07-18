@@ -26,4 +26,12 @@ class MainViewModel : ViewModel() {
         get() = _mutableLiveDataTest
     //到第4點而已,先來睡了
 
+    private val _quantity = MutableLiveData<Int>(0)
+    val quantity: LiveData<Int> = _quantity
+
+    fun setQuantity(numberCupcakes: Int) {
+        _quantity.value = numberCupcakes
+    }
+
+
 }
