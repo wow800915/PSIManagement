@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 
 class MainViewModel : ViewModel() {
     // TODO: Implement the ViewModel
-    private var user: String? =null
+    private var user: String? ="nullUSER"
 
     fun setUser(aa: String){
         user=aa

@@ -13,6 +13,7 @@ import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.example.psimanagement.R;
+import com.example.psimanagement.ui.main.MainViewModel;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import java.lang.Deprecated;
@@ -32,19 +33,30 @@ public abstract class LoginFragmentBinding extends ViewDataBinding {
   public final ConstraintLayout main;
 
   @NonNull
+  public final TextView textView2;
+
+  @NonNull
+  public final TextView tvBackingPropertyTest;
+
+  @NonNull
   public final TextView tvTest;
 
   @Bindable
   protected String mTitle;
 
+  @Bindable
+  protected MainViewModel mMainViewModel;
+
   protected LoginFragmentBinding(Object _bindingComponent, View _root, int _localFieldCount,
       Button btnLogin, TextInputEditText etTest, TextInputLayout ilayoutTest, ConstraintLayout main,
-      TextView tvTest) {
+      TextView textView2, TextView tvBackingPropertyTest, TextView tvTest) {
     super(_bindingComponent, _root, _localFieldCount);
     this.btnLogin = btnLogin;
     this.etTest = etTest;
     this.ilayoutTest = ilayoutTest;
     this.main = main;
+    this.textView2 = textView2;
+    this.tvBackingPropertyTest = tvBackingPropertyTest;
     this.tvTest = tvTest;
   }
 
@@ -53,6 +65,13 @@ public abstract class LoginFragmentBinding extends ViewDataBinding {
   @Nullable
   public String getTitle() {
     return mTitle;
+  }
+
+  public abstract void setMainViewModel(@Nullable MainViewModel mainViewModel);
+
+  @Nullable
+  public MainViewModel getMainViewModel() {
+    return mMainViewModel;
   }
 
   @NonNull

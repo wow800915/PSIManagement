@@ -54,6 +54,10 @@ class MainFragment : Fragment() {
             sss = viewModel.getUser()
             Log.d("IANIAN",sss.toString())
         }
+
+        binding.btnBackingPropertyTest.setOnClickListener {
+            binding.tvBackingPropertyTest.text = viewModel.backingPropertyTest
+        }
         return binding.root
 
 //        // Inflate the layout for this fragment

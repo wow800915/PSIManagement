@@ -22,6 +22,9 @@ public final class FragmentMainBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
+  public final Button btnBackingPropertyTest;
+
+  @NonNull
   public final Button btnTest;
 
   @NonNull
@@ -31,15 +34,21 @@ public final class FragmentMainBinding implements ViewBinding {
   public final TextInputEditText costOfServiceEditText;
 
   @NonNull
+  public final TextView tvBackingPropertyTest;
+
+  @NonNull
   public final TextView tvTest;
 
-  private FragmentMainBinding(@NonNull FrameLayout rootView, @NonNull Button btnTest,
-      @NonNull TextInputLayout costOfService, @NonNull TextInputEditText costOfServiceEditText,
+  private FragmentMainBinding(@NonNull FrameLayout rootView, @NonNull Button btnBackingPropertyTest,
+      @NonNull Button btnTest, @NonNull TextInputLayout costOfService,
+      @NonNull TextInputEditText costOfServiceEditText, @NonNull TextView tvBackingPropertyTest,
       @NonNull TextView tvTest) {
     this.rootView = rootView;
+    this.btnBackingPropertyTest = btnBackingPropertyTest;
     this.btnTest = btnTest;
     this.costOfService = costOfService;
     this.costOfServiceEditText = costOfServiceEditText;
+    this.tvBackingPropertyTest = tvBackingPropertyTest;
     this.tvTest = tvTest;
   }
 
@@ -70,6 +79,12 @@ public final class FragmentMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btn_backingPropertyTest;
+      Button btnBackingPropertyTest = rootView.findViewById(id);
+      if (btnBackingPropertyTest == null) {
+        break missingId;
+      }
+
       id = R.id.btn_test;
       Button btnTest = rootView.findViewById(id);
       if (btnTest == null) {
@@ -88,14 +103,20 @@ public final class FragmentMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_backingPropertyTest;
+      TextView tvBackingPropertyTest = rootView.findViewById(id);
+      if (tvBackingPropertyTest == null) {
+        break missingId;
+      }
+
       id = R.id.tv_test;
       TextView tvTest = rootView.findViewById(id);
       if (tvTest == null) {
         break missingId;
       }
 
-      return new FragmentMainBinding((FrameLayout) rootView, btnTest, costOfService,
-          costOfServiceEditText, tvTest);
+      return new FragmentMainBinding((FrameLayout) rootView, btnBackingPropertyTest, btnTest,
+          costOfService, costOfServiceEditText, tvBackingPropertyTest, tvTest);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

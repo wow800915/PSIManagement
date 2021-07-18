@@ -34,13 +34,9 @@ class LoginFragment : Fragment() {
             viewModel.setUser(binding.etTest.text.toString())
             findNavController().navigate(R.id.action_loginFragment_to_mainFragment)
             Log.d("IANIAN","loginFragment43 viewModel.getUser().toString():"+viewModel.getUser().toString())
-            Log.d("IANIAN","loginFragment43 viewModel.currentScrambledWord:"+viewModel.backingPropertyTest)
             Log.d("IANIAN", "viewModel.backingPropertyTest: ${viewModel.backingPropertyTest} ");
-
-
         }
         binding.title = "标题LOGINFRAGMENT"
-
 
         return binding.root
     }
