@@ -1786,11 +1786,13 @@ id action_divider
 id action_image
 id action_loginFragment_to_mainFragment
 id action_mainFragment_to_loginFragment
+id action_mainFragment_to_profileFragment
 id action_menu_divider
 id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_profileFragment_to_loginFragment
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1816,6 +1818,7 @@ id bottom
 id bounce
 id btn_backingPropertyTest
 id btn_login
+id btn_logout
 id btn_test
 id button
 id buttonPanel
@@ -2035,6 +2038,7 @@ id percent
 id pin
 id position
 id postLayout
+id profileFragment
 id progress_circular
 id progress_horizontal
 id radio
@@ -2253,6 +2257,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_main
+layout fragment_profile
 layout login_fragment
 layout main_activity
 layout material_chip_input_combo
@@ -2437,6 +2442,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
+string subtotal_price
 string word_count
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

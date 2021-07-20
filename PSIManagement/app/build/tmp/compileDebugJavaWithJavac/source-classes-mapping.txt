@@ -1,5 +1,5 @@
-com/example/psimanagement/databinding/FragmentMainBinding.java
- com.example.psimanagement.databinding.FragmentMainBinding
+com/example/psimanagement/DataBindingTriggerClass.java
+ com.example.psimanagement.DataBindingTriggerClass
 com/example/psimanagement/generated/callback/OnClickListener.java
  com.example.psimanagement.generated.callback.OnClickListener
  com.example.psimanagement.generated.callback.OnClickListener$Listener
@@ -9,20 +9,22 @@ androidx/databinding/library/baseAdapters/BR.java
  androidx.databinding.library.baseAdapters.BR
 com/example/psimanagement/BR.java
  com.example.psimanagement.BR
+com/example/psimanagement/BuildConfig.java
+ com.example.psimanagement.BuildConfig
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
+com/example/psimanagement/databinding/FragmentProfileBinding.java
+ com.example.psimanagement.databinding.FragmentProfileBinding
 com/example/psimanagement/databinding/LoginFragmentBindingImpl.java
  com.example.psimanagement.databinding.LoginFragmentBindingImpl
+com/example/psimanagement/databinding/FragmentMainBinding.java
+ com.example.psimanagement.databinding.FragmentMainBinding
 com/example/psimanagement/DataBinderMapperImpl.java
  com.example.psimanagement.DataBinderMapperImpl
  com.example.psimanagement.DataBinderMapperImpl$InnerBrLookup
  com.example.psimanagement.DataBinderMapperImpl$InnerLayoutIdLookup
-com/example/psimanagement/DataBindingTriggerClass.java
- com.example.psimanagement.DataBindingTriggerClass
 com/example/psimanagement/databinding/MainActivityBinding.java
  com.example.psimanagement.databinding.MainActivityBinding
-androidx/databinding/DataBindingComponent.java
- androidx.databinding.DataBindingComponent
-com/example/psimanagement/BuildConfig.java
- com.example.psimanagement.BuildConfig
 com/example/psimanagement/databinding/ActivitySplashBinding.java
  com.example.psimanagement.databinding.ActivitySplashBinding
 com/example/psimanagement/databinding/LoginFragmentBinding.java

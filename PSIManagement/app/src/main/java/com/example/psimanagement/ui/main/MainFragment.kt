@@ -56,6 +56,10 @@ class MainFragment : Fragment() {
             Log.d("IANIAN",sss.toString())
         }
 
+        binding.btnTest.setOnClickListener(View.OnClickListener {
+            goToLoginFragment()
+        })
+
 
         return binding.root
 
@@ -64,7 +68,7 @@ class MainFragment : Fragment() {
     }
 
     fun goToLoginFragment(){
-        findNavController().navigate(R.id.action_mainFragment_to_loginFragment)
+        findNavController().navigate(R.id.action_mainFragment_to_profileFragment)
     }
 
     companion object {

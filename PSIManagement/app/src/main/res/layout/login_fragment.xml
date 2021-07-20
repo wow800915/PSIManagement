@@ -21,6 +21,8 @@
         android:layout_height="match_parent"
         tools:context=".ui.main.LoginFragment">
 
+
+
         <TextView
             android:id="@+id/tv_backingPropertyTest"
             android:layout_width="wrap_content"
@@ -36,9 +38,11 @@
             android:layout_marginStart="50dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="200dp"
-            android:text="@{@string/word_count(mainViewModel.getUser(), 1234)}"
+            android:text="@{@string/word_count(mainViewModel.getUser(),232)}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+
 
         <TextView
             android:id="@+id/tv_test"

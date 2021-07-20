@@ -12,6 +12,10 @@
         "source": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement_project\\PSIManagement\\app\\src\\main\\res\\layout\\activity_splash.xml"
     },
     {
+        "merged": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement_project\\PSIManagement\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement_project\\PSIManagement\\app\\src\\main\\res\\layout\\fragment_profile.xml"
+    },
+    {
         "merged": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement_project\\PSIManagement\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\main_activity.xml",
         "source": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement_project\\PSIManagement\\app\\src\\main\\res\\layout\\main_activity.xml"
     }

@@ -1785,11 +1785,13 @@ int id action_divider 0x7f08003a
 int id action_image 0x7f08003b
 int id action_loginFragment_to_mainFragment 0x7f08003c
 int id action_mainFragment_to_loginFragment 0x7f08003d
+int id action_mainFragment_to_profileFragment 0x7f0801c2
 int id action_menu_divider 0x7f08003e
 int id action_menu_presenter 0x7f08003f
 int id action_mode_bar 0x7f080040
 int id action_mode_bar_stub 0x7f080041
 int id action_mode_close_button 0x7f080042
+int id action_profileFragment_to_loginFragment 0x7f0801c3
 int id action_text 0x7f080043
 int id actions 0x7f080044
 int id activity_chooser_view_content 0x7f080045
@@ -1815,6 +1817,7 @@ int id bottom 0x7f080058
 int id bounce 0x7f080059
 int id btn_backingPropertyTest 0x7f08005a
 int id btn_login 0x7f08005b
+int id btn_logout 0x7f0801c5
 int id btn_test 0x7f08005c
 int id button 0x7f08005d
 int id buttonPanel 0x7f08005e
@@ -2034,6 +2037,7 @@ int id percent 0x7f080133
 int id pin 0x7f080134
 int id position 0x7f080135
 int id postLayout 0x7f080136
+int id profileFragment 0x7f0801c4
 int id progress_circular 0x7f080137
 int id progress_horizontal 0x7f080138
 int id radio 0x7f080139
@@ -2252,6 +2256,7 @@ int layout design_navigation_menu_item 0x7f0b002a
 int layout design_text_input_end_icon 0x7f0b002b
 int layout design_text_input_start_icon 0x7f0b002c
 int layout fragment_main 0x7f0b002d
+int layout fragment_profile 0x7f0b007b
 int layout login_fragment 0x7f0b002e
 int layout main_activity 0x7f0b002f
 int layout material_chip_input_combo 0x7f0b0030
@@ -2436,6 +2441,7 @@ int string path_password_eye_mask_visible 0x7f0f0063
 int string path_password_strike_through 0x7f0f0064
 int string search_menu_title 0x7f0f0065
 int string status_bar_notification_info_overflow 0x7f0f0066
+int string subtotal_price 0x7f0f0068
 int string word_count 0x7f0f0067
 int style AlertDialog_AppCompat 0x7f100000
 int style AlertDialog_AppCompat_Light 0x7f100001
