@@ -1,12 +1,15 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:2:1-22:12
+ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:2:1-24:12
 MERGED from [androidx.databinding:databinding-adapters:4.2.1] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\bec347c1f1edb8f23df0657f158bfa0c\databinding-adapters-4.2.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.databinding:databinding-runtime:4.2.1] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\d22da739c7ee1f5501e2cde3e21fec10\databinding-runtime-4.2.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.databinding:viewbinding:4.2.1] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\b7c1cea6c631d0b3240476715bd5e0ee\viewbinding-4.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\84f416886beee0b7657ac98b494e1af3\multidex-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [io.coil-kt:coil:1.1.1] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\e3ba2af51e63f5b34134281d7b89243e\coil-1.1.1\AndroidManifest.xml:2:1-9:12
+MERGED from [io.coil-kt:coil-base:1.1.1] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\7942fd812a76ea903e438c50869ff4af\coil-base-1.1.1\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.5] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\6863f8c0328173274351215df45d7f9b\navigation-fragment-ktx-2.3.5\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment-ktx:1.2.4] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\537aaa2b294d36a719f1f70c2519be7d\fragment-ktx-1.2.4\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui-ktx:2.3.5] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\18657d10c9846c809de08e80a7a1ffdb\navigation-ui-ktx-2.3.5\AndroidManifest.xml:17:1-24:12
@@ -58,30 +61,35 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.1] C:\Users\Ian\.gradle\c
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\60b22109e486a9f22a91253ee7db7262\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\5be0ad23f665fde781d660f6702ea073\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\a2c0d241c1430bb4c4e8eaa2e041383a\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\d05f2778450e36de69be3e7529fea6b7\exifinterface-1.3.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\0967fe5e45bd58c5aa622f7a4ff108f2\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\6b8ba596ea3a5610a0a6f4321d32f9ac\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\dd369a177b84f646b7c056e3f9d98125\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\46c85ba6b01157e32d44fbd61dd3fc00\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\b485d7dcb73f50fda850fbfec292a113\annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:2:1-24:12
 	package
 		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:3:5-40
 		INJECTED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:2:1-22:12
+		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:2:1-24:12
 		INJECTED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:2:1-22:12
+		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:2:1-24:12
 		INJECTED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:5:5-20:19
+ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:7:5-22:19
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\b8721f2d746093988e747bf0dc3e8f30\material-1.3.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\b8721f2d746093988e747bf0dc3e8f30\material-1.3.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\c627a146c7a3766ceee070eb3539ded4\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -93,35 +101,35 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Ia
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.5.0] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\967826c52c5558ea22060f7728ba7d3b\core-1.5.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:11:9-54
 	android:icon
-		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:11:9-51
+		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:13:9-51
 activity#com.example.psimanagement.MainActivity
-ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:12:9-59
+ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:14:9-59
 	android:name
-		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:12:19-47
+		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:14:19-47
 activity#com.example.psimanagement.SplashActivity
-ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:13:9-19:20
+ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:15:9-21:20
 	android:name
-		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:13:19-49
+		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:15:19-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:14:13-18:29
+ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:15:17-69
+ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:15:25-66
+		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:17:17-77
+ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:17:27-74
+		ADDED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml:19:27-74
 uses-sdk
 INJECTED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\AndroidManifest.xml
@@ -132,6 +140,12 @@ MERGED from [androidx.databinding:databinding-runtime:4.2.1] C:\Users\Ian\.gradl
 MERGED from [androidx.databinding:databinding-runtime:4.2.1] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\d22da739c7ee1f5501e2cde3e21fec10\databinding-runtime-4.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.databinding:viewbinding:4.2.1] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\b7c1cea6c631d0b3240476715bd5e0ee\viewbinding-4.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.databinding:viewbinding:4.2.1] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\b7c1cea6c631d0b3240476715bd5e0ee\viewbinding-4.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\84f416886beee0b7657ac98b494e1af3\multidex-2.0.1\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\84f416886beee0b7657ac98b494e1af3\multidex-2.0.1\AndroidManifest.xml:20:5-43
+MERGED from [io.coil-kt:coil:1.1.1] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\e3ba2af51e63f5b34134281d7b89243e\coil-1.1.1\AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil:1.1.1] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\e3ba2af51e63f5b34134281d7b89243e\coil-1.1.1\AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil-base:1.1.1] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\7942fd812a76ea903e438c50869ff4af\coil-base-1.1.1\AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil-base:1.1.1] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\7942fd812a76ea903e438c50869ff4af\coil-base-1.1.1\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.5] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\6863f8c0328173274351215df45d7f9b\navigation-fragment-ktx-2.3.5\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.5] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\6863f8c0328173274351215df45d7f9b\navigation-fragment-ktx-2.3.5\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment-ktx:1.2.4] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\537aaa2b294d36a719f1f70c2519be7d\fragment-ktx-1.2.4\AndroidManifest.xml:20:5-22:41
@@ -234,6 +248,8 @@ MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Ian\.gradle\caches\
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\5be0ad23f665fde781d660f6702ea073\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\a2c0d241c1430bb4c4e8eaa2e041383a\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\a2c0d241c1430bb4c4e8eaa2e041383a\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\d05f2778450e36de69be3e7529fea6b7\exifinterface-1.3.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\d05f2778450e36de69be3e7529fea6b7\exifinterface-1.3.2\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\0967fe5e45bd58c5aa622f7a4ff108f2\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\0967fe5e45bd58c5aa622f7a4ff108f2\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Ian\.gradle\caches\transforms-2\files-2.1\6b8ba596ea3a5610a0a6f4321d32f9ac\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44

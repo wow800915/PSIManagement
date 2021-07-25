@@ -54,6 +54,7 @@ class MainFragment : Fragment() {
             binding.tvBackingPropertyTest.text = viewModel.backingPropertyTest
             sss = viewModel.getUser()
             Log.d("IANIAN",sss.toString())
+
         }
 
         binding.btnTest.setOnClickListener(View.OnClickListener {

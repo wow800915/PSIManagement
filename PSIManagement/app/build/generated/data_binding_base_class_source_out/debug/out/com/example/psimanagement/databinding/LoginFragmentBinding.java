@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -34,6 +35,12 @@ public abstract class LoginFragmentBinding extends ViewDataBinding {
   public final TextInputLayout ilayoutTest;
 
   @NonNull
+  public final ImageView imageView;
+
+  @NonNull
+  public final ImageView imageView2;
+
+  @NonNull
   public final ConstraintLayout main;
 
   @NonNull
@@ -56,12 +63,15 @@ public abstract class LoginFragmentBinding extends ViewDataBinding {
 
   protected LoginFragmentBinding(Object _bindingComponent, View _root, int _localFieldCount,
       Button btnLogin, Button button, TextInputEditText etTest, TextInputLayout ilayoutTest,
-      ConstraintLayout main, TextView textView2, TextView tvBackingPropertyTest, TextView tvTest) {
+      ImageView imageView, ImageView imageView2, ConstraintLayout main, TextView textView2,
+      TextView tvBackingPropertyTest, TextView tvTest) {
     super(_bindingComponent, _root, _localFieldCount);
     this.btnLogin = btnLogin;
     this.button = button;
     this.etTest = etTest;
     this.ilayoutTest = ilayoutTest;
+    this.imageView = imageView;
+    this.imageView2 = imageView2;
     this.main = main;
     this.textView2 = textView2;
     this.tvBackingPropertyTest = tvBackingPropertyTest;

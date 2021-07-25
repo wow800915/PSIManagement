@@ -13,6 +13,8 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.psimanagement.R
 import com.example.psimanagement.databinding.LoginFragmentBinding
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 
 class LoginFragment : Fragment() {
@@ -23,6 +25,8 @@ class LoginFragment : Fragment() {
     private val viewModel: MainViewModel by activityViewModels()
 
     private var binding: LoginFragmentBinding? = null
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -37,6 +41,16 @@ class LoginFragment : Fragment() {
             Log.d("IANIAN", "viewModel.backingPropertyTest: ${viewModel.backingPropertyTest} ");
         }
         binding!!.title = "标题LOGINFRAGMENT"
+
+        repeat(3) {
+            GlobalScope.launch {
+                println("Hi from ${Thread.currentThread()}")
+            }
+        }
+
+
+
+
         return binding!!.root
     }
 
@@ -49,6 +63,8 @@ class LoginFragment : Fragment() {
             mainViewModel = viewModel
             loginFragment = this@LoginFragment
         }
+
+
     }
 
     fun goToMainFragment(){

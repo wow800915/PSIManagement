@@ -1681,7 +1681,9 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_broken_image
 drawable ic_clock_black_24dp
+drawable ic_connection_error
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1689,6 +1691,8 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable loading_animation
+drawable loading_img
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1843,6 +1847,7 @@ id clear_text
 id clip_horizontal
 id clip_vertical
 id clockwise
+id coil_request_manager
 id collapseActionView
 id confirm_button
 id container
@@ -1931,6 +1936,8 @@ id ignore
 id ignoreRequest
 id ilayout_test
 id image
+id imageView
+id imageView2
 id info
 id invisible
 id inward

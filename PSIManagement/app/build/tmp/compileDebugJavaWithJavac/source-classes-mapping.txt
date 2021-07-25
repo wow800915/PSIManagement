@@ -1,5 +1,5 @@
-com/example/psimanagement/DataBindingTriggerClass.java
- com.example.psimanagement.DataBindingTriggerClass
+com/example/psimanagement/BuildConfig.java
+ com.example.psimanagement.BuildConfig
 com/example/psimanagement/generated/callback/OnClickListener.java
  com.example.psimanagement.generated.callback.OnClickListener
  com.example.psimanagement.generated.callback.OnClickListener$Listener
@@ -7,12 +7,12 @@ androidx/databinding/DataBinderMapperImpl.java
  androidx.databinding.DataBinderMapperImpl
 androidx/databinding/library/baseAdapters/BR.java
  androidx.databinding.library.baseAdapters.BR
-com/example/psimanagement/BR.java
- com.example.psimanagement.BR
-com/example/psimanagement/BuildConfig.java
- com.example.psimanagement.BuildConfig
 androidx/databinding/DataBindingComponent.java
  androidx.databinding.DataBindingComponent
+com/example/psimanagement/BR.java
+ com.example.psimanagement.BR
+com/example/psimanagement/DataBindingTriggerClass.java
+ com.example.psimanagement.DataBindingTriggerClass
 com/example/psimanagement/databinding/FragmentProfileBinding.java
  com.example.psimanagement.databinding.FragmentProfileBinding
 com/example/psimanagement/databinding/LoginFragmentBindingImpl.java
