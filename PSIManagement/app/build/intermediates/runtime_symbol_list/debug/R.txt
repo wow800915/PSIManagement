@@ -1833,6 +1833,7 @@ int id center_horizontal 0x7f080066
 int id center_vertical 0x7f080067
 int id chain 0x7f080068
 int id chains 0x7f080069
+int id checkBox2 0x7f0801cb
 int id checkbox 0x7f08006a
 int id checked 0x7f08006b
 int id chip 0x7f08006c
@@ -2141,7 +2142,9 @@ int id textSpacerNoButtons 0x7f080195
 int id textSpacerNoTitle 0x7f080196
 int id textStart 0x7f080197
 int id textTop 0x7f080198
+int id textView 0x7f0801cc
 int id textView2 0x7f080199
+int id textView3 0x7f0801cd
 int id textWatcher 0x7f08019a
 int id text_input_end_icon 0x7f08019b
 int id text_input_error_icon 0x7f08019c
@@ -2387,10 +2390,12 @@ int string error_icon_content_description 0x7f0f0024
 int string exposed_dropdown_menu_content_description 0x7f0f0025
 int string fab_transformation_scrim_behavior 0x7f0f0026
 int string fab_transformation_sheet_behavior 0x7f0f0027
+int string forgot_account_and_password 0x7f0f0069
 int string hello_blank_fragment 0x7f0f0028
 int string hide_bottom_view_on_scroll_behavior 0x7f0f0029
 int string icon_content_description 0x7f0f002a
 int string item_view_role_description 0x7f0f002b
+int string login 0x7f0f006d
 int string material_clock_display_divider 0x7f0f002c
 int string material_clock_toggle_content_description 0x7f0f002d
 int string material_hour_selection 0x7f0f002e
@@ -2406,6 +2411,7 @@ int string material_timepicker_minute 0x7f0f0037
 int string material_timepicker_pm 0x7f0f0038
 int string material_timepicker_select_time 0x7f0f0039
 int string material_timepicker_text_input_mode_description 0x7f0f003a
+int string memorise_account_id 0x7f0f006c
 int string mtrl_badge_numberless_content_description 0x7f0f003b
 int string mtrl_chip_close_icon_content_description 0x7f0f003c
 int string mtrl_exceed_max_badge_number_content_description 0x7f0f003d
@@ -2448,6 +2454,7 @@ int string path_password_eye 0x7f0f0061
 int string path_password_eye_mask_strike_through 0x7f0f0062
 int string path_password_eye_mask_visible 0x7f0f0063
 int string path_password_strike_through 0x7f0f0064
+int string register 0x7f0f006b
 int string search_menu_title 0x7f0f0065
 int string status_bar_notification_info_overflow 0x7f0f0066
 int string subtotal_price 0x7f0f0067

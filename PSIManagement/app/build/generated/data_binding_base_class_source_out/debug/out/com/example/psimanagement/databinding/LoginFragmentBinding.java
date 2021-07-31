@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -29,6 +30,9 @@ public abstract class LoginFragmentBinding extends ViewDataBinding {
   public final Button button;
 
   @NonNull
+  public final CheckBox checkBox2;
+
+  @NonNull
   public final TextInputEditText etPassword;
 
   @NonNull
@@ -50,7 +54,13 @@ public abstract class LoginFragmentBinding extends ViewDataBinding {
   public final ConstraintLayout main;
 
   @NonNull
+  public final TextView textView;
+
+  @NonNull
   public final TextView textView2;
+
+  @NonNull
+  public final TextView textView3;
 
   @NonNull
   public final TextView tvBackingPropertyTest;
@@ -68,13 +78,14 @@ public abstract class LoginFragmentBinding extends ViewDataBinding {
   protected LoginFragment mLoginFragment;
 
   protected LoginFragmentBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      Button btnLogin, Button button, TextInputEditText etPassword, TextInputEditText etTest,
-      TextInputLayout ilayoutPassword, TextInputLayout ilayoutTest, ImageView imageView,
-      ImageView imageView2, ConstraintLayout main, TextView textView2,
-      TextView tvBackingPropertyTest, TextView tvTest) {
+      Button btnLogin, Button button, CheckBox checkBox2, TextInputEditText etPassword,
+      TextInputEditText etTest, TextInputLayout ilayoutPassword, TextInputLayout ilayoutTest,
+      ImageView imageView, ImageView imageView2, ConstraintLayout main, TextView textView,
+      TextView textView2, TextView textView3, TextView tvBackingPropertyTest, TextView tvTest) {
     super(_bindingComponent, _root, _localFieldCount);
     this.btnLogin = btnLogin;
     this.button = button;
+    this.checkBox2 = checkBox2;
     this.etPassword = etPassword;
     this.etTest = etTest;
     this.ilayoutPassword = ilayoutPassword;
@@ -82,7 +93,9 @@ public abstract class LoginFragmentBinding extends ViewDataBinding {
     this.imageView = imageView;
     this.imageView2 = imageView2;
     this.main = main;
+    this.textView = textView;
     this.textView2 = textView2;
+    this.textView3 = textView3;
     this.tvBackingPropertyTest = tvBackingPropertyTest;
     this.tvTest = tvTest;
   }

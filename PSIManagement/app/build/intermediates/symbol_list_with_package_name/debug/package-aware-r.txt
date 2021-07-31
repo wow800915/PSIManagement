@@ -1834,6 +1834,7 @@ id center_horizontal
 id center_vertical
 id chain
 id chains
+id checkBox2
 id checkbox
 id checked
 id chip
@@ -2142,7 +2143,9 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id textView2
+id textView3
 id textWatcher
 id text_input_end_icon
 id text_input_error_icon
@@ -2388,10 +2391,12 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string forgot_account_and_password
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string login
 string material_clock_display_divider
 string material_clock_toggle_content_description
 string material_hour_selection
@@ -2407,6 +2412,7 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string memorise_account_id
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_content_description
@@ -2449,6 +2455,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string register
 string search_menu_title
 string status_bar_notification_info_overflow
 string subtotal_price

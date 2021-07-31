@@ -4,4 +4,10 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="word_count">%s of %d words</string>
     <string name="subtotal_price">Subtotal %s</string>
+
+    <string name="register">Register</string>
+    <string name="forgot_account_and_password">Forgot amount/password</string>
+    <string name="memorise_account_id">Keep Account ID</string>
+    <string name="login">login</string>
+
 </resources>

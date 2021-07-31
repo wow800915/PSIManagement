@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PSIManagement</string>
+    <string name="memorise_account_id">記住帳號</string>
+    <string name="forgot_account_and_password">忘記帳號密碼</string>
+    <string name="register">註冊</string>
+    <string name="login">登入</string>
+</resources>
