@@ -22,12 +22,12 @@
         tools:context=".ui.main.LoginFragment">
 
 
-
         <TextView
             android:id="@+id/tv_backingPropertyTest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -41,6 +41,7 @@
             android:layout_marginRight="183dp"
             android:layout_marginBottom="50dp"
             android:scaleType="fitXY"
+            android:visibility="gone"
             app:imageUrl="@{mainViewModel.photos.imgSrcUrl}"
             app:layout_constraintBottom_toTopOf="@+id/ilayout_test"
             app:layout_constraintEnd_toEndOf="parent"
@@ -54,6 +55,7 @@
             android:layout_height="240dp"
             android:layout_marginStart="250dp"
             android:layout_marginLeft="250dp"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -64,9 +66,9 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="200dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="150dp"
             android:text="@{@string/word_count(mainViewModel.marStatusTest,232)}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -101,6 +103,24 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ilayout_password"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="300dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
         <Button
             android:id="@+id/btn_login"
             android:layout_width="0dp"
@@ -117,8 +137,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="500dp"
-            android:text="Button"
             android:onClick="@{() -> loginFragment.goToMainFragment()}"
+            android:text="Button"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

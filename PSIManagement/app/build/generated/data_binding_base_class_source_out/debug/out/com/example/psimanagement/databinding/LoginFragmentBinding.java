@@ -29,7 +29,13 @@ public abstract class LoginFragmentBinding extends ViewDataBinding {
   public final Button button;
 
   @NonNull
+  public final TextInputEditText etPassword;
+
+  @NonNull
   public final TextInputEditText etTest;
+
+  @NonNull
+  public final TextInputLayout ilayoutPassword;
 
   @NonNull
   public final TextInputLayout ilayoutTest;
@@ -62,13 +68,16 @@ public abstract class LoginFragmentBinding extends ViewDataBinding {
   protected LoginFragment mLoginFragment;
 
   protected LoginFragmentBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      Button btnLogin, Button button, TextInputEditText etTest, TextInputLayout ilayoutTest,
-      ImageView imageView, ImageView imageView2, ConstraintLayout main, TextView textView2,
+      Button btnLogin, Button button, TextInputEditText etPassword, TextInputEditText etTest,
+      TextInputLayout ilayoutPassword, TextInputLayout ilayoutTest, ImageView imageView,
+      ImageView imageView2, ConstraintLayout main, TextView textView2,
       TextView tvBackingPropertyTest, TextView tvTest) {
     super(_bindingComponent, _root, _localFieldCount);
     this.btnLogin = btnLogin;
     this.button = button;
+    this.etPassword = etPassword;
     this.etTest = etTest;
+    this.ilayoutPassword = ilayoutPassword;
     this.ilayoutTest = ilayoutTest;
     this.imageView = imageView;
     this.imageView2 = imageView2;

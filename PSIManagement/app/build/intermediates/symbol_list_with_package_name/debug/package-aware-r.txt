@@ -1899,6 +1899,7 @@ id endToStart
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id et_password
 id et_test
 id exitUntilCollapsed
 id expand_activities_button
@@ -1934,6 +1935,7 @@ id icon_group
 id ifRoom
 id ignore
 id ignoreRequest
+id ilayout_password
 id ilayout_test
 id image
 id imageView
