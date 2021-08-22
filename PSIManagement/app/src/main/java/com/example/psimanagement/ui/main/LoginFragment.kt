@@ -35,18 +35,19 @@ class LoginFragment : Fragment() {
         binding = LoginFragmentBinding.inflate(inflater, container, false)
         binding!!.btnLogin.setOnClickListener {
 
-            viewModel.setUser(binding!!.etTest.text.toString())
+//            viewModel.setUser(binding!!.etTest.text.toString())
             findNavController().navigate(R.id.action_loginFragment_to_mainFragment)
-            Log.d("IANIAN","loginFragment43 viewModel.getUser().toString():"+viewModel.getUser().toString())
-            Log.d("IANIAN", "viewModel.backingPropertyTest: ${viewModel.backingPropertyTest} ");
+//            Log.d("IANIAN","loginFragment43 viewModel.getUser().toString():"+viewModel.getUser().toString())
+//            Log.d("IANIAN", "viewModel.backingPropertyTest: ${viewModel.backingPropertyTest} ");
         }
-        binding!!.title = "标题LOGINFRAGMENT"
 
-        repeat(3) {
-            GlobalScope.launch {
-                println("Hi from ${Thread.currentThread()}")
-            }
-        }
+//        binding!!.title = "标题LOGINFRAGMENT"
+//
+//        repeat(3) {
+//            GlobalScope.launch {
+//                println("Hi from ${Thread.currentThread()}")
+//            }
+//        }
 
 
 
@@ -59,7 +60,7 @@ class LoginFragment : Fragment() {
 //        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         // TODO: Use the ViewModel
         binding?.apply {
-            lifecycleOwner = viewLifecycleOwner
+//            lifecycleOwner = viewLifecycleOwner
             mainViewModel = viewModel
             loginFragment = this@LoginFragment
         }

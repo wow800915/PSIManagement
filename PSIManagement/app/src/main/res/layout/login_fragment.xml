@@ -62,6 +62,9 @@
             app:marsApiStatus="@{mainViewModel.marStatusTest}"
             tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
+        <!-- android:text="@{@string/word_count(mainViewModel.getUser(),232)}" -->
+
+
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
@@ -70,23 +73,25 @@
             android:layout_marginLeft="100dp"
             android:layout_marginTop="150dp"
             android:text="@{@string/word_count(mainViewModel.marStatusTest,232)}"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-<!-- android:text="@{@string/word_count(mainViewModel.getUser(),232)}" -->
-
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="gone" />
 
         <TextView
             android:id="@+id/tv_test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{title}"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="gone" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/ilayout_test"
+            android:id="@+id/ilayout_accountnumber"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="120dp"
@@ -96,7 +101,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_test"
+                android:id="@+id/et_accountnumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal" />
@@ -123,17 +128,16 @@
 
         <Button
             android:id="@+id/btn_login"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="165dp"
-            android:layout_marginLeft="165dp"
             android:layout_marginTop="500dp"
             android:text="@string/login"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn_fastlogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="500dp"
@@ -144,7 +148,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/tv_forgotaccountnumberandpassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="62dp"
@@ -155,7 +159,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/tv_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="54dp"
@@ -175,6 +179,16 @@
             android:text="@string/memorise_account_id"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_fastlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/offlinelogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ilayout_password" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

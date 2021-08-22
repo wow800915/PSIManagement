@@ -39,8 +39,8 @@ class MainFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
 
-            sss = viewModel.getUser()
-            Log.d("IANIAN",sss.toString())
+//            sss = viewModel.getUser()
+//            Log.d("IANIAN",sss.toString())
         }
     }
 
@@ -50,16 +50,16 @@ class MainFragment : Fragment() {
     ): View? {
         val binding = FragmentMainBinding.inflate(inflater, container, false)
 
-        binding.btnBackingPropertyTest.setOnClickListener {
-            binding.tvBackingPropertyTest.text = viewModel.backingPropertyTest
-            sss = viewModel.getUser()
-            Log.d("IANIAN",sss.toString())
+//        binding.btnBackingPropertyTest.setOnClickListener {
+//            binding.tvBackingPropertyTest.text = viewModel.backingPropertyTest
+//            sss = viewModel.getUser()
+//            Log.d("IANIAN",sss.toString())
+//
+//        }
 
-        }
-
-        binding.btnTest.setOnClickListener(View.OnClickListener {
-            goToLoginFragment()
-        })
+//        binding.btnTest.setOnClickListener(View.OnClickListener {
+//            goToLoginFragment()
+//        })
 
 
         return binding.root

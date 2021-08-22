@@ -5,4 +5,7 @@
     <string name="forgot_account_and_password">忘記帳號密碼</string>
     <string name="register">註冊</string>
     <string name="login">登入</string>
+    <string name="fastlogin">快速登入</string>
+    <string name="offlinelogin">不用網路登入</string>
+
 </resources>

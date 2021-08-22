@@ -24,25 +24,28 @@ import java.lang.Object;
 
 public abstract class LoginFragmentBinding extends ViewDataBinding {
   @NonNull
+  public final Button btnFastlogin;
+
+  @NonNull
   public final Button btnLogin;
 
   @NonNull
-  public final Button button;
+  public final Button buttonFastlogin;
 
   @NonNull
   public final CheckBox checkBox2;
 
   @NonNull
+  public final TextInputEditText etAccountnumber;
+
+  @NonNull
   public final TextInputEditText etPassword;
 
   @NonNull
-  public final TextInputEditText etTest;
+  public final TextInputLayout ilayoutAccountnumber;
 
   @NonNull
   public final TextInputLayout ilayoutPassword;
-
-  @NonNull
-  public final TextInputLayout ilayoutTest;
 
   @NonNull
   public final ImageView imageView;
@@ -54,16 +57,16 @@ public abstract class LoginFragmentBinding extends ViewDataBinding {
   public final ConstraintLayout main;
 
   @NonNull
-  public final TextView textView;
-
-  @NonNull
   public final TextView textView2;
 
   @NonNull
-  public final TextView textView3;
+  public final TextView tvBackingPropertyTest;
 
   @NonNull
-  public final TextView tvBackingPropertyTest;
+  public final TextView tvForgotaccountnumberandpassword;
+
+  @NonNull
+  public final TextView tvRegister;
 
   @NonNull
   public final TextView tvTest;
@@ -78,25 +81,28 @@ public abstract class LoginFragmentBinding extends ViewDataBinding {
   protected LoginFragment mLoginFragment;
 
   protected LoginFragmentBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      Button btnLogin, Button button, CheckBox checkBox2, TextInputEditText etPassword,
-      TextInputEditText etTest, TextInputLayout ilayoutPassword, TextInputLayout ilayoutTest,
-      ImageView imageView, ImageView imageView2, ConstraintLayout main, TextView textView,
-      TextView textView2, TextView textView3, TextView tvBackingPropertyTest, TextView tvTest) {
+      Button btnFastlogin, Button btnLogin, Button buttonFastlogin, CheckBox checkBox2,
+      TextInputEditText etAccountnumber, TextInputEditText etPassword,
+      TextInputLayout ilayoutAccountnumber, TextInputLayout ilayoutPassword, ImageView imageView,
+      ImageView imageView2, ConstraintLayout main, TextView textView2,
+      TextView tvBackingPropertyTest, TextView tvForgotaccountnumberandpassword,
+      TextView tvRegister, TextView tvTest) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.btnFastlogin = btnFastlogin;
     this.btnLogin = btnLogin;
-    this.button = button;
+    this.buttonFastlogin = buttonFastlogin;
     this.checkBox2 = checkBox2;
+    this.etAccountnumber = etAccountnumber;
     this.etPassword = etPassword;
-    this.etTest = etTest;
+    this.ilayoutAccountnumber = ilayoutAccountnumber;
     this.ilayoutPassword = ilayoutPassword;
-    this.ilayoutTest = ilayoutTest;
     this.imageView = imageView;
     this.imageView2 = imageView2;
     this.main = main;
-    this.textView = textView;
     this.textView2 = textView2;
-    this.textView3 = textView3;
     this.tvBackingPropertyTest = tvBackingPropertyTest;
+    this.tvForgotaccountnumberandpassword = tvForgotaccountnumberandpassword;
+    this.tvRegister = tvRegister;
     this.tvTest = tvTest;
   }
 
