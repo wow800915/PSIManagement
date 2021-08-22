@@ -40,14 +40,14 @@ class MainViewModel : ViewModel() {
 //    }
 
     //{拿火星照片,測試網路
-    private val _marStatusTest = MutableLiveData<MarsApiStatus>()
-    val marStatusTest: LiveData<MarsApiStatus> = _marStatusTest
+//    private val _marStatusTest = MutableLiveData<MarsApiStatus>()
+//    val marStatusTest: LiveData<MarsApiStatus> = _marStatusTest
 //        get() = _marStatusTest
 //    private val _status = MutableLiveData<MarsApiStatus>()
 //
 //    val status: LiveData<MarsApiStatus> = _status
-    private val _photos = MutableLiveData<MarsPhoto>()
-    val photos: LiveData<MarsPhoto> = _photos
+//    private val _photos = MutableLiveData<MarsPhoto>()
+//    val photos: LiveData<MarsPhoto> = _photos
 //    init {
 //        getMarsPhotos()
 //    }

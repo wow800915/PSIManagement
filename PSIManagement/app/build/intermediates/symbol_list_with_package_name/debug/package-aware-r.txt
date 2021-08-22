@@ -1939,7 +1939,6 @@ id ignore
 id ignoreRequest
 id ilayout_accountnumber
 id ilayout_password
-id ilayout_test
 id image
 id imageView
 id imageView2
