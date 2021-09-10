@@ -1,17 +1,53 @@
 package com.example.psimanagement.ui.main
 
 import android.text.Editable
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
+import androidx.lifecycle.*
+import androidx.room.ColumnInfo
+import com.example.psimanagement.data.Inventory
+import com.example.psimanagement.data.InventoryDao
 import com.example.psimanagement.network.MarsApi
 import com.example.psimanagement.network.MarsPhoto
 import kotlinx.coroutines.launch
 
-enum class MarsApiStatus { LOADING, ERROR, DONE }
+//20210906這邊room開始有改
+class MainViewModel(private val inventoryDao: InventoryDao) : ViewModel() {
 
-class MainViewModel : ViewModel() {
+    fun addNewItem() {
+        val newItem = getNewInventoryEntry(1, 40, "sds",32.2,231,123123,"dsad")
+        insertInventory(newItem)
+    }
+
+    private fun insertInventory(inventory: Inventory) {
+        viewModelScope.launch {
+            inventoryDao.insert(inventory)
+        }
+    }
+
+    private fun getNewInventoryEntry(inventoryItemId: Int, inventoryItemBarcode: Int, inventoryItemName: String, inventoryItemPrice: Double, inventoryItemQuantityInStock: Int, inventoryItemTime: Long, inventoryItemOther: String): Inventory {
+        return Inventory(
+            inventoryItemId = inventoryItemId,
+            inventoryItemBarcode = inventoryItemBarcode,
+            inventoryItemName = inventoryItemName,
+            inventoryItemPrice = inventoryItemPrice,
+            inventoryItemQuantityInStock = inventoryItemQuantityInStock,
+            inventoryItemTime = inventoryItemTime,
+            inventoryItemOther = inventoryItemOther
+        )
+    }
+}
+//20210906這邊room開始有改
+class MainViewModelFactory(private val inventoryDao: InventoryDao) : ViewModelProvider.Factory {
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        if (modelClass.isAssignableFrom(MainViewModel::class.java)) {
+            @Suppress("UNCHECKED_CAST")
+            return MainViewModel(inventoryDao) as T
+        }
+        throw IllegalArgumentException("Unknown ViewModel class")
+    }
+}
+
+enum class MarsApiStatus { LOADING, ERROR, DONE }
+//class MainViewModel : ViewModel() {
     // TODO: Implement the ViewModel
 //    private var user: String? = "nullUSER"
 //
@@ -70,6 +106,5 @@ class MainViewModel : ViewModel() {
 //        }
 //    }
 //    拿火星照片,測試網路}
-
-
-}
+//
+//}

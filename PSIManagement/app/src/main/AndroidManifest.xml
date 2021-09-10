@@ -3,8 +3,9 @@
     package="com.example.psimanagement">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+//20210909這邊也要改
     <application
+        android:name="com.example.psimanagement.PSIManagamentApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"

@@ -1,3 +1,13 @@
+com/example/psimanagement/data/InventoryDao_Impl.java
+ com.example.psimanagement.data.InventoryDao_Impl
+ com.example.psimanagement.data.InventoryDao_Impl$1
+ com.example.psimanagement.data.InventoryDao_Impl$2
+ com.example.psimanagement.data.InventoryDao_Impl$3
+ com.example.psimanagement.data.InventoryDao_Impl$4
+ com.example.psimanagement.data.InventoryDao_Impl$5
+ com.example.psimanagement.data.InventoryDao_Impl$6
+ com.example.psimanagement.data.InventoryDao_Impl$7
+ com.example.psimanagement.data.InventoryDao_Impl$8
 com/example/psimanagement/databinding/FragmentMainBinding.java
  com.example.psimanagement.databinding.FragmentMainBinding
 com/example/psimanagement/generated/callback/OnClickListener.java
@@ -9,6 +19,9 @@ androidx/databinding/library/baseAdapters/BR.java
  androidx.databinding.library.baseAdapters.BR
 com/example/psimanagement/databinding/FragmentProfileBinding.java
  com.example.psimanagement.databinding.FragmentProfileBinding
+com/example/psimanagement/data/InventoryRoomDatabase_Impl.java
+ com.example.psimanagement.data.InventoryRoomDatabase_Impl
+ com.example.psimanagement.data.InventoryRoomDatabase_Impl$1
 com/example/psimanagement/BR.java
  com.example.psimanagement.BR
 com/example/psimanagement/databinding/LoginFragmentBindingImpl.java

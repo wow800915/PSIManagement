@@ -29,8 +29,8 @@ class MainFragment : Fragment() {
     private var param2: String? = null
 
     var sss: String? = null
-
-    private val viewModel: MainViewModel by activityViewModels()
+//20210906這邊room開始有改
+//    private val viewModel: MainViewModel by activityViewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

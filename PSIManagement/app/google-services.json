@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "179246615949",
+    "firebase_url": "https://psimanagement-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "psimanagement",
+    "storage_bucket": "psimanagement.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179246615949:android:41b4183f638d22d68881c4",
+        "android_client_info": {
+          "package_name": "com.example.psimanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179246615949-hu2m6v5asscofoe6k7qhmdei9isfk5l8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtUfOEj8AUDTIg0hAVNUR1PUztEfjt7gE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179246615949-hu2m6v5asscofoe6k7qhmdei9isfk5l8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

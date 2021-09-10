@@ -16,12 +16,12 @@
         "source": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement_project\\PSIManagement\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\loading_img.png"
     },
     {
-        "merged": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement_project\\PSIManagement\\app\\build\\intermediates\\res\\merged\\debug\\navigation_main_navigation.xml.flat",
-        "source": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement_project\\PSIManagement\\app\\src\\main\\res\\navigation\\main_navigation.xml"
-    },
-    {
         "merged": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement_project\\PSIManagement\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_loading_img.png.flat",
         "source": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement_project\\PSIManagement\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\loading_img.png"
+    },
+    {
+        "merged": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement_project\\PSIManagement\\app\\build\\intermediates\\res\\merged\\debug\\navigation_main_navigation.xml.flat",
+        "source": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement_project\\PSIManagement\\app\\src\\main\\res\\navigation\\main_navigation.xml"
     },
     {
         "merged": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement_project\\PSIManagement\\app\\build\\intermediates\\res\\merged\\debug\\layout_main_activity.xml.flat",
@@ -72,12 +72,12 @@
         "source": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement_project\\PSIManagement\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_connection_error.png"
     },
     {
-        "merged": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement_project\\PSIManagement\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement_project\\PSIManagement\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
-    },
-    {
         "merged": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement_project\\PSIManagement\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_broken_image.png.flat",
         "source": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement_project\\PSIManagement\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_broken_image.png"
+    },
+    {
+        "merged": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement_project\\PSIManagement\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement_project\\PSIManagement\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
         "merged": "C:\\Users\\Ian\\AndroidStudioProjects\\PSIManagement_project\\PSIManagement\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_connection_error.png.flat",
