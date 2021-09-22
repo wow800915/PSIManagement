@@ -3,9 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.main.MainFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+<!--    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        app:menu="@menu/navigation" />-->
+
     <TextView
         android:id="@+id/tv_test"
         android:layout_width="match_parent"

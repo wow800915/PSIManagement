@@ -8,6 +8,8 @@ com/example/psimanagement/data/InventoryDao_Impl.java
  com.example.psimanagement.data.InventoryDao_Impl$6
  com.example.psimanagement.data.InventoryDao_Impl$7
  com.example.psimanagement.data.InventoryDao_Impl$8
+com/example/psimanagement/databinding/FragmentPurchaseBinding.java
+ com.example.psimanagement.databinding.FragmentPurchaseBinding
 com/example/psimanagement/databinding/FragmentMainBinding.java
  com.example.psimanagement.databinding.FragmentMainBinding
 com/example/psimanagement/generated/callback/OnClickListener.java
@@ -15,6 +17,8 @@ com/example/psimanagement/generated/callback/OnClickListener.java
  com.example.psimanagement.generated.callback.OnClickListener$Listener
 androidx/databinding/DataBinderMapperImpl.java
  androidx.databinding.DataBinderMapperImpl
+com/example/psimanagement/databinding/FragmentInventoryBinding.java
+ com.example.psimanagement.databinding.FragmentInventoryBinding
 androidx/databinding/library/baseAdapters/BR.java
  androidx.databinding.library.baseAdapters.BR
 com/example/psimanagement/databinding/FragmentProfileBinding.java
@@ -38,7 +42,7 @@ androidx/databinding/DataBindingComponent.java
  androidx.databinding.DataBindingComponent
 com/example/psimanagement/BuildConfig.java
  com.example.psimanagement.BuildConfig
-com/example/psimanagement/databinding/ActivitySplashBinding.java
- com.example.psimanagement.databinding.ActivitySplashBinding
 com/example/psimanagement/databinding/LoginFragmentBinding.java
  com.example.psimanagement.databinding.LoginFragmentBinding
+com/example/psimanagement/databinding/ActivitySplashBinding.java
+ com.example.psimanagement.databinding.ActivitySplashBinding
