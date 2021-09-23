@@ -27,12 +27,14 @@ class LoginFragment : Fragment() {
 //    private val viewModel: MainViewModel by activityViewModels()
     private val viewModel: MainViewModel by activityViewModels {
         MainViewModelFactory(
-            (activity?.application as PSIManagamentApplication).database.inventoryDao()
+            (activity?.application as PSIManagamentApplication).inventoryDatabase.inventoryDao(),
+            (activity?.application as PSIManagamentApplication).salesDatabase.salesDao(),
+            (activity?.application as PSIManagamentApplication).purchaseDatabase.purchaseDao(),
+            (activity?.application as PSIManagamentApplication).scrapDatabase.scrapDao()
         )
     }
+    
     private var binding: LoginFragmentBinding? = null
-
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -42,7 +44,10 @@ class LoginFragment : Fragment() {
         val myRef = database.getReference("message")
         binding = LoginFragmentBinding.inflate(inflater, container, false)
         binding!!.btnLogin.setOnClickListener {
-            viewModel.addNewItem()
+            viewModel.addNewInventoryItem()
+            viewModel.addNewSalesItem()
+            viewModel.addNewPurchaseItem()
+            viewModel.addNewScrapItem()
             // Write a message to the database
             // Write a message to the database
 //            myRef.setValue("Hello, World!534564")

@@ -62,8 +62,6 @@ class MainFragment : Fragment() {
 //        })
 
 
-
-
         return binding.root
 
 //        // Inflate the layout for this fragment

@@ -1,3 +1,13 @@
+com/example/psimanagement/data/PurchaseDao_Impl.java
+ com.example.psimanagement.data.PurchaseDao_Impl
+ com.example.psimanagement.data.PurchaseDao_Impl$1
+ com.example.psimanagement.data.PurchaseDao_Impl$2
+ com.example.psimanagement.data.PurchaseDao_Impl$3
+ com.example.psimanagement.data.PurchaseDao_Impl$4
+ com.example.psimanagement.data.PurchaseDao_Impl$5
+ com.example.psimanagement.data.PurchaseDao_Impl$6
+ com.example.psimanagement.data.PurchaseDao_Impl$7
+ com.example.psimanagement.data.PurchaseDao_Impl$8
 com/example/psimanagement/data/InventoryDao_Impl.java
  com.example.psimanagement.data.InventoryDao_Impl
  com.example.psimanagement.data.InventoryDao_Impl$1
@@ -8,17 +18,39 @@ com/example/psimanagement/data/InventoryDao_Impl.java
  com.example.psimanagement.data.InventoryDao_Impl$6
  com.example.psimanagement.data.InventoryDao_Impl$7
  com.example.psimanagement.data.InventoryDao_Impl$8
-com/example/psimanagement/databinding/FragmentPurchaseBinding.java
- com.example.psimanagement.databinding.FragmentPurchaseBinding
+com/example/psimanagement/data/PurchaseRoomDatabase_Impl.java
+ com.example.psimanagement.data.PurchaseRoomDatabase_Impl
+ com.example.psimanagement.data.PurchaseRoomDatabase_Impl$1
+com/example/psimanagement/data/ScrapDao_Impl.java
+ com.example.psimanagement.data.ScrapDao_Impl
+ com.example.psimanagement.data.ScrapDao_Impl$1
+ com.example.psimanagement.data.ScrapDao_Impl$2
+ com.example.psimanagement.data.ScrapDao_Impl$3
+ com.example.psimanagement.data.ScrapDao_Impl$4
+ com.example.psimanagement.data.ScrapDao_Impl$5
+ com.example.psimanagement.data.ScrapDao_Impl$6
+ com.example.psimanagement.data.ScrapDao_Impl$7
+ com.example.psimanagement.data.ScrapDao_Impl$8
+com/example/psimanagement/data/ScrapRoomDatabase_Impl.java
+ com.example.psimanagement.data.ScrapRoomDatabase_Impl
+ com.example.psimanagement.data.ScrapRoomDatabase_Impl$1
 com/example/psimanagement/databinding/FragmentMainBinding.java
  com.example.psimanagement.databinding.FragmentMainBinding
 com/example/psimanagement/generated/callback/OnClickListener.java
  com.example.psimanagement.generated.callback.OnClickListener
  com.example.psimanagement.generated.callback.OnClickListener$Listener
+com/example/psimanagement/data/SalesDao_Impl.java
+ com.example.psimanagement.data.SalesDao_Impl
+ com.example.psimanagement.data.SalesDao_Impl$1
+ com.example.psimanagement.data.SalesDao_Impl$2
+ com.example.psimanagement.data.SalesDao_Impl$3
+ com.example.psimanagement.data.SalesDao_Impl$4
+ com.example.psimanagement.data.SalesDao_Impl$5
+ com.example.psimanagement.data.SalesDao_Impl$6
+ com.example.psimanagement.data.SalesDao_Impl$7
+ com.example.psimanagement.data.SalesDao_Impl$8
 androidx/databinding/DataBinderMapperImpl.java
  androidx.databinding.DataBinderMapperImpl
-com/example/psimanagement/databinding/FragmentInventoryBinding.java
- com.example.psimanagement.databinding.FragmentInventoryBinding
 androidx/databinding/library/baseAdapters/BR.java
  androidx.databinding.library.baseAdapters.BR
 com/example/psimanagement/databinding/FragmentProfileBinding.java
@@ -30,6 +62,9 @@ com/example/psimanagement/BR.java
  com.example.psimanagement.BR
 com/example/psimanagement/databinding/LoginFragmentBindingImpl.java
  com.example.psimanagement.databinding.LoginFragmentBindingImpl
+com/example/psimanagement/data/SalesRoomDatabase_Impl.java
+ com.example.psimanagement.data.SalesRoomDatabase_Impl
+ com.example.psimanagement.data.SalesRoomDatabase_Impl$1
 com/example/psimanagement/DataBinderMapperImpl.java
  com.example.psimanagement.DataBinderMapperImpl
  com.example.psimanagement.DataBinderMapperImpl$InnerBrLookup

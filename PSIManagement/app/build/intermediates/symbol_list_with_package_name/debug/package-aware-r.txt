@@ -2065,10 +2065,6 @@ id multiply
 id nav_controller_view_tag
 id nav_host_fragment_container
 id navigation_header_container
-id navigation_inventory
-id navigation_others
-id navigation_purchase
-id navigation_sales
 id never
 id noScroll
 id none
@@ -2318,10 +2314,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout fragment_inventory
 layout fragment_main
 layout fragment_profile
-layout fragment_purchase
 layout login_fragment
 layout main_activity
 layout material_chip_input_combo
@@ -2399,7 +2393,6 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
-menu navigation
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation main_navigation
