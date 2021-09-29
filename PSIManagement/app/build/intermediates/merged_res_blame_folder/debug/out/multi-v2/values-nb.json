@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/twmp-it3/怕不見/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nb/values-nb.xml",
+            "outputFile": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nb/values-nb.xml",
             "map": [
                 {
                     "source": "/Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/022cee4c9f5718635f98a55ac637ed56/core-1.5.0/res/values-nb/values-nb.xml",

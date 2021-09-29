@@ -12,4 +12,11 @@
     <string name="fastlogin">fastlogin</string>
     <string name="offlinelogin">offlinelogin</string>
 
+    <string name="title_purchase">purchase</string>
+    <string name="title_sales">sales</string>
+    <string name="title_inventory">inventory</string>
+    <string name="title_scrap">scrap</string>
+
+    title_dashboard
+
 </resources>

@@ -1859,12 +1859,14 @@ id beginOnFirstDraw
 id beginning
 id blocking
 id bottom
+id bottomNavigationView
 id bounce
 id btn_backingPropertyTest
 id btn_fastlogin
 id btn_login
 id btn_logout
 id btn_test
+id button
 id buttonPanel
 id button_fastlogin
 id cache_measures
@@ -2064,7 +2066,11 @@ id mtrl_view_tag_bottom_padding
 id multiply
 id nav_controller_view_tag
 id nav_host_fragment_container
+id navigation_dashboard
 id navigation_header_container
+id navigation_home
+id navigation_notifications
+id navigation_test
 id never
 id noScroll
 id none
@@ -2187,6 +2193,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id textView2
 id textWatcher
 id text_input_end_icon
@@ -2297,7 +2304,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_login
 layout activity_splash
+layout activity_test
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2393,6 +2402,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation main_navigation
@@ -2533,6 +2543,10 @@ string register
 string search_menu_title
 string status_bar_notification_info_overflow
 string subtotal_price
+string title_inventory
+string title_purchase
+string title_sales
+string title_scrap
 string word_count
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

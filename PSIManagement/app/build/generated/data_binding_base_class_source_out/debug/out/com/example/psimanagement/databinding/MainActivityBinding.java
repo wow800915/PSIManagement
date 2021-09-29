@@ -4,36 +4,42 @@ package com.example.psimanagement.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import com.example.psimanagement.R;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class MainActivityBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final FrameLayout container;
+  public final BottomNavigationView bottomNavigationView;
+
+  @NonNull
+  public final ConstraintLayout container;
 
   @NonNull
   public final FragmentContainerView fragmentContainerView;
 
-  private MainActivityBinding(@NonNull FrameLayout rootView, @NonNull FrameLayout container,
+  private MainActivityBinding(@NonNull ConstraintLayout rootView,
+      @NonNull BottomNavigationView bottomNavigationView, @NonNull ConstraintLayout container,
       @NonNull FragmentContainerView fragmentContainerView) {
     this.rootView = rootView;
+    this.bottomNavigationView = bottomNavigationView;
     this.container = container;
     this.fragmentContainerView = fragmentContainerView;
   }
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -58,7 +64,13 @@ public final class MainActivityBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      FrameLayout container = (FrameLayout) rootView;
+      id = R.id.bottomNavigationView;
+      BottomNavigationView bottomNavigationView = rootView.findViewById(id);
+      if (bottomNavigationView == null) {
+        break missingId;
+      }
+
+      ConstraintLayout container = (ConstraintLayout) rootView;
 
       id = R.id.fragmentContainerView;
       FragmentContainerView fragmentContainerView = rootView.findViewById(id);
@@ -66,7 +78,8 @@ public final class MainActivityBinding implements ViewBinding {
         break missingId;
       }
 
-      return new MainActivityBinding((FrameLayout) rootView, container, fragmentContainerView);
+      return new MainActivityBinding((ConstraintLayout) rootView, bottomNavigationView, container,
+          fragmentContainerView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

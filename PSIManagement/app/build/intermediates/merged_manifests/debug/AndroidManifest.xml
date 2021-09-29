@@ -9,7 +9,6 @@
         android:targetSdkVersion="30" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-//20210909這邊也要改
 
     <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
     <!-- <uses-sdk android:minSdkVersion="14"/> -->
@@ -26,6 +25,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.PSIManagement" >
+        <activity android:name="com.example.psimanagement.TestActivity" />
+        <activity android:name="com.example.psimanagement.LoginActivity" />
         <activity android:name="com.example.psimanagement.MainActivity" />
         <activity android:name="com.example.psimanagement.SplashActivity" >
             <intent-filter>

@@ -3,16 +3,18 @@
     package="com.example.psimanagement">
 
     <uses-permission android:name="android.permission.INTERNET" />
-//20210909這邊也要改
+
     <application
-        android:name="com.example.psimanagement.PSIManagamentApplication"
+        android:name=".PSIManagamentApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PSIManagement">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".TestActivity"></activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

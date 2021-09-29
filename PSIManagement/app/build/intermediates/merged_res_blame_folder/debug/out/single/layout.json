@@ -1,22 +1,30 @@
 [
     {
-        "merged": "/Users/twmp-it3/怕不見/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/main_activity.xml",
-        "source": "/Users/twmp-it3/怕不見/PSIManagement/PSIManagement/app/src/main/res/layout/main_activity.xml"
+        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/login_fragment.xml",
+        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/login_fragment.xml"
     },
     {
-        "merged": "/Users/twmp-it3/怕不見/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_splash.xml",
-        "source": "/Users/twmp-it3/怕不見/PSIManagement/PSIManagement/app/src/main/res/layout/activity_splash.xml"
+        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login.xml",
+        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/activity_login.xml"
     },
     {
-        "merged": "/Users/twmp-it3/怕不見/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_profile.xml",
-        "source": "/Users/twmp-it3/怕不見/PSIManagement/PSIManagement/app/src/main/res/layout/fragment_profile.xml"
+        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_main.xml",
+        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/fragment_main.xml"
     },
     {
-        "merged": "/Users/twmp-it3/怕不見/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/login_fragment.xml",
-        "source": "/Users/twmp-it3/怕不見/PSIManagement/PSIManagement/app/src/main/res/layout/login_fragment.xml"
+        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/main_activity.xml",
+        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/main_activity.xml"
     },
     {
-        "merged": "/Users/twmp-it3/怕不見/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_main.xml",
-        "source": "/Users/twmp-it3/怕不見/PSIManagement/PSIManagement/app/src/main/res/layout/fragment_main.xml"
+        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_splash.xml",
+        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_test.xml",
+        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/activity_test.xml"
+    },
+    {
+        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_profile.xml",
+        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/fragment_profile.xml"
     }
 ]

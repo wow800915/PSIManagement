@@ -8,6 +8,8 @@ com/example/psimanagement/data/PurchaseDao_Impl.java
  com.example.psimanagement.data.PurchaseDao_Impl$6
  com.example.psimanagement.data.PurchaseDao_Impl$7
  com.example.psimanagement.data.PurchaseDao_Impl$8
+com/example/psimanagement/databinding/ActivityLoginBinding.java
+ com.example.psimanagement.databinding.ActivityLoginBinding
 com/example/psimanagement/data/InventoryDao_Impl.java
  com.example.psimanagement.data.InventoryDao_Impl
  com.example.psimanagement.data.InventoryDao_Impl$1
@@ -49,6 +51,8 @@ com/example/psimanagement/data/SalesDao_Impl.java
  com.example.psimanagement.data.SalesDao_Impl$6
  com.example.psimanagement.data.SalesDao_Impl$7
  com.example.psimanagement.data.SalesDao_Impl$8
+com/example/psimanagement/databinding/ActivityTestBinding.java
+ com.example.psimanagement.databinding.ActivityTestBinding
 androidx/databinding/DataBinderMapperImpl.java
  androidx.databinding.DataBinderMapperImpl
 androidx/databinding/library/baseAdapters/BR.java
