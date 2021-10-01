@@ -1,31 +1,24 @@
 package com.example.psimanagement
 
-import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.navigation.NavController
-import androidx.navigation.Navigation.findNavController
-import androidx.navigation.findNavController
-import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
 import com.example.psimanagement.databinding.MainActivityBinding
-import com.example.psimanagement.ui.main.LoginFragment
-import com.example.psimanagement.ui.main.MainFragment
+import com.example.psimanagement.ui.main.InventoryFragment
+import com.example.psimanagement.ui.main.PurchaseFragment
 import com.example.psimanagement.ui.main.ProfileFragment
+import com.example.psimanagement.ui.main.SalesFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import kotlin.contracts.*
 
 class MainActivity : AppCompatActivity(){
 
     companion object{
-        val loginFragment = LoginFragment()
-        val mainFragment = MainFragment()
+        val purchaseFragment = PurchaseFragment()
+        val salesFragment = SalesFragment()
         val profileFragemnt = ProfileFragment()
+        val inventoryFragment = InventoryFragment()
     }
 
     private lateinit var navController: NavController
@@ -40,7 +33,7 @@ class MainActivity : AppCompatActivity(){
         val navView: BottomNavigationView = findViewById(R.id.bottomNavigationView)
 
         supportFragmentManager.beginTransaction()
-                .replace(R.id.fragmentContainerView, mainFragment)
+                .replace(R.id.fragmentContainerView, salesFragment)
                 .commit()
         navView.selectedItemId = R.id.navigation_home
         navView.setOnNavigationItemSelectedListener(listener)
@@ -52,14 +45,16 @@ class MainActivity : AppCompatActivity(){
                     Log.d("IANIAN","navigation_home");
                     val manager = supportFragmentManager
                     val transaction = manager.beginTransaction()
-                    transaction.replace(R.id.fragmentContainerView, MainActivity.mainFragment).commit()
+                    transaction.replace(R.id.fragmentContainerView, MainActivity.salesFragment).commit()
                 }                //之後按鈕會連結fragment
                 R.id.navigation_dashboard -> {
                     Log.d("IANIAN","navigation_dashboard");
                     val t = supportFragmentManager.beginTransaction()
-                    t.replace(R.id.fragmentContainerView, MainActivity.loginFragment).commit()
+                    t.replace(R.id.fragmentContainerView, MainActivity.purchaseFragment).commit()
                 }
                 R.id.navigation_test -> {
+                    val t = supportFragmentManager.beginTransaction()
+                    t.replace(R.id.fragmentContainerView, MainActivity.inventoryFragment).commit()
                     Log.d("IANIAN","navigation_test");
                 }
                 R.id.navigation_notifications -> {

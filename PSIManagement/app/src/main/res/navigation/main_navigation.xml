@@ -3,25 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/purchaseFragment">
 
     <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.example.psimanagement.ui.main.LoginFragment"
+        android:id="@+id/purchaseFragment"
+        android:name="com.example.psimanagement.ui.main.PurchaseFragment"
         android:label="login_fragment"
-        tools:layout="@layout/login_fragment" >
+        tools:layout="@layout/purchase_fragment" >
         <action
-            android:id="@+id/action_loginFragment_to_mainFragment"
-            app:destination="@id/mainFragment" />
+            android:id="@+id/action_purchaseFragment_to_salesFragment"
+            app:destination="@id/salesFragment" />
     </fragment>
     <fragment
-        android:id="@+id/mainFragment"
-        android:name="com.example.psimanagement.ui.main.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
+        android:id="@+id/salesFragment"
+        android:name="com.example.psimanagement.ui.main.SalesFragment"
+        android:label="fragment_sales"
+        tools:layout="@layout/fragment_sales" >
         <action
             android:id="@+id/action_mainFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/purchaseFragment" />
         <action
             android:id="@+id/action_mainFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
@@ -32,9 +32,9 @@
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" >
         <action
-            android:id="@+id/action_profileFragment_to_loginFragment"
-            app:destination="@id/loginFragment"
-            app:popUpTo="@id/loginFragment"
+            android:id="@+id/action_profileFragment_to_purchaseFragment"
+            app:destination="@id/purchaseFragment"
+            app:popUpTo="@id/purchaseFragment"
             app:popUpToInclusive="true"  />
     </fragment>
 

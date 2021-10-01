@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.psimanagement.R
-import com.example.psimanagement.databinding.FragmentMainBinding
+import com.example.psimanagement.databinding.FragmentSalesBinding
 import com.example.psimanagement.databinding.FragmentProfileBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -41,7 +41,7 @@ class ProfileFragment : Fragment() {
         val binding = FragmentProfileBinding.inflate(inflater, container, false)
 
         binding.btnLogout.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.action_profileFragment_to_loginFragment)
+            findNavController().navigate(R.id.action_profileFragment_to_purchaseFragment)
         })
 
         return binding.root

@@ -1826,7 +1826,6 @@ id action_container
 id action_context_bar
 id action_divider
 id action_image
-id action_loginFragment_to_mainFragment
 id action_mainFragment_to_loginFragment
 id action_mainFragment_to_profileFragment
 id action_menu_divider
@@ -1834,7 +1833,8 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
-id action_profileFragment_to_loginFragment
+id action_profileFragment_to_purchaseFragment
+id action_purchaseFragment_to_salesFragment
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1867,6 +1867,7 @@ id btn_login
 id btn_logout
 id btn_test
 id button
+id button2
 id buttonPanel
 id button_fastlogin
 id cache_measures
@@ -2005,9 +2006,7 @@ id line3
 id linear
 id listMode
 id list_item
-id loginFragment
 id main
-id mainFragment
 id main_navigation
 id masked
 id material_clock_display
@@ -2101,6 +2100,7 @@ id postLayout
 id profileFragment
 id progress_circular
 id progress_horizontal
+id purchaseFragment
 id radio
 id ratio
 id rectangles
@@ -2111,6 +2111,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id salesFragment
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2323,9 +2324,9 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout fragment_main
+layout fragment_inventory
 layout fragment_profile
-layout login_fragment
+layout fragment_sales
 layout main_activity
 layout material_chip_input_combo
 layout material_clock_display
@@ -2384,6 +2385,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout purchase_fragment
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
