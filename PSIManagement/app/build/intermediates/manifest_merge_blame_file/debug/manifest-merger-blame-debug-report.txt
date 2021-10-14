@@ -6,13 +6,13 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="16"
-8-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
+8-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="30" />
-9-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
+9-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:5:5-67
-11-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:5:22-64
+11-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:5:22-64
 12
 13    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 14    <!-- <uses-sdk android:minSdkVersion="14"/> -->
@@ -21,46 +21,46 @@
 15-->[com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:25:22-76
 16
 17    <application
-17-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:7:5-25:19
+17-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:7:5-25:19
 18        android:name="com.example.psimanagement.PSIManagamentApplication"
-18-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:8:9-49
+18-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:8:9-49
 19        android:allowBackup="true"
-19-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:9:9-35
+19-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:9:9-35
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 20-->[androidx.core:core:1.5.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/022cee4c9f5718635f98a55ac637ed56/core-1.5.0/AndroidManifest.xml:24:18-86
 21        android:debuggable="true"
 22        android:icon="@mipmap/ic_launcher"
-22-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:10:9-43
+22-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:10:9-43
 23        android:label="@string/app_name"
-23-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:11:9-41
+23-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:11:9-41
 24        android:roundIcon="@mipmap/ic_launcher_round"
-24-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:12:9-54
+24-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:12:9-54
 25        android:supportsRtl="true"
-25-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:13:9-35
+25-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:13:9-35
 26        android:testOnly="true"
 27        android:theme="@style/Theme.PSIManagement" >
-27-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:14:9-51
+27-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:14:9-51
 28        <activity android:name="com.example.psimanagement.TestActivity" />
-28-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:15:9-59
-28-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:15:19-47
+28-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:15:9-59
+28-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:15:19-47
 29        <activity android:name="com.example.psimanagement.LoginActivity" />
-29-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:16:9-51
-29-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:16:19-48
+29-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:16:9-51
+29-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:16:19-48
 30        <activity android:name="com.example.psimanagement.MainActivity" />
-30-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:17:9-50
-30-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:17:19-47
+30-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:17:9-50
+30-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:17:19-47
 31        <activity android:name="com.example.psimanagement.SplashActivity" >
-31-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:18:9-24:20
-31-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:18:19-49
+31-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:18:9-24:20
+31-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:18:19-49
 32            <intent-filter>
-32-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:19:13-23:29
+32-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:19:13-23:29
 33                <action android:name="android.intent.action.MAIN" />
-33-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:20:17-69
-33-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:20:25-66
+33-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:20:17-69
+33-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:20:25-66
 34
 35                <category android:name="android.intent.category.LAUNCHER" />
-35-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:22:17-77
-35-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:22:27-74
+35-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:22:17-77
+35-->/Users/twmp-it3/Downloads/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:22:27-74
 36            </intent-filter>
 37        </activity>
 38

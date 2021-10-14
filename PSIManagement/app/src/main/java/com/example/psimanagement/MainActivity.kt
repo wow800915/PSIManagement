@@ -52,14 +52,17 @@ class MainActivity : AppCompatActivity(){
                     val t = supportFragmentManager.beginTransaction()
                     t.replace(R.id.fragmentContainerView, MainActivity.purchaseFragment).commit()
                 }
+                R.id.navigation_notifications -> {
+                val t = supportFragmentManager.beginTransaction()
+                t.replace(R.id.fragmentContainerView, MainActivity.inventoryFragment).commit()
+                Log.d("IANIAN","navigation_notifications");
+                }
                 R.id.navigation_test -> {
-                    val t = supportFragmentManager.beginTransaction()
-                    t.replace(R.id.fragmentContainerView, MainActivity.inventoryFragment).commit()
+//                    val t = supportFragmentManager.beginTransaction()
+//                    t.replace(R.id.fragmentContainerView, MainActivity.inventoryFragment).commit()
                     Log.d("IANIAN","navigation_test");
                 }
-                R.id.navigation_notifications -> {
-                    Log.d("IANIAN","navigation_notifications");
-                }
+
             }
             return true
         }

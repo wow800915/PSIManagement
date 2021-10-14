@@ -38,7 +38,9 @@ class PurchaseFragment : Fragment() {
         val database = FirebaseDatabase.getInstance()
         val myRef = database.getReference("message")
         binding = PurchaseFragmentBinding.inflate(inflater, container, false)
+        binding!!.btnFastlogin.setOnClickListener { viewModel.addNewInventoryItem2() }
         binding!!.btnLogin.setOnClickListener {
+
             viewModel.addNewInventoryItem()
             viewModel.addNewSalesItem()
             viewModel.addNewPurchaseItem()

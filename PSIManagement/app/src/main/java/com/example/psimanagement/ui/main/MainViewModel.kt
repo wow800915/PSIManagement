@@ -1,30 +1,52 @@
 package com.example.psimanagement.ui.main
 
-import android.text.Editable
+import android.util.Log
 import androidx.lifecycle.*
-import androidx.room.ColumnInfo
 import com.example.psimanagement.data.*
-import com.example.psimanagement.network.MarsApi
-import com.example.psimanagement.network.MarsPhoto
 import kotlinx.coroutines.launch
 
 //20210906這邊room開始有改
 class MainViewModel(private val inventoryDao: InventoryDao,private val salesDao: SalesDao,private val purchaseDao: PurchaseDao,private val scrapDao: ScrapDao) : ViewModel() {
 
+    lateinit var inventory: Inventory
+
+    val allItems: LiveData<List<Inventory>> = inventoryDao.getInventorys().asLiveData()
+
+    fun retrieveItem(id: Int): LiveData<Inventory> {
+        return inventoryDao.getInventory(id).asLiveData()
+    }
+
     fun addNewInventoryItem() {
-        val newItem = getNewInventoryEntry(1, 40, "sds",32.2,231,123123,"dsad")
+        val newItem = getNewInventoryEntry(2, 40, "sds",32.2,231,123123,"dsad")
+        insertInventory(newItem)
+    }
+
+    fun addNewInventoryItem(inventoryItemName: String, inventoryItemPrice: Double, inventoryItemQuantityInStock: Int) {
+        val newItem = getNewInventoryEntry(2, 40, inventoryItemName,inventoryItemPrice,inventoryItemQuantityInStock,123123,"dsad")
+        insertInventory(newItem)
+//        viewModelScope.launch {
+//            inventoryDao.insert(newItem)
+//        }
+    }
+
+    fun addNewInventoryItem2() {
+        val newItem = getNewInventoryEntry(3, 40, "sds",32.2,231,123123,"dsad")
         insertInventory(newItem)
     }
 
     private fun insertInventory(inventory: Inventory) {
+        Log.d("IANIAN","insertInventory(");
         viewModelScope.launch {
+            Log.d("IANIAN","insertInventory2222(");
             inventoryDao.insert(inventory)
+//            inventoryDao.insert(getNewInventoryEntry(3, 40, "sds",32.2,231,123123,"dsad")
+//            )
         }
     }
 
     private fun getNewInventoryEntry(inventoryItemId: Int, inventoryItemBarcode: Int, inventoryItemName: String, inventoryItemPrice: Double, inventoryItemQuantityInStock: Int, inventoryItemTime: Long, inventoryItemOther: String): Inventory {
         return Inventory(
-            inventoryItemId = inventoryItemId,
+//            inventoryItemId = inventoryItemId,
             inventoryItemBarcode = inventoryItemBarcode,
             inventoryItemName = inventoryItemName,
             inventoryItemPrice = inventoryItemPrice,
@@ -33,6 +55,13 @@ class MainViewModel(private val inventoryDao: InventoryDao,private val salesDao:
             inventoryItemOther = inventoryItemOther
         )
     }
+
+//    fun getInventoryData(): Flow<List<Inventory>>? {
+//        viewModelScope.launch {
+//           Log.d("IANIAN",inventoryDao.getInventorys().toString());
+//        }
+//        return null
+//    }
 
     fun addNewSalesItem() {
         val newItem = getNewSalesEntry(1, 40, "sds",32.2,231,123123,"dsad")
@@ -102,6 +131,16 @@ class MainViewModel(private val inventoryDao: InventoryDao,private val salesDao:
             scrapItemOther = scrapItemOther
         )
     }
+
+    fun isEntryValid(itemName: String, itemPrice: String, itemCount: String): Boolean {
+        if (itemName.isBlank() || itemPrice.isBlank() || itemCount.isBlank()) {
+            return false
+        }
+        return true
+    }
+
+
+
 }
 //20210906這邊room開始有改
 class MainViewModelFactory(private val inventoryDao: InventoryDao,private val salesDao: SalesDao,private val purchaseDao: PurchaseDao,private val scrapDao: ScrapDao) : ViewModelProvider.Factory {
@@ -113,6 +152,8 @@ class MainViewModelFactory(private val inventoryDao: InventoryDao,private val sa
         throw IllegalArgumentException("Unknown ViewModel class")
     }
 }
+
+
 
 enum class MarsApiStatus { LOADING, ERROR, DONE }
 //class MainViewModel : ViewModel() {
