@@ -29,10 +29,11 @@ class ItemListAdapter(private val onItemClicked: (Inventory) -> Unit) :
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val current = getItem(position)
-//        holder.itemView.setOnClickListener {
-//            onItemClicked(current)
-//            Log.d("IANIAN","ItemListAdapter33");
-//        }
+        holder.itemView.setOnClickListener {
+            Log.d("IANIAN","ItemListAdapter33");
+            onItemClicked(current)
+            Log.d("IANIAN","ItemListAdapter35");
+        }
         holder.bind(current)
     }
 

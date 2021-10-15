@@ -13,7 +13,6 @@ import androidx.fragment.app.activityViewModels
 import com.example.psimanagement.PSIManagamentApplication
 import com.example.psimanagement.data.Inventory
 import com.example.psimanagement.databinding.FragmentAddItemBinding
-import com.google.android.gms.common.util.NumberUtils
 
 /**
  * Fragment to add or update an item in the Inventory database.
@@ -51,6 +50,9 @@ class AddItemFragment : Fragment() {
         _binding = FragmentAddItemBinding.inflate(inflater, container, false)
         Log.d("IANIAN","AddItemFragment54");
 //        bind(inventory);
+
+//        val string = requireArguments().getString("key")
+//        Log.d("IANIAN","AddItemFragment54: "+string);
         return binding.root
     }
 

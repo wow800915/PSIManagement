@@ -44,6 +44,26 @@ class MainViewModel(private val inventoryDao: InventoryDao,private val salesDao:
         }
     }
 
+    private fun updateInventoryItem(inventory: Inventory) {
+        viewModelScope.launch {
+            inventoryDao.update(inventory)
+        }
+    }
+
+    fun sellItem(inventory: Inventory) {
+        if (inventory.inventoryItemQuantityInStock > 0) {
+            // Decrease the quantity by 1
+            val newInventoryItem = inventory.copy(inventoryItemQuantityInStock = inventory.inventoryItemQuantityInStock - 1)
+            updateInventoryItem(newInventoryItem)
+        }
+    }
+
+    fun deleteItem(inventory: Inventory) {
+        viewModelScope.launch {
+            inventoryDao.delete(inventory)
+        }
+    }
+
     private fun getNewInventoryEntry(inventoryItemId: Int, inventoryItemBarcode: Int, inventoryItemName: String, inventoryItemPrice: Double, inventoryItemQuantityInStock: Int, inventoryItemTime: Long, inventoryItemOther: String): Inventory {
         return Inventory(
 //            inventoryItemId = inventoryItemId,

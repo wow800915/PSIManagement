@@ -1723,6 +1723,7 @@ drawable googleg_standard_color_18
 drawable ic_broken_image
 drawable ic_clock_black_24dp
 drawable ic_connection_error
+drawable ic_edit
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1914,6 +1915,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id delete_item
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -1939,6 +1941,7 @@ id dropdown_menu
 id easeIn
 id easeInOut
 id easeOut
+id edit_item
 id edit_query
 id elastic
 id end
@@ -2146,6 +2149,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id sell_item
 id shortcut
 id showCustom
 id showHome
@@ -2337,6 +2341,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_add_item
 layout fragment_inventory
+layout fragment_item_detail
 layout fragment_profile
 layout fragment_sales
 layout item_list_item
@@ -2449,6 +2454,8 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string add_fragment_title
+string add_new_item
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -2476,7 +2483,12 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string currency_symbol
 string default_web_client_id
+string delete
+string delete_question
+string edit_fragment_title
+string edit_item
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -2492,6 +2504,10 @@ string google_storage_bucket
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string item
+string item_detail_fragment_title
+string item_name_req
+string item_price_req
 string item_view_role_description
 string login
 string material_clock_display_divider
@@ -2547,15 +2563,22 @@ string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
+string no
 string offlinelogin
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string price
 string project_id
+string quantity
+string quantity_in_stock
+string quantity_req
 string register
+string save_action
 string search_menu_title
+string sell
 string status_bar_notification_info_overflow
 string subtotal_price
 string title_inventory
@@ -2563,6 +2586,7 @@ string title_purchase
 string title_sales
 string title_scrap
 string word_count
+string yes
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

@@ -65,6 +65,16 @@ class InventoryFragment : Fragment() {
 //            val action =
 //                ItemListFragmentDirections.actionItemListFragmentToItemDetailFragment(it.id)
 //            this.findNavController().navigate(action)
+            Log.d("IANIAN","ItemListAdapter ");
+            val itemDetailFragment = ItemDetailFragment()
+            val bundle = Bundle()
+            bundle.putString("key", it.inventoryItemId.toString())
+            itemDetailFragment.setArguments(bundle)
+
+            requireActivity().supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.fragmentContainerView, itemDetailFragment, null)//.replace(R.id.fragmentContainerView, AddItemFragment(), null)
+                    .commit()
         }
 //        binding.itemName.text= viewModel.getInventoryData().toString()
 //        Log.d("IANIAN","viewModel.getInventoryData().toString(): "+viewModel.getInventoryData().toString());
@@ -86,9 +96,15 @@ class InventoryFragment : Fragment() {
 //            )
 //            this.findNavController().navigate(action)
             Log.d("IANIAN","Inventory82");
+
+            val addItemFragment = AddItemFragment()
+            val bundle = Bundle()
+            bundle.putString("key", "这是方法二")
+            addItemFragment.setArguments(bundle)
+
             requireActivity().supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.fragmentContainerView, AddItemFragment(), null)
+                .replace(R.id.fragmentContainerView, addItemFragment, null)//.replace(R.id.fragmentContainerView, AddItemFragment(), null)
                 .commit()
 
         }
