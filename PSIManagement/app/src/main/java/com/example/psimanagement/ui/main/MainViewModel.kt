@@ -44,10 +44,34 @@ class MainViewModel(private val inventoryDao: InventoryDao,private val salesDao:
         }
     }
 
+//    private fun getUpdatedItemEntry(
+//        itemId: Int,
+//        itemName: String,
+//        itemPrice: String,
+//        itemCount: String
+//    ): Inventory {
+//        return Inventory(
+//            id = itemId,
+//            itemName = itemName,
+//            itemPrice = itemPrice.toDouble(),
+//            quantityInStock = itemCount.toInt()
+//        )
+//    }
+
     private fun updateInventoryItem(inventory: Inventory) {
         viewModelScope.launch {
             inventoryDao.update(inventory)
         }
+    }
+
+    fun updateInventoryItem(
+            inventoryItemId: Int,
+            inventoryItemName: String,
+            inventoryItemPrice: Double,
+            inventoryItemQuantityInStock: Int
+    ) {
+        val updatedInventoryItem = getUpdatedInventoryItemEntry(inventoryItemId,0,inventoryItemName,inventoryItemPrice, inventoryItemQuantityInStock, 12311, "其他")
+        updateInventoryItem(updatedInventoryItem)
     }
 
     fun sellItem(inventory: Inventory) {
@@ -73,6 +97,18 @@ class MainViewModel(private val inventoryDao: InventoryDao,private val salesDao:
             inventoryItemQuantityInStock = inventoryItemQuantityInStock,
             inventoryItemTime = inventoryItemTime,
             inventoryItemOther = inventoryItemOther
+        )
+    }
+
+    private fun getUpdatedInventoryItemEntry(inventoryItemId: Int, inventoryItemBarcode: Int, inventoryItemName: String, inventoryItemPrice: Double, inventoryItemQuantityInStock: Int, inventoryItemTime: Long, inventoryItemOther: String): Inventory {
+        return Inventory(
+            inventoryItemId = inventoryItemId,
+                inventoryItemBarcode = inventoryItemBarcode,
+                inventoryItemName = inventoryItemName,
+                inventoryItemPrice = inventoryItemPrice,
+                inventoryItemQuantityInStock = inventoryItemQuantityInStock,
+                inventoryItemTime = inventoryItemTime,
+                inventoryItemOther = inventoryItemOther
         )
     }
 

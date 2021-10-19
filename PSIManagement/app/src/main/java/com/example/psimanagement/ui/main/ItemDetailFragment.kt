@@ -66,7 +66,18 @@ class ItemDetailFragment : Fragment() {
 //            item.id
 //        )
 //        this.findNavController().navigate(action)
-        Log.d("IANIAN","editItem()");
+
+        Log.d("IANIAN","ItemListAdapter ");
+        val EditItemFragment = EditItemFragment()
+        val bundle = Bundle()
+        bundle.putString("key", inventory.inventoryItemId.toString())
+        EditItemFragment.setArguments(bundle)
+
+        requireActivity().supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.fragmentContainerView, EditItemFragment, null)//.replace(R.id.fragmentContainerView, AddItemFragment(), null)
+            .commit()
+
     }
 
     /**

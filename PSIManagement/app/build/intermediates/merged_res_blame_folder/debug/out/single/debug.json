@@ -160,6 +160,10 @@
         "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/navigation/main_navigation.xml"
     },
     {
+        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/res/merged/debug/layout_fragment_edit_item.xml.flat",
+        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/fragment_edit_item.xml"
+    },
+    {
         "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher_background.png.flat",
         "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launcher_background.png"
     },

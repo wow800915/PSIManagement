@@ -21,6 +21,8 @@ com/example/psimanagement/data/InventoryDao_Impl.java
 com/example/psimanagement/data/PurchaseRoomDatabase_Impl.java
  com.example.psimanagement.data.PurchaseRoomDatabase_Impl
  com.example.psimanagement.data.PurchaseRoomDatabase_Impl$1
+com/example/psimanagement/databinding/FragmentEditItemBinding.java
+ com.example.psimanagement.databinding.FragmentEditItemBinding
 com/example/psimanagement/data/SalesDao_Impl.java
  com.example.psimanagement.data.SalesDao_Impl
  com.example.psimanagement.data.SalesDao_Impl$1
