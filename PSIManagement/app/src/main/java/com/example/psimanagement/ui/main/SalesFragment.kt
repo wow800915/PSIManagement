@@ -68,9 +68,6 @@ class SalesFragment : Fragment() {
 //        return inflater.inflate(R.layout.fragment_main, container, false)
     }
 
-    fun goToLoginFragment(){
-//        findNavController().navigate(R.id.action_salesFragment_to_profileFragment)
-    }
 
     companion object {
         /**

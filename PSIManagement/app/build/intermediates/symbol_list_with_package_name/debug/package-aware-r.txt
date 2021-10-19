@@ -2339,10 +2339,10 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout fragment_add_item
-layout fragment_edit_item
+layout fragment_add_inventory_item
+layout fragment_edit_inventory_item
 layout fragment_inventory
-layout fragment_item_detail
+layout fragment_inventory_item_detail
 layout fragment_profile
 layout fragment_sales
 layout item_list_item

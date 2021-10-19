@@ -22,10 +22,10 @@ class PurchaseFragment : Fragment() {
 //    private val viewModel: MainViewModel by activityViewModels()
     private val viewModel: MainViewModel by activityViewModels {
         MainViewModelFactory(
-            (activity?.application as PSIManagamentApplication).inventoryDatabase.inventoryDao(),
-            (activity?.application as PSIManagamentApplication).salesDatabase.salesDao(),
-            (activity?.application as PSIManagamentApplication).purchaseDatabase.purchaseDao(),
-            (activity?.application as PSIManagamentApplication).scrapDatabase.scrapDao()
+            (activity?.application as PSIManagamentApplication).inventoryItemDatabase.inventoryItemDao(),
+            (activity?.application as PSIManagamentApplication).salesItemDatabase.salesItemDao(),
+            (activity?.application as PSIManagamentApplication).purchaseItemDatabase.purchaseItemDao(),
+            (activity?.application as PSIManagamentApplication).scrapItemDatabase.scrapItemDao()
         )
     }
     
@@ -38,13 +38,7 @@ class PurchaseFragment : Fragment() {
         val database = FirebaseDatabase.getInstance()
         val myRef = database.getReference("message")
         binding = PurchaseFragmentBinding.inflate(inflater, container, false)
-        binding!!.btnFastlogin.setOnClickListener { viewModel.addNewInventoryItem2() }
         binding!!.btnLogin.setOnClickListener {
-
-            viewModel.addNewInventoryItem()
-            viewModel.addNewSalesItem()
-            viewModel.addNewPurchaseItem()
-            viewModel.addNewScrapItem()
             // Write a message to the database
             // Write a message to the database
 //            myRef.setValue("Hello, World!534564")

@@ -2338,10 +2338,10 @@ int layout design_navigation_menu 0x7f0b002b
 int layout design_navigation_menu_item 0x7f0b002c
 int layout design_text_input_end_icon 0x7f0b002d
 int layout design_text_input_start_icon 0x7f0b002e
-int layout fragment_add_item 0x7f0b002f
-int layout fragment_edit_item 0x7f0b0030
+int layout fragment_add_inventory_item 0x7f0b002f
+int layout fragment_edit_inventory_item 0x7f0b0030
 int layout fragment_inventory 0x7f0b0031
-int layout fragment_item_detail 0x7f0b0032
+int layout fragment_inventory_item_detail 0x7f0b0032
 int layout fragment_profile 0x7f0b0033
 int layout fragment_sales 0x7f0b0034
 int layout item_list_item 0x7f0b0035

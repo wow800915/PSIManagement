@@ -1,15 +1,15 @@
 [
     {
+        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_edit_inventory_item.xml",
+        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/fragment_edit_inventory_item.xml"
+    },
+    {
         "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login.xml",
         "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/activity_login.xml"
     },
     {
         "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/main_activity.xml",
         "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/main_activity.xml"
-    },
-    {
-        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_add_item.xml",
-        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/fragment_add_item.xml"
     },
     {
         "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_splash.xml",
@@ -20,6 +20,10 @@
         "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/purchase_fragment.xml"
     },
     {
+        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_add_inventory_item.xml",
+        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/fragment_add_inventory_item.xml"
+    },
+    {
         "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_sales.xml",
         "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/fragment_sales.xml"
     },
@@ -28,16 +32,12 @@
         "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/item_list_item.xml"
     },
     {
-        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_item_detail.xml",
-        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/fragment_item_detail.xml"
-    },
-    {
         "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_test.xml",
         "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/activity_test.xml"
     },
     {
-        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_edit_item.xml",
-        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/fragment_edit_item.xml"
+        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_inventory_item_detail.xml",
+        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/fragment_inventory_item_detail.xml"
     },
     {
         "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_profile.xml",

@@ -1,38 +1,22 @@
-com/example/psimanagement/data/PurchaseDao_Impl.java
- com.example.psimanagement.data.PurchaseDao_Impl
- com.example.psimanagement.data.PurchaseDao_Impl$1
- com.example.psimanagement.data.PurchaseDao_Impl$2
- com.example.psimanagement.data.PurchaseDao_Impl$3
- com.example.psimanagement.data.PurchaseDao_Impl$4
- com.example.psimanagement.data.PurchaseDao_Impl$5
- com.example.psimanagement.data.PurchaseDao_Impl$6
- com.example.psimanagement.data.PurchaseDao_Impl$7
- com.example.psimanagement.data.PurchaseDao_Impl$8
-com/example/psimanagement/data/InventoryDao_Impl.java
- com.example.psimanagement.data.InventoryDao_Impl
- com.example.psimanagement.data.InventoryDao_Impl$1
- com.example.psimanagement.data.InventoryDao_Impl$2
- com.example.psimanagement.data.InventoryDao_Impl$3
- com.example.psimanagement.data.InventoryDao_Impl$4
- com.example.psimanagement.data.InventoryDao_Impl$5
- com.example.psimanagement.data.InventoryDao_Impl$6
- com.example.psimanagement.data.InventoryDao_Impl$7
- com.example.psimanagement.data.InventoryDao_Impl$8
-com/example/psimanagement/data/PurchaseRoomDatabase_Impl.java
- com.example.psimanagement.data.PurchaseRoomDatabase_Impl
- com.example.psimanagement.data.PurchaseRoomDatabase_Impl$1
-com/example/psimanagement/databinding/FragmentEditItemBinding.java
- com.example.psimanagement.databinding.FragmentEditItemBinding
-com/example/psimanagement/data/SalesDao_Impl.java
- com.example.psimanagement.data.SalesDao_Impl
- com.example.psimanagement.data.SalesDao_Impl$1
- com.example.psimanagement.data.SalesDao_Impl$2
- com.example.psimanagement.data.SalesDao_Impl$3
- com.example.psimanagement.data.SalesDao_Impl$4
- com.example.psimanagement.data.SalesDao_Impl$5
- com.example.psimanagement.data.SalesDao_Impl$6
- com.example.psimanagement.data.SalesDao_Impl$7
- com.example.psimanagement.data.SalesDao_Impl$8
+com/example/psimanagement/data/SalesItemRoomDatabase_Impl.java
+ com.example.psimanagement.data.SalesItemRoomDatabase_Impl
+ com.example.psimanagement.data.SalesItemRoomDatabase_Impl$1
+com/example/psimanagement/data/ScrapItemRoomDatabase_Impl.java
+ com.example.psimanagement.data.ScrapItemRoomDatabase_Impl
+ com.example.psimanagement.data.ScrapItemRoomDatabase_Impl$1
+com/example/psimanagement/data/SalesItemDao_Impl.java
+ com.example.psimanagement.data.SalesItemDao_Impl
+ com.example.psimanagement.data.SalesItemDao_Impl$1
+ com.example.psimanagement.data.SalesItemDao_Impl$2
+ com.example.psimanagement.data.SalesItemDao_Impl$3
+ com.example.psimanagement.data.SalesItemDao_Impl$4
+ com.example.psimanagement.data.SalesItemDao_Impl$5
+ com.example.psimanagement.data.SalesItemDao_Impl$6
+ com.example.psimanagement.data.SalesItemDao_Impl$7
+ com.example.psimanagement.data.SalesItemDao_Impl$8
+com/example/psimanagement/data/InventoryItemRoomDatabase_Impl.java
+ com.example.psimanagement.data.InventoryItemRoomDatabase_Impl
+ com.example.psimanagement.data.InventoryItemRoomDatabase_Impl$1
 com/example/psimanagement/databinding/ActivityTestBinding.java
  com.example.psimanagement.databinding.ActivityTestBinding
 androidx/databinding/DataBinderMapperImpl.java
@@ -49,49 +33,65 @@ com/example/psimanagement/BR.java
  com.example.psimanagement.BR
 com/example/psimanagement/DataBindingTriggerClass.java
  com.example.psimanagement.DataBindingTriggerClass
-com/example/psimanagement/BuildConfig.java
- com.example.psimanagement.BuildConfig
+com/example/psimanagement/databinding/PurchaseFragmentBindingImpl.java
+ com.example.psimanagement.databinding.PurchaseFragmentBindingImpl
+com/example/psimanagement/data/ScrapItemDao_Impl.java
+ com.example.psimanagement.data.ScrapItemDao_Impl
+ com.example.psimanagement.data.ScrapItemDao_Impl$1
+ com.example.psimanagement.data.ScrapItemDao_Impl$2
+ com.example.psimanagement.data.ScrapItemDao_Impl$3
+ com.example.psimanagement.data.ScrapItemDao_Impl$4
+ com.example.psimanagement.data.ScrapItemDao_Impl$5
+ com.example.psimanagement.data.ScrapItemDao_Impl$6
+ com.example.psimanagement.data.ScrapItemDao_Impl$7
+ com.example.psimanagement.data.ScrapItemDao_Impl$8
+com/example/psimanagement/data/PurchaseItemRoomDatabase_Impl.java
+ com.example.psimanagement.data.PurchaseItemRoomDatabase_Impl
+ com.example.psimanagement.data.PurchaseItemRoomDatabase_Impl$1
 com/example/psimanagement/databinding/MainActivityBinding.java
  com.example.psimanagement.databinding.MainActivityBinding
 com/example/psimanagement/databinding/ActivitySplashBinding.java
  com.example.psimanagement.databinding.ActivitySplashBinding
+com/example/psimanagement/data/InventoryItemDao_Impl.java
+ com.example.psimanagement.data.InventoryItemDao_Impl
+ com.example.psimanagement.data.InventoryItemDao_Impl$1
+ com.example.psimanagement.data.InventoryItemDao_Impl$2
+ com.example.psimanagement.data.InventoryItemDao_Impl$3
+ com.example.psimanagement.data.InventoryItemDao_Impl$4
+ com.example.psimanagement.data.InventoryItemDao_Impl$5
+ com.example.psimanagement.data.InventoryItemDao_Impl$6
+ com.example.psimanagement.data.InventoryItemDao_Impl$7
+ com.example.psimanagement.data.InventoryItemDao_Impl$8
 com/example/psimanagement/databinding/ActivityLoginBinding.java
  com.example.psimanagement.databinding.ActivityLoginBinding
-com/example/psimanagement/data/ScrapDao_Impl.java
- com.example.psimanagement.data.ScrapDao_Impl
- com.example.psimanagement.data.ScrapDao_Impl$1
- com.example.psimanagement.data.ScrapDao_Impl$2
- com.example.psimanagement.data.ScrapDao_Impl$3
- com.example.psimanagement.data.ScrapDao_Impl$4
- com.example.psimanagement.data.ScrapDao_Impl$5
- com.example.psimanagement.data.ScrapDao_Impl$6
- com.example.psimanagement.data.ScrapDao_Impl$7
- com.example.psimanagement.data.ScrapDao_Impl$8
-com/example/psimanagement/data/ScrapRoomDatabase_Impl.java
- com.example.psimanagement.data.ScrapRoomDatabase_Impl
- com.example.psimanagement.data.ScrapRoomDatabase_Impl$1
 com/example/psimanagement/generated/callback/OnClickListener.java
  com.example.psimanagement.generated.callback.OnClickListener
  com.example.psimanagement.generated.callback.OnClickListener$Listener
-com/example/psimanagement/databinding/FragmentAddItemBinding.java
- com.example.psimanagement.databinding.FragmentAddItemBinding
-com/example/psimanagement/data/InventoryRoomDatabase_Impl.java
- com.example.psimanagement.data.InventoryRoomDatabase_Impl
- com.example.psimanagement.data.InventoryRoomDatabase_Impl$1
-com/example/psimanagement/data/SalesRoomDatabase_Impl.java
- com.example.psimanagement.data.SalesRoomDatabase_Impl
- com.example.psimanagement.data.SalesRoomDatabase_Impl$1
-com/example/psimanagement/databinding/FragmentItemDetailBinding.java
- com.example.psimanagement.databinding.FragmentItemDetailBinding
+com/example/psimanagement/data/PurchaseItemDao_Impl.java
+ com.example.psimanagement.data.PurchaseItemDao_Impl
+ com.example.psimanagement.data.PurchaseItemDao_Impl$1
+ com.example.psimanagement.data.PurchaseItemDao_Impl$2
+ com.example.psimanagement.data.PurchaseItemDao_Impl$3
+ com.example.psimanagement.data.PurchaseItemDao_Impl$4
+ com.example.psimanagement.data.PurchaseItemDao_Impl$5
+ com.example.psimanagement.data.PurchaseItemDao_Impl$6
+ com.example.psimanagement.data.PurchaseItemDao_Impl$7
+ com.example.psimanagement.data.PurchaseItemDao_Impl$8
 com/example/psimanagement/DataBinderMapperImpl.java
  com.example.psimanagement.DataBinderMapperImpl
  com.example.psimanagement.DataBinderMapperImpl$InnerBrLookup
  com.example.psimanagement.DataBinderMapperImpl$InnerLayoutIdLookup
-androidx/databinding/DataBindingComponent.java
- androidx.databinding.DataBindingComponent
-com/example/psimanagement/databinding/ItemListItemBinding.java
- com.example.psimanagement.databinding.ItemListItemBinding
-com/example/psimanagement/databinding/PurchaseFragmentBindingImpl.java
- com.example.psimanagement.databinding.PurchaseFragmentBindingImpl
+com/example/psimanagement/databinding/FragmentInventoryItemDetailBinding.java
+ com.example.psimanagement.databinding.FragmentInventoryItemDetailBinding
 com/example/psimanagement/databinding/PurchaseFragmentBinding.java
  com.example.psimanagement.databinding.PurchaseFragmentBinding
+com/example/psimanagement/databinding/ItemListItemBinding.java
+ com.example.psimanagement.databinding.ItemListItemBinding
+com/example/psimanagement/databinding/FragmentEditInventoryItemBinding.java
+ com.example.psimanagement.databinding.FragmentEditInventoryItemBinding
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
+com/example/psimanagement/BuildConfig.java
+ com.example.psimanagement.BuildConfig
+com/example/psimanagement/databinding/FragmentAddInventoryItemBinding.java
+ com.example.psimanagement.databinding.FragmentAddInventoryItemBinding

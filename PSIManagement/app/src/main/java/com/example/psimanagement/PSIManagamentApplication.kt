@@ -7,8 +7,8 @@ import com.example.psimanagement.data.*
 class PSIManagamentApplication : Application() {
     // Using by lazy so the database and the repository are only created when they're needed
     // rather than when the application starts
-    val inventoryDatabase: InventoryRoomDatabase by lazy { InventoryRoomDatabase.getDatabase(this) }
-    val salesDatabase: SalesRoomDatabase by lazy { SalesRoomDatabase.getDatabase(this) }
-    val purchaseDatabase: PurchaseRoomDatabase by lazy { PurchaseRoomDatabase.getDatabase(this) }
-    val scrapDatabase: ScrapRoomDatabase by lazy { ScrapRoomDatabase.getDatabase(this) }
+    val inventoryItemDatabase: InventoryItemRoomDatabase by lazy { InventoryItemRoomDatabase.getDatabase(this) }
+    val salesItemDatabase: SalesItemRoomDatabase by lazy { SalesItemRoomDatabase.getDatabase(this) }
+    val purchaseItemDatabase: PurchaseItemRoomDatabase by lazy { PurchaseItemRoomDatabase.getDatabase(this) }
+    val scrapItemDatabase: ScrapItemRoomDatabase by lazy { ScrapItemRoomDatabase.getDatabase(this) }
 }

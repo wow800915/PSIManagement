@@ -1,7 +1,6 @@
 package com.example.psimanagement.ui.main
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -31,10 +30,10 @@ class InventoryFragment : Fragment() {
 
     private val viewModel: MainViewModel by activityViewModels {
         MainViewModelFactory(
-            (activity?.application as PSIManagamentApplication).inventoryDatabase.inventoryDao(),
-            (activity?.application as PSIManagamentApplication).salesDatabase.salesDao(),
-            (activity?.application as PSIManagamentApplication).purchaseDatabase.purchaseDao(),
-            (activity?.application as PSIManagamentApplication).scrapDatabase.scrapDao()
+            (activity?.application as PSIManagamentApplication).inventoryItemDatabase.inventoryItemDao(),
+            (activity?.application as PSIManagamentApplication).salesItemDatabase.salesItemDao(),
+            (activity?.application as PSIManagamentApplication).purchaseItemDatabase.purchaseItemDao(),
+            (activity?.application as PSIManagamentApplication).scrapItemDatabase.scrapItemDao()
         )
     }
 
@@ -43,10 +42,10 @@ class InventoryFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+//        arguments?.let {
+//            param1 = it.getString(ARG_PARAM1)
+//            param2 = it.getString(ARG_PARAM2)
+//        }
     }
 
     override fun onCreateView(
@@ -61,14 +60,10 @@ class InventoryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 //
-        val adapter = ItemListAdapter {
-//            val action =
-//                ItemListFragmentDirections.actionItemListFragmentToItemDetailFragment(it.id)
-//            this.findNavController().navigate(action)
-            Log.d("IANIAN","ItemListAdapter ");
-            val itemDetailFragment = ItemDetailFragment()
+        val adapter = InventoryItemListAdapter {
+            val itemDetailFragment = InventoryItemDetailFragment()
             val bundle = Bundle()
-            bundle.putString("key", it.inventoryItemId.toString())
+            bundle.putString("position", it.inventoryItemId.toString())
             itemDetailFragment.setArguments(bundle)
 
             requireActivity().supportFragmentManager
@@ -76,13 +71,11 @@ class InventoryFragment : Fragment() {
                     .replace(R.id.fragmentContainerView, itemDetailFragment, null)//.replace(R.id.fragmentContainerView, AddItemFragment(), null)
                     .commit()
         }
-//        binding.itemName.text= viewModel.getInventoryData().toString()
-//        Log.d("IANIAN","viewModel.getInventoryData().toString(): "+viewModel.getInventoryData().toString());
 
         binding.recyclerView.adapter = adapter
         // Attach an observer on the allItems list to update the UI automatically when the data
         // changes.
-        viewModel.allItems.observe(this.viewLifecycleOwner) { inventorys ->
+        viewModel.allInventoryItems.observe(this.viewLifecycleOwner) { inventorys ->
             inventorys.let {
                 adapter.submitList(it)
             }
@@ -91,20 +84,10 @@ class InventoryFragment : Fragment() {
         binding.recyclerView.layoutManager = LinearLayoutManager(this.context)
 
         binding.floatingActionButton.setOnClickListener {
-//            val action = ItemListFragmentDirections.actionItemListFragmentToAddItemFragment(
-//                getString(R.string.add_fragment_title)
-//            )
-//            this.findNavController().navigate(action)
-            Log.d("IANIAN","Inventory82");
-
-            val addItemFragment = AddItemFragment()
-            val bundle = Bundle()
-            bundle.putString("key", "这是方法二")
-            addItemFragment.setArguments(bundle)
 
             requireActivity().supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.fragmentContainerView, addItemFragment, null)//.replace(R.id.fragmentContainerView, AddItemFragment(), null)
+                .replace(R.id.fragmentContainerView, AddInventoryItemFragment(), null)//.replace(R.id.fragmentContainerView, AddItemFragment(), null)
                 .commit()
 
         }

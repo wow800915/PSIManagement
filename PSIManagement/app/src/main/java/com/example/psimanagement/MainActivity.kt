@@ -42,26 +42,22 @@ class MainActivity : AppCompatActivity(){
         override fun onNavigationItemSelected(item: MenuItem): Boolean {
             when (item.itemId) {
                 R.id.navigation_home-> {
-                    Log.d("IANIAN","navigation_home");
                     val manager = supportFragmentManager
                     val transaction = manager.beginTransaction()
                     transaction.replace(R.id.fragmentContainerView, MainActivity.salesFragment).commit()
                 }                //之後按鈕會連結fragment
                 R.id.navigation_dashboard -> {
-                    Log.d("IANIAN","navigation_dashboard");
                     val t = supportFragmentManager.beginTransaction()
                     t.replace(R.id.fragmentContainerView, MainActivity.purchaseFragment).commit()
                 }
                 R.id.navigation_notifications -> {
                 val t = supportFragmentManager.beginTransaction()
                 t.replace(R.id.fragmentContainerView, MainActivity.inventoryFragment).commit()
-                Log.d("IANIAN","navigation_notifications");
-                }
+                 }
                 R.id.navigation_test -> {
 //                    val t = supportFragmentManager.beginTransaction()
 //                    t.replace(R.id.fragmentContainerView, MainActivity.inventoryFragment).commit()
-                    Log.d("IANIAN","navigation_test");
-                }
+                    }
 
             }
             return true
