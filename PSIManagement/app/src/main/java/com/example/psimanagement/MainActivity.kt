@@ -1,20 +1,19 @@
 package com.example.psimanagement
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import com.example.psimanagement.databinding.MainActivityBinding
 import com.example.psimanagement.ui.main.InventoryFragment
-import com.example.psimanagement.ui.main.PurchaseFragment
 import com.example.psimanagement.ui.main.ProfileFragment
+import com.example.psimanagement.ui.main.PurchaseFragment
 import com.example.psimanagement.ui.main.SalesFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class MainActivity : AppCompatActivity(){
+class MainActivity : AppCompatActivity() {
 
-    companion object{
+    companion object {
         val purchaseFragment = PurchaseFragment()
         val salesFragment = SalesFragment()
         val profileFragemnt = ProfileFragment()
@@ -23,7 +22,7 @@ class MainActivity : AppCompatActivity(){
 
     private lateinit var navController: NavController
 
-    private lateinit var binding : MainActivityBinding
+    private lateinit var binding: MainActivityBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,31 +32,36 @@ class MainActivity : AppCompatActivity(){
         val navView: BottomNavigationView = findViewById(R.id.bottomNavigationView)
 
         supportFragmentManager.beginTransaction()
-                .replace(R.id.fragmentContainerView, salesFragment)
+                .replace(R.id.fragmentContainerView, inventoryFragment)
                 .commit()
-        navView.selectedItemId = R.id.navigation_home
+        navView.selectedItemId = R.id.navigation_inventory
         navView.setOnNavigationItemSelectedListener(listener)
     }
+
     private var listener = object : BottomNavigationView.OnNavigationItemSelectedListener {
         override fun onNavigationItemSelected(item: MenuItem): Boolean {
             when (item.itemId) {
-                R.id.navigation_home-> {
+                R.id.navigation_purchase -> {
+//                    title = "進貨"
+                    val t = supportFragmentManager.beginTransaction()
+                    t.replace(R.id.fragmentContainerView, MainActivity.purchaseFragment).commit()
+
+                }                //之後按鈕會連結fragment
+                R.id.navigation_sales -> {
+//                    title = "銷售"
                     val manager = supportFragmentManager
                     val transaction = manager.beginTransaction()
                     transaction.replace(R.id.fragmentContainerView, MainActivity.salesFragment).commit()
-                }                //之後按鈕會連結fragment
-                R.id.navigation_dashboard -> {
-                    val t = supportFragmentManager.beginTransaction()
-                    t.replace(R.id.fragmentContainerView, MainActivity.purchaseFragment).commit()
                 }
-                R.id.navigation_notifications -> {
-                val t = supportFragmentManager.beginTransaction()
-                t.replace(R.id.fragmentContainerView, MainActivity.inventoryFragment).commit()
-                 }
-                R.id.navigation_test -> {
+                R.id.navigation_inventory -> {
+//                    title = "存貨"
+                    val t = supportFragmentManager.beginTransaction()
+                    t.replace(R.id.fragmentContainerView, MainActivity.inventoryFragment).commit()
+                }
+                R.id.navigation_scrap -> {
 //                    val t = supportFragmentManager.beginTransaction()
 //                    t.replace(R.id.fragmentContainerView, MainActivity.inventoryFragment).commit()
-                    }
+                }
 
             }
             return true
@@ -76,7 +80,7 @@ class MainActivity : AppCompatActivity(){
 //            .findFragmentById(R.id.fragmentContainerView) as NavHostFragment
 //        navController = navHostFragment.navController
 
-        // Set up the action bar for use with the NavController
+    // Set up the action bar for use with the NavController
 //        setupActionBarWithNavController(navController)
 //    }
 

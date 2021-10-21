@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import com.example.psimanagement.R
 import com.example.psimanagement.PSIManagamentApplication
+import com.example.psimanagement.R
 import com.example.psimanagement.databinding.PurchaseFragmentBinding
 import com.google.firebase.database.FirebaseDatabase
 
@@ -18,23 +18,25 @@ class PurchaseFragment : Fragment() {
     companion object {
         fun newInstance() = PurchaseFragment()
     }
+
     //20210906這邊room開始有改
 //    private val viewModel: MainViewModel by activityViewModels()
     private val viewModel: MainViewModel by activityViewModels {
         MainViewModelFactory(
-            (activity?.application as PSIManagamentApplication).inventoryItemDatabase.inventoryItemDao(),
-            (activity?.application as PSIManagamentApplication).salesItemDatabase.salesItemDao(),
-            (activity?.application as PSIManagamentApplication).purchaseItemDatabase.purchaseItemDao(),
-            (activity?.application as PSIManagamentApplication).scrapItemDatabase.scrapItemDao()
+                (activity?.application as PSIManagamentApplication).inventoryItemDatabase.inventoryItemDao(),
+                (activity?.application as PSIManagamentApplication).salesItemDatabase.salesItemDao(),
+                (activity?.application as PSIManagamentApplication).purchaseItemDatabase.purchaseItemDao(),
+                (activity?.application as PSIManagamentApplication).scrapItemDatabase.scrapItemDao()
         )
     }
-    
+
     private var binding: PurchaseFragmentBinding? = null
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater, container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View {
+        activity?.setTitle(R.string.title_purchase)
         val database = FirebaseDatabase.getInstance()
         val myRef = database.getReference("message")
         binding = PurchaseFragmentBinding.inflate(inflater, container, false)
@@ -73,8 +75,6 @@ class PurchaseFragment : Fragment() {
 //        }
 
 
-
-
         return binding!!.root
     }
 
@@ -92,11 +92,9 @@ class PurchaseFragment : Fragment() {
 
     }
 
-    fun goToMainFragment(){
+    fun goToMainFragment() {
         findNavController().navigate(R.id.action_purchaseFragment_to_salesFragment)
     }
-
-
 
 
 }

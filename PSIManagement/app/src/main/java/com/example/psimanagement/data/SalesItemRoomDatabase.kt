@@ -22,14 +22,14 @@ abstract class SalesItemRoomDatabase : RoomDatabase() {
             // if it is, then create the database
             return INSTANCE ?: synchronized(this) {
                 val instance = Room.databaseBuilder(
-                    context.applicationContext,
-                    SalesItemRoomDatabase::class.java,
-                    "sales_item_database"
+                        context.applicationContext,
+                        SalesItemRoomDatabase::class.java,
+                        "sales_item_database"
                 )
-                    // Wipes and rebuilds instead of migrating if no Migration object.
-                    // Migration is not part of this codelab.
-                    .fallbackToDestructiveMigration()
-                    .build()
+                        // Wipes and rebuilds instead of migrating if no Migration object.
+                        // Migration is not part of this codelab.
+                        .fallbackToDestructiveMigration()
+                        .build()
                 INSTANCE = instance
                 // return instance
                 instance

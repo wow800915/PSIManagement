@@ -1,11 +1,6 @@
 package com.example.psimanagement.data
 
-import androidx.room.Dao
-import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
-import androidx.room.Update
+import androidx.room.*
 import kotlinx.coroutines.flow.Flow
 
 /**
@@ -17,7 +12,8 @@ interface InventoryItemDao {
 //這邊的NAME不知道要不要改成inventoryItemName
     @Query("SELECT * from inventoryItem ORDER BY name ASC")
     fun getInventoryItems(): Flow<List<InventoryItem>>
-//inventoryItemId不知道要不要改成ID
+
+    //inventoryItemId不知道要不要改成ID
     @Query("SELECT * from inventoryItem WHERE inventoryItemId = :inventoryItemId")
     fun getInventoryItem(inventoryItemId: Int): Flow<InventoryItem>
 

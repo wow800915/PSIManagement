@@ -7,10 +7,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import com.example.psimanagement.PSIManagamentApplication
+import com.example.psimanagement.R
 import com.example.psimanagement.data.InventoryItem
 import com.example.psimanagement.databinding.FragmentAddInventoryItemBinding
 
@@ -21,10 +21,10 @@ class AddInventoryItemFragment : Fragment() {
 
     private val viewModel: MainViewModel by activityViewModels {
         MainViewModelFactory(
-            (activity?.application as PSIManagamentApplication).inventoryItemDatabase.inventoryItemDao(),
-            (activity?.application as PSIManagamentApplication).salesItemDatabase.salesItemDao(),
-            (activity?.application as PSIManagamentApplication).purchaseItemDatabase.purchaseItemDao(),
-            (activity?.application as PSIManagamentApplication).scrapItemDatabase.scrapItemDao()
+                (activity?.application as PSIManagamentApplication).inventoryItemDatabase.inventoryItemDao(),
+                (activity?.application as PSIManagamentApplication).salesItemDatabase.salesItemDao(),
+                (activity?.application as PSIManagamentApplication).purchaseItemDatabase.purchaseItemDao(),
+                (activity?.application as PSIManagamentApplication).scrapItemDatabase.scrapItemDao()
         )
     }
 
@@ -34,10 +34,11 @@ class AddInventoryItemFragment : Fragment() {
     private val binding get() = _binding!!
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater,
+            container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
+        activity?.setTitle(R.string.title_purchase)
         _binding = FragmentAddInventoryItemBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -45,9 +46,9 @@ class AddInventoryItemFragment : Fragment() {
 
     private fun isEntryValid(): Boolean {
         return viewModel.isEntryValid(
-            binding.itemName.text.toString(),
-            binding.itemPrice.text.toString(),
-            binding.itemCount.text.toString()
+                binding.itemName.text.toString(),
+                binding.itemPrice.text.toString(),
+                binding.itemCount.text.toString()
         )
     }
 
@@ -58,7 +59,7 @@ class AddInventoryItemFragment : Fragment() {
         if (isEntryValid()) {
             val doubleValueOfInventoryPrice: Double = java.lang.Double.valueOf(binding.itemPrice.text.toString())
             val intValueOfInventoryItemQuantityInStock: Int = Integer.decode(binding.itemCount.text.toString())
-            viewModel.addNewInventoryItem(
+            viewModel.purchaseItem(
                     binding.itemName.text.toString(), doubleValueOfInventoryPrice, intValueOfInventoryItemQuantityInStock
             )
         }
@@ -73,9 +74,13 @@ class AddInventoryItemFragment : Fragment() {
      */
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-            binding.saveAction.setOnClickListener {
-                addNewItem()
-            }
+        binding.saveAction.setOnClickListener {
+            addNewItem()
+            requireActivity().supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.fragmentContainerView, InventoryFragment(), null)//.replace(R.id.fragmentContainerView, AddItemFragment(), null)
+                    .commit()
+        }
     }
 
     /**

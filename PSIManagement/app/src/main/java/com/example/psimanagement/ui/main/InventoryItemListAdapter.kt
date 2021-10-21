@@ -1,7 +1,6 @@
 package com.example.psimanagement.ui.main
 
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -15,15 +14,15 @@ import com.example.psimanagement.databinding.ItemListItemBinding
  */
 
 class InventoryItemListAdapter(private val onItemClicked: (InventoryItem) -> Unit) :
-    ListAdapter<InventoryItem, InventoryItemListAdapter.ItemViewHolder>(DiffCallback) {
+        ListAdapter<InventoryItem, InventoryItemListAdapter.ItemViewHolder>(DiffCallback) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         return ItemViewHolder(
-            ItemListItemBinding.inflate(
-                LayoutInflater.from(
-                    parent.context
+                ItemListItemBinding.inflate(
+                        LayoutInflater.from(
+                                parent.context
+                        )
                 )
-            )
         )
     }
 
@@ -36,7 +35,7 @@ class InventoryItemListAdapter(private val onItemClicked: (InventoryItem) -> Uni
     }
 
     class ItemViewHolder(private var binding: ItemListItemBinding) :
-        RecyclerView.ViewHolder(binding.root) {
+            RecyclerView.ViewHolder(binding.root) {
         fun bind(item: InventoryItem) {
             binding.itemName.text = item.inventoryItemName
             binding.itemPrice.text = item.inventoryItemPrice.toString()
@@ -47,12 +46,12 @@ class InventoryItemListAdapter(private val onItemClicked: (InventoryItem) -> Uni
     companion object {
         private val DiffCallback = object : DiffUtil.ItemCallback<InventoryItem>() {
             override fun areItemsTheSame(oldItem: InventoryItem, newItem: InventoryItem): Boolean {
-                 return oldItem === newItem
+                return oldItem === newItem
             }
 
             override fun areContentsTheSame(oldItem: InventoryItem, newItem: InventoryItem): Boolean {
                 return oldItem.inventoryItemName == newItem.inventoryItemName
-                }
+            }
         }
     }
 }

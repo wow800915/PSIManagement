@@ -1,7 +1,10 @@
 package com.example.psimanagement
 
 import android.app.Application
-import com.example.psimanagement.data.*
+import com.example.psimanagement.data.InventoryItemRoomDatabase
+import com.example.psimanagement.data.PurchaseItemRoomDatabase
+import com.example.psimanagement.data.SalesItemRoomDatabase
+import com.example.psimanagement.data.ScrapItemRoomDatabase
 
 //20210906這邊room開始有改
 class PSIManagamentApplication : Application() {

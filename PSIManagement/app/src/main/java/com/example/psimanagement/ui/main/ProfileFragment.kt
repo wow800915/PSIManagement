@@ -1,14 +1,12 @@
 package com.example.psimanagement.ui.main
 
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.psimanagement.R
-import com.example.psimanagement.databinding.FragmentSalesBinding
 import com.example.psimanagement.databinding.FragmentProfileBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -35,9 +33,10 @@ class ProfileFragment : Fragment() {
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater, container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
+        activity?.setTitle(R.string.title_scrap)
         val binding = FragmentProfileBinding.inflate(inflater, container, false)
 
         binding.btnLogout.setOnClickListener(View.OnClickListener {
@@ -62,11 +61,11 @@ class ProfileFragment : Fragment() {
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            ProfileFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
+                ProfileFragment().apply {
+                    arguments = Bundle().apply {
+                        putString(ARG_PARAM1, param1)
+                        putString(ARG_PARAM2, param2)
+                    }
                 }
-            }
     }
 }

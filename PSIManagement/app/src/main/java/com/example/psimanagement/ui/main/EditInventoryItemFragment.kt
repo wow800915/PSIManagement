@@ -2,7 +2,6 @@ package com.example.psimanagement.ui.main
 
 import android.content.Context.INPUT_METHOD_SERVICE
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,10 +9,11 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.observe
 import com.example.psimanagement.PSIManagamentApplication
+import com.example.psimanagement.R
 import com.example.psimanagement.data.InventoryItem
 import com.example.psimanagement.databinding.FragmentEditInventoryItemBinding
-import java.text.DecimalFormat
 
 /**
  * Fragment to add or update an item in the Inventory database.
@@ -24,10 +24,10 @@ class EditInventoryItemFragment : Fragment() {
     // to share the ViewModel across fragments.
     private val viewModel: MainViewModel by activityViewModels {
         MainViewModelFactory(
-            (activity?.application as PSIManagamentApplication).inventoryItemDatabase.inventoryItemDao(),
-            (activity?.application as PSIManagamentApplication).salesItemDatabase.salesItemDao(),
-            (activity?.application as PSIManagamentApplication).purchaseItemDatabase.purchaseItemDao(),
-            (activity?.application as PSIManagamentApplication).scrapItemDatabase.scrapItemDao()
+                (activity?.application as PSIManagamentApplication).inventoryItemDatabase.inventoryItemDao(),
+                (activity?.application as PSIManagamentApplication).salesItemDatabase.salesItemDao(),
+                (activity?.application as PSIManagamentApplication).purchaseItemDatabase.purchaseItemDao(),
+                (activity?.application as PSIManagamentApplication).scrapItemDatabase.scrapItemDao()
         )
     }
 
@@ -42,10 +42,11 @@ class EditInventoryItemFragment : Fragment() {
     private val binding get() = _binding!!
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater,
+            container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
+        activity?.setTitle("先別動修改,很危險")
         _binding = FragmentEditInventoryItemBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -55,9 +56,9 @@ class EditInventoryItemFragment : Fragment() {
      */
     private fun isEntryValid(): Boolean {
         return viewModel.isEntryValid(
-            binding.itemName.text.toString(),
-            binding.itemPrice.text.toString(),
-            binding.itemCount.text.toString(),
+                binding.itemName.text.toString(),
+                binding.itemPrice.text.toString(),
+                binding.itemCount.text.toString(),
         )
     }
 
@@ -80,12 +81,12 @@ class EditInventoryItemFragment : Fragment() {
      */
     private fun updateInventoryItem() {
         val id = requireArguments().getString("position")
-            viewModel.updateInventoryItem(
+        viewModel.updateInventoryItem(
                 Integer.parseInt(id),
                 this.binding.itemName.text.toString(),
                 java.lang.Double.valueOf(binding.itemPrice.text.toString()),
                 Integer.valueOf(this.binding.itemCount.text.toString())
-            )
+        )
     }
 
     /**
@@ -98,10 +99,10 @@ class EditInventoryItemFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val id = requireArguments().getString("position")
 
-            viewModel.retrieveItem(Integer.parseInt(id)).observe(this.viewLifecycleOwner) { selectedItem ->
-                inventoryItem = selectedItem
-                bind(inventoryItem)
-            }
+        viewModel.retrieveItem(Integer.parseInt(id)).observe(this.viewLifecycleOwner) { selectedItem ->
+            inventoryItem = selectedItem
+            bind(inventoryItem)
+        }
     }
 
     /**

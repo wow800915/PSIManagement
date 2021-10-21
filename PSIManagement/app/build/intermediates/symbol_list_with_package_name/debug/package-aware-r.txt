@@ -1996,6 +1996,8 @@ id info
 id invisible
 id inward
 id italic
+id item_barcode
+id item_barcode_label
 id item_count
 id item_count_label
 id item_name
@@ -2077,11 +2079,11 @@ id mtrl_view_tag_bottom_padding
 id multiply
 id nav_controller_view_tag
 id nav_host_fragment_container
-id navigation_dashboard
 id navigation_header_container
-id navigation_home
-id navigation_notifications
-id navigation_test
+id navigation_inventory
+id navigation_purchase
+id navigation_sales
+id navigation_scrap
 id never
 id noScroll
 id none
@@ -2211,6 +2213,7 @@ id textStart
 id textTop
 id textView
 id textView2
+id textView3
 id textWatcher
 id text_input_end_icon
 id text_input_error_icon

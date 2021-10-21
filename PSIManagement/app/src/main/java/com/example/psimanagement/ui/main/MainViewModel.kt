@@ -1,14 +1,13 @@
 package com.example.psimanagement.ui.main
 
-import android.util.Log
 import androidx.lifecycle.*
 import com.example.psimanagement.data.*
 import kotlinx.coroutines.launch
 
 //20210906這邊room開始有改
-class MainViewModel(private val inventoryItemDao: InventoryItemDao,private val salesItemDao: SalesItemDao,private val purchaseItemDao: PurchaseItemDao,private val scrapItemDao: ScrapItemDao) : ViewModel() {
+class MainViewModel(private val inventoryItemDao: InventoryItemDao, private val salesItemDao: SalesItemDao, private val purchaseItemDao: PurchaseItemDao, private val scrapItemDao: ScrapItemDao) : ViewModel() {
 
-    lateinit var inventoryItem: InventoryItem
+//    lateinit var inventoryItem: InventoryItem
 
     val allInventoryItems: LiveData<List<InventoryItem>> = inventoryItemDao.getInventoryItems().asLiveData()
 
@@ -16,25 +15,32 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao,private val s
         return inventoryItemDao.getInventoryItem(id).asLiveData()
     }
 
-    fun addNewInventoryItem(inventoryItemName: String, inventoryItemPrice: Double, inventoryItemQuantityInStock: Int) {
-        val newItem = getNewInventoryEntry(2, 40, inventoryItemName,inventoryItemPrice,inventoryItemQuantityInStock,123123,"dsad")
-        insertInventory(newItem)
+    fun purchaseItem(inventoryItemName: String, inventoryItemPrice: Double, inventoryItemQuantityInStock: Int){
+        val newItem = getNewInventoryItemEntry("0", "0", inventoryItemName,"NTD", inventoryItemPrice, inventoryItemQuantityInStock, "20210203","11:01:01", "IanInventoryItemOther")
+        insertInventoryItem(newItem)
+        val newPurchaseItem =getNewPurchaseItemEntry("0", "0", inventoryItemName,"NTD", inventoryItemPrice, inventoryItemQuantityInStock, "20210203","11:01:01", "IanInventoryItemOther")
+        insertPurchaseItem(newPurchaseItem)
     }
 
-    private fun getNewInventoryEntry(inventoryItemId: Int, inventoryItemBarcode: Int, inventoryItemName: String, inventoryItemPrice: Double, inventoryItemQuantityInStock: Int, inventoryItemTime: Long, inventoryItemOther: String): InventoryItem {
+
+
+    private fun getNewInventoryItemEntry(inventoryItemOrder: String, inventoryItemBarcode: String, inventoryItemName: String, inventoryItemCurrency: String, inventoryItemPrice: Double, inventoryItemQuantityInStock: Int,inventoryItemDate:String , inventoryItemTime: String, inventoryItemOther: String): InventoryItem {
         return InventoryItem(
 //            inventoryItemId = inventoryItemId,
+                inventoryItemOrder = inventoryItemOrder,
                 inventoryItemBarcode = inventoryItemBarcode,
                 inventoryItemName = inventoryItemName,
+                inventoryItemCurrency = inventoryItemCurrency,
                 inventoryItemPrice = inventoryItemPrice,
                 inventoryItemQuantityInStock = inventoryItemQuantityInStock,
+                inventoryItemDate = inventoryItemDate,
                 inventoryItemTime = inventoryItemTime,
                 inventoryItemOther = inventoryItemOther
         )
     }
 
 
-    private fun insertInventory(inventoryItem: InventoryItem) {
+    private fun insertInventoryItem(inventoryItem: InventoryItem) {
         viewModelScope.launch {
             inventoryItemDao.insert(inventoryItem)
         }
@@ -52,17 +58,20 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao,private val s
             inventoryItemPrice: Double,
             inventoryItemQuantityInStock: Int
     ) {
-        val updatedInventoryItem = getUpdatedInventoryItemEntry(inventoryItemId,0,inventoryItemName,inventoryItemPrice, inventoryItemQuantityInStock, 12311, "其他")
+        val updatedInventoryItem = getUpdatedInventoryItemEntry(inventoryItemId,"0", "0", inventoryItemName,"NTD", inventoryItemPrice, inventoryItemQuantityInStock,"20210101", "12:02:03", "其他")
         updateInventoryItem(updatedInventoryItem)
     }
 
-    private fun getUpdatedInventoryItemEntry(inventoryItemId: Int, inventoryItemBarcode: Int, inventoryItemName: String, inventoryItemPrice: Double, inventoryItemQuantityInStock: Int, inventoryItemTime: Long, inventoryItemOther: String): InventoryItem {
+    private fun getUpdatedInventoryItemEntry(inventoryItemId: Int,inventoryItemOrder: String, inventoryItemBarcode: String, inventoryItemName: String, inventoryItemCurrency: String, inventoryItemPrice: Double, inventoryItemQuantityInStock: Int,inventoryItemDate: String, inventoryItemTime: String, inventoryItemOther: String): InventoryItem {
         return InventoryItem(
                 inventoryItemId = inventoryItemId,
+                inventoryItemOrder = inventoryItemOrder,
                 inventoryItemBarcode = inventoryItemBarcode,
                 inventoryItemName = inventoryItemName,
+                inventoryItemCurrency = inventoryItemCurrency,
                 inventoryItemPrice = inventoryItemPrice,
                 inventoryItemQuantityInStock = inventoryItemQuantityInStock,
+                inventoryItemDate = inventoryItemDate,
                 inventoryItemTime = inventoryItemTime,
                 inventoryItemOther = inventoryItemOther
         )
@@ -73,6 +82,7 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao,private val s
             // Decrease the quantity by 1
             val newInventoryItem = inventoryItem.copy(inventoryItemQuantityInStock = inventoryItem.inventoryItemQuantityInStock - 1)
             updateInventoryItem(newInventoryItem)
+            add1NewSalesItem()
         }
     }
 
@@ -83,7 +93,6 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao,private val s
     }
 
 
-
 //    fun getInventoryData(): Flow<List<Inventory>>? {
 //        viewModelScope.launch {
 //           Log.d("IANIAN",inventoryDao.getInventorys().toString());
@@ -91,8 +100,8 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao,private val s
 //        return null
 //    }
 
-    fun addNewSalesItem() {
-        val newItem = getNewSalesItemEntry(1, 40, "sds",32.2,231,123123,"dsad")
+    fun add1NewSalesItem() {
+        val newItem = getNewSalesItemEntry("0", "0","IanSaleItemName", "NTD", 1.0,1, "20200102","12:23:22", "IanSalesItemOther")
         insertSalesItem(newItem)
     }
 
@@ -102,22 +111,21 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao,private val s
         }
     }
 
-    private fun getNewSalesItemEntry(salesItemId: Int, salesItemBarcode: Int, salesItemName: String, salesItemPrice: Double, salesItemQuantityInStock: Int, salesItemTime: Long, salesItemOther: String): SalesItem {
+    private fun getNewSalesItemEntry(salesItemOrder: String, salesItemBarcode: String, salesItemName: String,salesItemCurrency: String, salesItemPrice: Double, salesItemQuantityInStock: Int,salesItemDate: String,  salesItemTime: String, salesItemOther: String): SalesItem {
         return SalesItem(
-            salesItemId = salesItemId,
-            salesItemBarcode = salesItemBarcode,
-            salesItemName = salesItemName,
-            salesItemPrice = salesItemPrice,
-            salesItemQuantityInStock = salesItemQuantityInStock,
-            salesItemTime = salesItemTime,
-            salesItemOther = salesItemOther
+//                salesItemId = salesItemId,
+                salesItemOrder = salesItemOrder,
+                salesItemBarcode = salesItemBarcode,
+                salesItemName = salesItemName,
+                salesItemCurrency = salesItemCurrency,
+                salesItemPrice = salesItemPrice,
+                salesItemQuantityInStock = salesItemQuantityInStock,
+                salesItemDate = salesItemDate,
+                salesItemTime = salesItemTime,
+                salesItemOther = salesItemOther
         )
     }
 
-    fun addNewPurchaseItem() {
-        val newItem = getNewPurchaseItemEntry(1, 40, "sds",32.2,231,123123,"dsad")
-        insertPurchaseItem(newItem)
-    }
 
     private fun insertPurchaseItem(purchaseItem: PurchaseItem) {
         viewModelScope.launch {
@@ -125,20 +133,23 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao,private val s
         }
     }
 
-    private fun getNewPurchaseItemEntry(purchaseItemId: Int, purchaseItemBarcode: Int, purchaseItemName: String, purchaseItemPrice: Double, purchaseItemQuantityInStock: Int, purchaseItemTime: Long, purchaseItemOther: String): PurchaseItem {
+    private fun getNewPurchaseItemEntry(purchaseItemOrder: String, purchaseItemBarcode: String, purchaseItemName: String, purchaseItemCurrency: String, purchaseItemPrice: Double, purchaseItemQuantityInStock: Int,purchaseItemDate: String,  purchaseItemTime: String, purchaseItemOther: String): PurchaseItem {
         return PurchaseItem(
-            purchaseItemId = purchaseItemId,
-            purchaseItemBarcode = purchaseItemBarcode,
-            purchaseItemName = purchaseItemName,
-            purchaseItemPrice = purchaseItemPrice,
-            purchaseItemQuantityInStock = purchaseItemQuantityInStock,
-            purchaseItemTime = purchaseItemTime,
-            purchaseItemOther = purchaseItemOther
+//                purchaseItemId = purchaseItemId,
+                purchaseItemOrder = purchaseItemOrder,
+                purchaseItemBarcode = purchaseItemBarcode,
+                purchaseItemName = purchaseItemName,
+                purchaseItemCurrency = purchaseItemCurrency,
+                purchaseItemPrice = purchaseItemPrice,
+                purchaseItemQuantityInStock = purchaseItemQuantityInStock,
+                purchaseItemDate = purchaseItemDate,
+                purchaseItemTime = purchaseItemTime,
+                purchaseItemOther = purchaseItemOther
         )
     }
 
     fun addNewScrapItem() {
-        val newItem = getNewScrapItemEntry(1, 40, "sds",32.2,231,123123,"dsad")
+        val newItem = getNewScrapItemEntry("0", "0", "IanScrapItemName", "NTD", 1.0, 1, "20210102","12:23:32","IanScrapItemOther")
         insertScrapItem(newItem)
     }
 
@@ -148,15 +159,18 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao,private val s
         }
     }
 
-    private fun getNewScrapItemEntry(scrapItemId: Int, scrapItemBarcode: Int, scrapItemName: String, scrapItemPrice: Double, scrapItemQuantityInStock: Int, scrapItemTime: Long, scrapItemOther: String): ScrapItem {
+    private fun getNewScrapItemEntry(scrapItemOrder: String, scrapItemBarcode: String, scrapItemName: String,scrapItemCurrency:String, scrapItemPrice: Double, scrapItemQuantityInStock: Int,scrapItemDate: String, scrapItemTime: String, scrapItemOther: String): ScrapItem {
         return ScrapItem(
-            scrapItemId = scrapItemId,
-            scrapItemBarcode = scrapItemBarcode,
-            scrapItemName = scrapItemName,
-            scrapItemPrice = scrapItemPrice,
-            scrapItemQuantityInStock = scrapItemQuantityInStock,
-            scrapItemTime = scrapItemTime,
-            scrapItemOther = scrapItemOther
+//                scrapItemId = scrapItemId,
+                scrapItemOrder =scrapItemOrder,
+                scrapItemBarcode = scrapItemBarcode,
+                scrapItemName = scrapItemName,
+                scrapItemCurrency = scrapItemCurrency,
+                scrapItemPrice = scrapItemPrice,
+                scrapItemQuantityInStock = scrapItemQuantityInStock,
+                scrapItemDate = scrapItemDate,
+                scrapItemTime = scrapItemTime,
+                scrapItemOther = scrapItemOther
         )
     }
 
@@ -168,24 +182,23 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao,private val s
     }
 
 
-
 }
+
 //20210906這邊room開始有改
-class MainViewModelFactory(private val inventoryItemDao: InventoryItemDao,private val salesItemDao: SalesItemDao,private val purchaseItemDao: PurchaseItemDao,private val scrapItemDao: ScrapItemDao) : ViewModelProvider.Factory {
+class MainViewModelFactory(private val inventoryItemDao: InventoryItemDao, private val salesItemDao: SalesItemDao, private val purchaseItemDao: PurchaseItemDao, private val scrapItemDao: ScrapItemDao) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(MainViewModel::class.java)) {
             @Suppress("UNCHECKED_CAST")
-            return MainViewModel(inventoryItemDao,salesItemDao,purchaseItemDao,scrapItemDao) as T
+            return MainViewModel(inventoryItemDao, salesItemDao, purchaseItemDao, scrapItemDao) as T
         }
         throw IllegalArgumentException("Unknown ViewModel class")
     }
 }
 
 
-
 enum class MarsApiStatus { LOADING, ERROR, DONE }
 //class MainViewModel : ViewModel() {
-    // TODO: Implement the ViewModel
+// TODO: Implement the ViewModel
 //    private var user: String? = "nullUSER"
 //
 //    fun setUser(aa: String) {
@@ -212,7 +225,7 @@ enum class MarsApiStatus { LOADING, ERROR, DONE }
 //        _quantity.value = numberCupcakes
 //    }
 
-    //{拿火星照片,測試網路
+//{拿火星照片,測試網路
 //    private val _marStatusTest = MutableLiveData<MarsApiStatus>()
 //    val marStatusTest: LiveData<MarsApiStatus> = _marStatusTest
 //        get() = _marStatusTest

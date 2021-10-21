@@ -17,15 +17,15 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
  * [InventoryItemDetailFragment] displays the details of the selected item.
  */
 class InventoryItemDetailFragment : Fragment() {
-//    private val navigationArgs: ItemDetailFragmentArgs by navArgs()
+    //    private val navigationArgs: ItemDetailFragmentArgs by navArgs()
     lateinit var inventoryItem: InventoryItem
 
     private val viewModel: MainViewModel by activityViewModels {
         MainViewModelFactory(
-            (activity?.application as PSIManagamentApplication).inventoryItemDatabase.inventoryItemDao(),
-            (activity?.application as PSIManagamentApplication).salesItemDatabase.salesItemDao(),
-            (activity?.application as PSIManagamentApplication).purchaseItemDatabase.purchaseItemDao(),
-            (activity?.application as PSIManagamentApplication).scrapItemDatabase.scrapItemDao()
+                (activity?.application as PSIManagamentApplication).inventoryItemDatabase.inventoryItemDao(),
+                (activity?.application as PSIManagamentApplication).salesItemDatabase.salesItemDao(),
+                (activity?.application as PSIManagamentApplication).purchaseItemDatabase.purchaseItemDao(),
+                (activity?.application as PSIManagamentApplication).scrapItemDatabase.scrapItemDao()
         )
     }
 
@@ -33,9 +33,9 @@ class InventoryItemDetailFragment : Fragment() {
     private val binding get() = _binding!!
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater,
+            container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentInventoryItemDetailBinding.inflate(inflater, container, false)
         return binding.root
@@ -70,9 +70,9 @@ class InventoryItemDetailFragment : Fragment() {
         EditItemFragment.setArguments(bundle)
 
         requireActivity().supportFragmentManager
-            .beginTransaction()
-            .replace(R.id.fragmentContainerView, EditItemFragment, null)//.replace(R.id.fragmentContainerView, AddItemFragment(), null)
-            .commit()
+                .beginTransaction()
+                .replace(R.id.fragmentContainerView, EditItemFragment, null)//.replace(R.id.fragmentContainerView, AddItemFragment(), null)
+                .commit()
 
     }
 
@@ -81,14 +81,14 @@ class InventoryItemDetailFragment : Fragment() {
      */
     private fun showConfirmationDialog() {
         MaterialAlertDialogBuilder(requireContext())
-            .setTitle(getString(android.R.string.dialog_alert_title))
-            .setMessage(getString(R.string.delete_question))
-            .setCancelable(false)
-            .setNegativeButton(getString(R.string.no)) { _, _ -> }
-            .setPositiveButton(getString(R.string.yes)) { _, _ ->
-                deleteItem()
-            }
-            .show()
+                .setTitle(getString(android.R.string.dialog_alert_title))
+                .setMessage(getString(R.string.delete_question))
+                .setCancelable(false)
+                .setNegativeButton(getString(R.string.no)) { _, _ -> }
+                .setPositiveButton(getString(R.string.yes)) { _, _ ->
+                    deleteItem()
+                }
+                .show()
     }
 
     /**
@@ -97,9 +97,9 @@ class InventoryItemDetailFragment : Fragment() {
     private fun deleteItem() {
 //        findNavController().navigateUp()
         requireActivity().supportFragmentManager
-            .beginTransaction()
-            .replace(R.id.fragmentContainerView, InventoryFragment(), null)//.replace(R.id.fragmentContainerView, AddItemFragment(), null)
-            .commit()
+                .beginTransaction()
+                .replace(R.id.fragmentContainerView, InventoryFragment(), null)//.replace(R.id.fragmentContainerView, AddItemFragment(), null)
+                .commit()
         viewModel.deleteInventoryItem(inventoryItem)
     }
 

@@ -3,28 +3,33 @@ package com.example.psimanagement.data
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import java.text.NumberFormat
 
 /**
  * Entity data class represents a single row in the database.
  */
 @Entity
 data class SalesItem(
-    @PrimaryKey(autoGenerate = true)
-    val salesItemId: Int = 0,
-    @ColumnInfo(name = "barcode")
-    val salesItemBarcode: Int,
-    @ColumnInfo(name = "name")
-    val salesItemName: String,
-    //20210906這邊room開始有改
-    @ColumnInfo(name = "price")
-    val salesItemPrice: Double,
-    @ColumnInfo(name = "quantity")
-    val salesItemQuantityInStock: Int,
-    @ColumnInfo(name = "time")
-    val salesItemTime: Long,
-    @ColumnInfo(name = "other")
-    val salesItemOther: String,
+        @PrimaryKey(autoGenerate = true)
+        val salesItemId: Int = 0,
+        @ColumnInfo(name = "order")
+        val salesItemOrder: String,
+        @ColumnInfo(name = "barcode")
+        val salesItemBarcode: String,
+        @ColumnInfo(name = "name")
+        val salesItemName: String,
+        //20210906這邊room開始有改
+        @ColumnInfo(name = "currency")
+        val salesItemCurrency: String,
+        @ColumnInfo(name = "price")
+        val salesItemPrice: Double,
+        @ColumnInfo(name = "quantity")
+        val salesItemQuantityInStock: Int,
+        @ColumnInfo(name = "date")
+        val salesItemDate: String,
+        @ColumnInfo(name = "time")
+        val salesItemTime: String,
+        @ColumnInfo(name = "other")
+        val salesItemOther: String,
 )
 /**
  * Returns the passed in price in currency format.

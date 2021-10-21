@@ -1,11 +1,6 @@
 package com.example.psimanagement.data
 
-import androidx.room.Dao
-import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
-import androidx.room.Update
+import androidx.room.*
 import kotlinx.coroutines.flow.Flow
 
 /**
@@ -14,9 +9,10 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface SalesItemDao {
     //20210906這邊room開始有改
-//這邊的NAME不知道要不要改成inventoryItemName
+    //這邊的NAME不知道要不要改成inventoryItemName
     @Query("SELECT * from salesItem ORDER BY name ASC")
     fun getSalesItems(): Flow<List<SalesItem>>
+
     //inventoryItemId不知道要不要改成ID
     @Query("SELECT * from salesItem WHERE salesItemId = :salesItemId")
     fun getSales(salesItemId: Int): Flow<SalesItem>

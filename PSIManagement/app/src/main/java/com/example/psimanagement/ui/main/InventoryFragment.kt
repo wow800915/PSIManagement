@@ -30,10 +30,10 @@ class InventoryFragment : Fragment() {
 
     private val viewModel: MainViewModel by activityViewModels {
         MainViewModelFactory(
-            (activity?.application as PSIManagamentApplication).inventoryItemDatabase.inventoryItemDao(),
-            (activity?.application as PSIManagamentApplication).salesItemDatabase.salesItemDao(),
-            (activity?.application as PSIManagamentApplication).purchaseItemDatabase.purchaseItemDao(),
-            (activity?.application as PSIManagamentApplication).scrapItemDatabase.scrapItemDao()
+                (activity?.application as PSIManagamentApplication).inventoryItemDatabase.inventoryItemDao(),
+                (activity?.application as PSIManagamentApplication).salesItemDatabase.salesItemDao(),
+                (activity?.application as PSIManagamentApplication).purchaseItemDatabase.purchaseItemDao(),
+                (activity?.application as PSIManagamentApplication).scrapItemDatabase.scrapItemDao()
         )
     }
 
@@ -49,10 +49,11 @@ class InventoryFragment : Fragment() {
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater,
+            container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
+        activity?.setTitle(R.string.title_inventory)
         _binding = FragmentInventoryBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -86,9 +87,9 @@ class InventoryFragment : Fragment() {
         binding.floatingActionButton.setOnClickListener {
 
             requireActivity().supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.fragmentContainerView, AddInventoryItemFragment(), null)//.replace(R.id.fragmentContainerView, AddItemFragment(), null)
-                .commit()
+                    .beginTransaction()
+                    .replace(R.id.fragmentContainerView, AddInventoryItemFragment(), null)//.replace(R.id.fragmentContainerView, AddItemFragment(), null)
+                    .commit()
 
         }
     }
