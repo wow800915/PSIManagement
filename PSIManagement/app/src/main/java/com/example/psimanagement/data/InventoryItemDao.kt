@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface InventoryItemDao {
     //20210906這邊room開始有改
-//這邊的NAME不知道要不要改成inventoryItemName
+    //這邊的NAME不知道要不要改成inventoryItemName
     @Query("SELECT * from inventoryItem ORDER BY name ASC")
     fun getInventoryItems(): Flow<List<InventoryItem>>
 

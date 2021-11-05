@@ -5,19 +5,18 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import com.example.psimanagement.databinding.MainActivityBinding
-import com.example.psimanagement.ui.main.InventoryFragment
-import com.example.psimanagement.ui.main.ProfileFragment
-import com.example.psimanagement.ui.main.PurchaseFragment
-import com.example.psimanagement.ui.main.SalesFragment
+import com.example.psimanagement.ui.main.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
     companion object {
+        var testFragment = TestFragment()
         val purchaseFragment = PurchaseFragment()
         val salesFragment = SalesFragment()
         val profileFragemnt = ProfileFragment()
         val inventoryFragment = InventoryFragment()
+        val moreFragment = MoreFragment()
     }
 
     private lateinit var navController: NavController
@@ -59,8 +58,8 @@ class MainActivity : AppCompatActivity() {
                     t.replace(R.id.fragmentContainerView, MainActivity.inventoryFragment).commit()
                 }
                 R.id.navigation_scrap -> {
-//                    val t = supportFragmentManager.beginTransaction()
-//                    t.replace(R.id.fragmentContainerView, MainActivity.inventoryFragment).commit()
+                    val t = supportFragmentManager.beginTransaction()
+                    t.replace(R.id.fragmentContainerView, MainActivity.moreFragment).commit()
                 }
 
             }

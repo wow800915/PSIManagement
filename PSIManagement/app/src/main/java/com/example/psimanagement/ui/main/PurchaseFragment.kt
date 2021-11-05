@@ -1,100 +1,60 @@
 package com.example.psimanagement.ui.main
 
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.activityViewModels
-import androidx.navigation.fragment.findNavController
-import com.example.psimanagement.PSIManagamentApplication
 import com.example.psimanagement.R
-import com.example.psimanagement.databinding.PurchaseFragmentBinding
-import com.google.firebase.database.FirebaseDatabase
 
+// TODO: Rename parameter arguments, choose names that match
+// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+private const val ARG_PARAM1 = "param1"
+private const val ARG_PARAM2 = "param2"
 
+/**
+ * A simple [Fragment] subclass.
+ * Use the [PurchaseFragment.newInstance] factory method to
+ * create an instance of this fragment.
+ */
 class PurchaseFragment : Fragment() {
+    // TODO: Rename and change types of parameters
+    private var param1: String? = null
+    private var param2: String? = null
 
-    companion object {
-        fun newInstance() = PurchaseFragment()
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        arguments?.let {
+            param1 = it.getString(ARG_PARAM1)
+            param2 = it.getString(ARG_PARAM2)
+        }
     }
-
-    //20210906這邊room開始有改
-//    private val viewModel: MainViewModel by activityViewModels()
-    private val viewModel: MainViewModel by activityViewModels {
-        MainViewModelFactory(
-                (activity?.application as PSIManagamentApplication).inventoryItemDatabase.inventoryItemDao(),
-                (activity?.application as PSIManagamentApplication).salesItemDatabase.salesItemDao(),
-                (activity?.application as PSIManagamentApplication).purchaseItemDatabase.purchaseItemDao(),
-                (activity?.application as PSIManagamentApplication).scrapItemDatabase.scrapItemDao()
-        )
-    }
-
-    private var binding: PurchaseFragmentBinding? = null
 
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
-    ): View {
-        activity?.setTitle(R.string.title_purchase)
-        val database = FirebaseDatabase.getInstance()
-        val myRef = database.getReference("message")
-        binding = PurchaseFragmentBinding.inflate(inflater, container, false)
-        binding!!.btnLogin.setOnClickListener {
-            // Write a message to the database
-            // Write a message to the database
-//            myRef.setValue("Hello, World!534564")
-//            myRef.addValueEventListener(object : ValueEventListener {
-//                override fun onDataChange(dataSnapshot: DataSnapshot) {
-//                    // This method is called once with the initial value and again
-//                    // whenever data at this location is updated.
-//                    val value = dataSnapshot.getValue(String::class.java)
-//                    Log.d(TAG, "Value is: $value")
-//                }
-//
-//                override fun onCancelled(error: DatabaseError) {
-//                    // Failed to read value
-//                    Log.w(TAG, "Failed to read value.", error.toException())
-//                }
-//            })
-//            val database = Firebase.database
-//            val myRef = database.getReference("message")
-
-//            myRef.setValue("Hello, World!")
-//            viewModel.setUser(binding!!.etTest.text.toString())
-//            findNavController().navigate(R.id.action_loginFragment_to_mainFragment)
-//            Log.d("IANIAN","loginFragment43 viewModel.getUser().toString():"+viewModel.getUser().toString())
-//            Log.d("IANIAN", "viewModel.backingPropertyTest: ${viewModel.backingPropertyTest} ");
-        }
-//        binding!!.title = "标题LOGINFRAGMENT"
-//
-//        repeat(3) {
-//            GlobalScope.launch {
-//                println("Hi from ${Thread.currentThread()}")
-//            }
-//        }
-
-
-        return binding!!.root
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_purchase, container, false)
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-//        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
-        // TODO: Use the ViewModel
-        binding?.apply {
-//            lifecycleOwner = viewLifecycleOwner
-            //20210906這邊room開始有改
-//            mainViewModel = viewModel
-            purchaseFragment = this@PurchaseFragment
-        }
-
-
+    companion object {
+        /**
+         * Use this factory method to create a new instance of
+         * this fragment using the provided parameters.
+         *
+         * @param param1 Parameter 1.
+         * @param param2 Parameter 2.
+         * @return A new instance of fragment PurchaseFragment.
+         */
+        // TODO: Rename and change types and number of parameters
+        @JvmStatic
+        fun newInstance(param1: String, param2: String) =
+            PurchaseFragment().apply {
+                arguments = Bundle().apply {
+                    putString(ARG_PARAM1, param1)
+                    putString(ARG_PARAM2, param2)
+                }
+            }
     }
-
-    fun goToMainFragment() {
-        findNavController().navigate(R.id.action_purchaseFragment_to_salesFragment)
-    }
-
-
 }

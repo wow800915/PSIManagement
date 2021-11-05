@@ -73,7 +73,6 @@ class InventoryFragment : Fragment() {
                     .commit()
         }
 
-        binding.recyclerView.adapter = adapter
         // Attach an observer on the allItems list to update the UI automatically when the data
         // changes.
         viewModel.allInventoryItems.observe(this.viewLifecycleOwner) { inventorys ->
@@ -82,6 +81,7 @@ class InventoryFragment : Fragment() {
             }
         }
 
+        binding.recyclerView.adapter = adapter
         binding.recyclerView.layoutManager = LinearLayoutManager(this.context)
 
         binding.floatingActionButton.setOnClickListener {

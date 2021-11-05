@@ -89,7 +89,6 @@ dependencies {
 //    // When using the BoM, you don't specify versions in Firebase library dependencies
 //    implementation 'com.google.firebase:firebase-database-ktx'
 
-
     //20210906這邊room開始有改
     // Room libraries
     implementation "androidx.room:room-runtime:$room_version"
