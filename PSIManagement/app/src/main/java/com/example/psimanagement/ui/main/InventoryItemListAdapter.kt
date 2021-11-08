@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.psimanagement.data.InventoryItem
-import com.example.psimanagement.databinding.ItemListItemBinding
+import com.example.psimanagement.databinding.ItemListInventoryItemBinding
 
 /**
  * [ListAdapter] implementation for the recyclerview.
@@ -18,7 +18,7 @@ class InventoryItemListAdapter(private val onItemClicked: (InventoryItem) -> Uni
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         return ItemViewHolder(
-                ItemListItemBinding.inflate(
+                ItemListInventoryItemBinding.inflate(
                         LayoutInflater.from(
                                 parent.context
                         )
@@ -34,7 +34,7 @@ class InventoryItemListAdapter(private val onItemClicked: (InventoryItem) -> Uni
         holder.bind(current)
     }
 
-    class ItemViewHolder(private var binding: ItemListItemBinding) :
+    class ItemViewHolder(private var binding: ItemListInventoryItemBinding) :
             RecyclerView.ViewHolder(binding.root) {
         fun bind(item: InventoryItem) {
             binding.itemName.text = item.inventoryItemName

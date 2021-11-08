@@ -10,6 +10,7 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao, private val 
 //    lateinit var inventoryItem: InventoryItem
 
     val allInventoryItems: LiveData<List<InventoryItem>> = inventoryItemDao.getInventoryItems().asLiveData()
+    val allPurchaseItems: LiveData<List<PurchaseItem>> = purchaseItemDao.getPurchaseItems().asLiveData()
 
     fun retrieveItem(id: Int): LiveData<InventoryItem> {
         return inventoryItemDao.getInventoryItem(id).asLiveData()

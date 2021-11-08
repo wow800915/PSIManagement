@@ -5,7 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.observe
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.psimanagement.PSIManagamentApplication
 import com.example.psimanagement.R
+import com.example.psimanagement.databinding.FragmentInventoryBinding
+import com.example.psimanagement.databinding.FragmentPurchaseBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -22,6 +28,18 @@ class PurchaseFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    private val viewModel: MainViewModel by activityViewModels {
+        MainViewModelFactory(
+            (activity?.application as PSIManagamentApplication).inventoryItemDatabase.inventoryItemDao(),
+            (activity?.application as PSIManagamentApplication).salesItemDatabase.salesItemDao(),
+            (activity?.application as PSIManagamentApplication).purchaseItemDatabase.purchaseItemDao(),
+            (activity?.application as PSIManagamentApplication).scrapItemDatabase.scrapItemDao()
+        )
+    }
+
+    private var _binding: FragmentPurchaseBinding? = null
+    private val binding get() = _binding!!
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -30,12 +48,36 @@ class PurchaseFragment : Fragment() {
         }
     }
 
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_purchase, container, false)
+        activity?.setTitle(R.string.title_purchase)
+        _binding = FragmentPurchaseBinding.inflate(inflater, container, false)
+        return binding.root
+//        // Inflate the layout for this fragment
+//        return inflater.inflate(R.layout.fragment_purchase, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+//
+        val adapter = PurchaseItemListAdapter {
+        }
+
+        // Attach an observer on the allItems list to update the UI automatically when the data
+        // changes.
+        viewModel.allPurchaseItems.observe(this.viewLifecycleOwner) { purchases ->
+            purchases.let {
+                adapter.submitList(it)
+            }
+        }
+
+        binding.lvTransactionDate.adapter = adapter
+        binding.lvTransactionDate.layoutManager = LinearLayoutManager(this.context)
+
     }
 
     companion object {

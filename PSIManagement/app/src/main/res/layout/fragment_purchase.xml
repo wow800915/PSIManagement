@@ -54,12 +54,12 @@
 
     <!-- 固定區間 -->
     <TextView
+        android:id="@+id/tv_range"
         android:layout_width="match_parent"
         android:layout_height="44dp"
-        android:id="@+id/tv_range"
         android:layout_below="@+id/view_range_line"
         android:background="@color/white"
-        android:gravity="center_vertical"/>
+        android:gravity="center_vertical" />
 
     <!-- 自訂區間 -->
     <RelativeLayout
@@ -145,12 +145,22 @@
         android:layout_below="@+id/tv_range"/>
 
 
-        <ListView
+    <!-- 日資料畫面 - 清單 -->
+<!--    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_sRefresh_transaction_date"
+        android:layout_below="@+id/view_range_line2">
+-->
+    <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/lv_transaction_date"
+            android:layout_below="@+id/view_range_line2"
             android:dividerHeight="1dp"/>
 
+<!--    </android.support.v4.widget.SwipeRefreshLayout>
+-->
 
 
 </RelativeLayout>
