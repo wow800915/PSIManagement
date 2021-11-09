@@ -13,6 +13,12 @@ interface PurchaseItemDao {
     @Query("SELECT * from purchaseItem ORDER BY name ASC")
     fun getPurchaseItems(): Flow<List<PurchaseItem>>
 
+    @Query("SELECT * from purchaseItem WHERE date = :currentDate ORDER BY name ASC")
+    fun getTodayPurchaseItems(currentDate: String): Flow<List<PurchaseItem>>
+
+//    @Query("SELECT * from purchaseItem WHERE date BETWEEN '20080205 00:00:00.000'and '20080205 23:59:59.999' ORDER BY name ASC")
+//    fun getWeekPurchaseItems(currentDate: String): Flow<List<PurchaseItem>>
+
     //inventoryItemId不知道要不要改成ID
     @Query("SELECT * from purchaseItem WHERE purchaseItemId = :purchaseItemId")
     fun getPurchaseItem(purchaseItemId: Int): Flow<PurchaseItem>

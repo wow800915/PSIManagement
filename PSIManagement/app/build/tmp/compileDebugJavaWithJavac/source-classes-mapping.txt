@@ -85,6 +85,7 @@ com/example/psimanagement/data/PurchaseItemDao_Impl.java
  com.example.psimanagement.data.PurchaseItemDao_Impl$6
  com.example.psimanagement.data.PurchaseItemDao_Impl$7
  com.example.psimanagement.data.PurchaseItemDao_Impl$8
+ com.example.psimanagement.data.PurchaseItemDao_Impl$9
 com/example/psimanagement/databinding/TestFragmentBinding.java
  com.example.psimanagement.databinding.TestFragmentBinding
 com/example/psimanagement/DataBinderMapperImpl.java

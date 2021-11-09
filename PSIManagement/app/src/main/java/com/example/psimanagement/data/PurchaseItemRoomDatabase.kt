@@ -4,14 +4,17 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
 
 /**
  * Database class with a singleton INSTANCE object.
- */
+ */@TypeConverters(Converters::class)
+
 @Database(entities = [PurchaseItem::class], version = 1, exportSchema = false)
 abstract class PurchaseItemRoomDatabase : RoomDatabase() {
     //20210906這邊room開始有改,主要是下面這行的問題
     abstract fun purchaseItemDao(): PurchaseItemDao
+
 
     companion object {
         @Volatile
@@ -36,4 +39,6 @@ abstract class PurchaseItemRoomDatabase : RoomDatabase() {
             }
         }
     }
+
+
 }

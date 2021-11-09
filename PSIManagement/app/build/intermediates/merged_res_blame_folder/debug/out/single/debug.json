@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/res/merged/debug/layout_fragment_profile.xml.flat",
-        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/fragment_profile.xml"
-    },
-    {
         "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
         "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/res/merged/debug/layout_fragment_profile.xml.flat",
+        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/fragment_profile.xml"
     },
     {
         "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_edit.xml.flat",
@@ -28,16 +28,16 @@
         "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/generated/res/pngs/debug/drawable-hdpi/ic_broken_image.png"
     },
     {
-        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/res/merged/debug/drawable-xxhdpi_loading_img.png.flat",
-        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/generated/res/pngs/debug/drawable-xxhdpi/loading_img.png"
+        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png"
     },
     {
         "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher_background.png.flat",
         "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png"
+        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/res/merged/debug/drawable-xxhdpi_loading_img.png.flat",
+        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/generated/res/pngs/debug/drawable-xxhdpi/loading_img.png"
     },
     {
         "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/res/merged/debug/layout_activity_splash.xml.flat",
