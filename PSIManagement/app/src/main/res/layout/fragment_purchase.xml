@@ -146,21 +146,20 @@
 
 
     <!-- 日資料畫面 - 清單 -->
-<!--    <android.support.v4.widget.SwipeRefreshLayout
+ <!--   <android.support.v4.widget.SwipeRefreshLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/layout_sRefresh_transaction_date"
+        android:id="@+id/layout_sRefresh_transaction_week"
         android:layout_below="@+id/view_range_line2">
 -->
-    <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/lv_transaction_date"
-            android:layout_below="@+id/view_range_line2"
-            android:dividerHeight="1dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lv_transaction_date"
+                android:layout_below="@+id/view_range_line2"
+                android:dividerHeight="1dp"/>
 
 <!--    </android.support.v4.widget.SwipeRefreshLayout>
 -->
-
 
 </RelativeLayout>

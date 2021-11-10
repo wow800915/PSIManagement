@@ -3,7 +3,7 @@ package com.example.psimanagement.data
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import java.sql.Date
+import java.util.*
 
 
 @Entity
@@ -24,7 +24,7 @@ data class PurchaseItem(
         @ColumnInfo(name = "quantity")
         val purchaseItemQuantityInStock: Int,
         @ColumnInfo(name = "date")
-        val purchaseItemDate: String,
+        val purchaseItemDate: Date,
         @ColumnInfo(name = "time")
         val purchaseItemTime: String,
         @ColumnInfo(name = "other")

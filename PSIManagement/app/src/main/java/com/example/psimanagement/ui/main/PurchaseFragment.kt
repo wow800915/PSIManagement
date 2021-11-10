@@ -1,10 +1,13 @@
 package com.example.psimanagement.ui.main
 
+import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.annotation.RequiresApi
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.observe
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -12,6 +15,8 @@ import com.example.psimanagement.PSIManagamentApplication
 import com.example.psimanagement.R
 import com.example.psimanagement.databinding.FragmentInventoryBinding
 import com.example.psimanagement.databinding.FragmentPurchaseBinding
+import java.time.LocalDate
+import java.util.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -69,7 +74,7 @@ class PurchaseFragment : Fragment() {
 
         // Attach an observer on the allItems list to update the UI automatically when the data
         // changes.
-        viewModel.allPurchaseItems.observe(this.viewLifecycleOwner) { purchases ->
+        viewModel.todayPurchaseItems.observe(this.viewLifecycleOwner) { purchases ->
             purchases.let {
                 adapter.submitList(it)
             }
@@ -77,6 +82,17 @@ class PurchaseFragment : Fragment() {
 
         binding.lvTransactionDate.adapter = adapter
         binding.lvTransactionDate.layoutManager = LinearLayoutManager(this.context)
+
+//這邊以ＭＶＶＭ邏輯,看一下是不是放這邊是不是正常的
+        binding.btnRangeWeek.setOnClickListener {
+            viewModel.weekPurchaseItems.observe(this.viewLifecycleOwner) { purchases ->
+                purchases.let {
+                    adapter.submitList(it)
+                }
+            }
+            binding.lvTransactionDate.adapter = adapter
+            binding.lvTransactionDate.layoutManager = LinearLayoutManager(this.context)
+        }
 
     }
 

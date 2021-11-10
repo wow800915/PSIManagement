@@ -2,13 +2,13 @@ package com.example.psimanagement.ui.main
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.annotation.NonNull
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.psimanagement.data.InventoryItem
 import com.example.psimanagement.data.PurchaseItem
 import com.example.psimanagement.databinding.ItemListPurchaseItemBinding
+import java.text.SimpleDateFormat
+import java.util.*
 
 class PurchaseItemListAdapter(private val onItemClicked: (PurchaseItem) -> Unit) :
     ListAdapter<PurchaseItem, PurchaseItemListAdapter.ItemViewHolder>(DiffCallback) {
@@ -37,10 +37,14 @@ class PurchaseItemListAdapter(private val onItemClicked: (PurchaseItem) -> Unit)
 //            binding.itemName.text = item.inventoryItemName
 //            binding.itemPrice.text = item.inventoryItemPrice.toString()
 //            binding.itemQuantity.text = item.inventoryItemQuantityInStock.toString()
+//            val dateStr: String = fromLongToDate("yyyy-MM-dd HH:mm:ss", 1568020783663L)
             binding.tvSrrn.text = item.purchaseItemName
             binding.tvAmt.text = item.purchaseItemPrice.toString()
+            binding.tvDateTime.text = SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(Date(item.purchaseItemDate.time))
         }
     }
+
+
 
     companion object {
         private val DiffCallback = object : DiffUtil.ItemCallback<PurchaseItem>() {

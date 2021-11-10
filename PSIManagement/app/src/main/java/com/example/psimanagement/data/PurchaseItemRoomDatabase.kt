@@ -8,9 +8,10 @@ import androidx.room.TypeConverters
 
 /**
  * Database class with a singleton INSTANCE object.
- */@TypeConverters(Converters::class)
+ */
 
 @Database(entities = [PurchaseItem::class], version = 1, exportSchema = false)
+@TypeConverters(Converters::class)
 abstract class PurchaseItemRoomDatabase : RoomDatabase() {
     //20210906這邊room開始有改,主要是下面這行的問題
     abstract fun purchaseItemDao(): PurchaseItemDao

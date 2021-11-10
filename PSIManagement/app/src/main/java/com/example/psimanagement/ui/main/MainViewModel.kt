@@ -1,41 +1,27 @@
 package com.example.psimanagement.ui.main
 
+import android.os.Build
+import android.util.Log
+import androidx.annotation.RequiresApi
 import androidx.lifecycle.*
 import com.example.psimanagement.data.*
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
+import java.time.LocalDate
+import java.time.YearMonth
 import java.util.*
 
 //20210906這邊room開始有改
 class MainViewModel(private val inventoryItemDao: InventoryItemDao, private val salesItemDao: SalesItemDao, private val purchaseItemDao: PurchaseItemDao, private val scrapItemDao: ScrapItemDao) : ViewModel() {
-
+    val calenderTime =Calendar.getInstance().getTime()
 //    lateinit var inventoryItem: InventoryItem
 
     val allInventoryItems: LiveData<List<InventoryItem>> = inventoryItemDao.getInventoryItems().asLiveData()
-    val allPurchaseItems: LiveData<List<PurchaseItem>> = purchaseItemDao.getTodayPurchaseItems(getCurrentDate()).asLiveData()
 
-    private fun getCurrentDate():String{
-        val dateStamp: String = SimpleDateFormat("yyyyMMdd").format(Calendar.getInstance().getTime())
-//        val timeStamp = SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(Calendar.getInstance().time)
-        return dateStamp
-    }
+    val allPurchaseItems: LiveData<List<PurchaseItem>> = purchaseItemDao.getPurchaseItems().asLiveData()
+    val todayPurchaseItems: LiveData<List<PurchaseItem>> = purchaseItemDao.getTodayPurchaseItems(Date(calenderTime.year,calenderTime.month,calenderTime.date)).asLiveData()
+    val weekPurchaseItems: LiveData<List<PurchaseItem>> = purchaseItemDao.getWeekPurchaseItems(Date(calenderTime.year,calenderTime.month,calenderTime.date-7),Date(calenderTime.year,calenderTime.month,calenderTime.date)).asLiveData()
 
-//    private fun getDate(): Date {
-//        var date : Date
-//        val source = "2019/12/31"
-//        val pattern = "yyyy-MM-dd"
-//        try {
-//            date= SimpleDateFormat(pattern).parse(source)
-//        } catch (e: ParseException) {
-//            System.out.printf(
-//                "Parse date string [%1\$s] with pattern [%2\$s] error.%n",
-//                source,
-//                pattern
-//            )
-//            // Parse date string [2019/12/31] with pattern [yyyy-MM-dd] error.
-//        }
-//        return date
-//    }
 
     fun retrieveItem(id: Int): LiveData<InventoryItem> {
         return inventoryItemDao.getInventoryItem(id).asLiveData()
@@ -44,7 +30,7 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao, private val 
     fun purchaseItem(inventoryItemName: String, inventoryItemPrice: Double, inventoryItemQuantityInStock: Int){
         val newItem = getNewInventoryItemEntry("0", "0", inventoryItemName,"NTD", inventoryItemPrice, inventoryItemQuantityInStock, "20210203","11:01:01", "IanInventoryItemOther")
         insertInventoryItem(newItem)
-        val newPurchaseItem =getNewPurchaseItemEntry("0", "0", inventoryItemName,"NTD", inventoryItemPrice, inventoryItemQuantityInStock, getCurrentDate(),"11:01:01", "IanInventoryItemOther")
+        val newPurchaseItem =getNewPurchaseItemEntry("0", "0", inventoryItemName,"NTD", inventoryItemPrice, inventoryItemQuantityInStock, Date(calenderTime.year,calenderTime.month,calenderTime.date),"11:01:01", "IanInventoryItemOther")
         insertPurchaseItem(newPurchaseItem)
     }
 
@@ -160,8 +146,8 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao, private val 
     }
 
     private fun getNewPurchaseItemEntry(
-        purchaseItemOrder: String, purchaseItemBarcode: String, purchaseItemName: String, purchaseItemCurrency: String, purchaseItemPrice: Double, purchaseItemQuantityInStock: Int,
-        purchaseItemDate: String, purchaseItemTime: String, purchaseItemOther: String): PurchaseItem {
+            purchaseItemOrder: String, purchaseItemBarcode: String, purchaseItemName: String, purchaseItemCurrency: String, purchaseItemPrice: Double, purchaseItemQuantityInStock: Int,
+            purchaseItemDate: Date, purchaseItemTime: String, purchaseItemOther: String): PurchaseItem {
         return PurchaseItem(
 //                purchaseItemId = purchaseItemId,
                 purchaseItemOrder = purchaseItemOrder,
@@ -208,7 +194,6 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao, private val 
 //        }
         return true
     }
-
 
 }
 
