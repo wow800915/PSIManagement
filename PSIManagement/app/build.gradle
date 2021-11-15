@@ -48,6 +48,10 @@ android {
 configurations {
     ktlint
 }
+//20211112MPAndroidChart
+repositories {
+    maven { url 'https://jitpack.io' }
+}
 
 dependencies {
 
@@ -69,6 +73,8 @@ dependencies {
     implementation 'androidx.multidex:multidex:2.0.1'
 
     implementation "io.coil-kt:coil:1.1.1"
+    //20211112MPAndroidChart
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.1'
 
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
@@ -81,6 +87,7 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
 
 //// Import the BoM for the Firebase platform
 //    implementation platform('com.google.firebase:firebase-bom:28.3.0')

@@ -152,12 +152,19 @@
         android:id="@+id/layout_sRefresh_transaction_week"
         android:layout_below="@+id/view_range_line2">
 -->
-        <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/lv_transaction_date"
-                android:layout_below="@+id/view_range_line2"
-                android:dividerHeight="1dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lv_transaction_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_range_line2"
+        android:dividerHeight="1dp" />
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_range_line2"
+        android:id="@+id/linechart"></com.github.mikephil.charting.charts.LineChart>
 
 <!--    </android.support.v4.widget.SwipeRefreshLayout>
 -->

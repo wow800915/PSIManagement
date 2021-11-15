@@ -1,22 +1,23 @@
 package com.example.psimanagement.ui.main
 
-import android.os.Build
+import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.annotation.RequiresApi
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.observe
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.psimanagement.PSIManagamentApplication
 import com.example.psimanagement.R
-import com.example.psimanagement.databinding.FragmentInventoryBinding
 import com.example.psimanagement.databinding.FragmentPurchaseBinding
-import java.time.LocalDate
+import com.github.mikephil.charting.data.Entry
+import com.github.mikephil.charting.data.LineData
+import com.github.mikephil.charting.data.LineDataSet
+import com.github.mikephil.charting.interfaces.datasets.ILineDataSet
 import java.util.*
+
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -94,6 +95,94 @@ class PurchaseFragment : Fragment() {
             binding.lvTransactionDate.layoutManager = LinearLayoutManager(this.context)
         }
 
+//        binding.btnRangeConfirm.setOnClickListener {
+            linechart()
+//        }
+
+    }
+//別放這邊
+    fun linechart() {
+        //            val mChart: LineChart
+//
+//            mChart = findViewById(R.id.linechart) as LineChart
+
+//        mChart.setOnChartGestureListener(MainActivity.this);
+//        mChart.setOnChartValueSelectedListener(MainActivity.this);
+
+
+//        mChart.setOnChartGestureListener(MainActivity.this);
+//        mChart.setOnChartValueSelectedListener(MainActivity.this);
+        binding.linechart.isDragEnabled = true
+        binding.linechart.setScaleEnabled(false)
+
+//            val yValues: ArrayList<Map.Entry<*, *>> = ArrayList()
+//
+//            yValues.add(
+//                MutableMap.MutableEntry<Any?, Any?>(
+//                    0,
+//                    60f
+//                )
+//            )
+//            yValues.add(
+//                MutableMap.MutableEntry<Any?, Any?>(
+//                    1,
+//                    50f
+//                )
+//            )
+//            yValues.add(
+//                MutableMap.MutableEntry<Any?, Any?>(
+//                    2,
+//                    70f
+//                )
+//            )
+//            yValues.add(
+//                MutableMap.MutableEntry<Any?, Any?>(
+//                    3,
+//                    30f
+//                )
+//            )
+//            yValues.add(
+//                MutableMap.MutableEntry<Any?, Any?>(
+//                    4,
+//                    50f
+//                )
+//            )
+//            yValues.add(
+//                MutableMap.MutableEntry<Any?, Any?>(
+//                    5,
+//                    60f
+//                )
+//            )
+//            yValues.add(
+//                MutableMap.MutableEntry<Any?, Any?>(
+//                    6,
+//                    65f
+//                )
+//            )
+        val yValues: ArrayList<Entry> = ArrayList()
+
+        yValues.add(Entry(0F,50f));
+        yValues.add(Entry(1F,60f));
+        yValues.add(Entry(2F,20f));
+        yValues.add(Entry(3F,30f));
+        yValues.add(Entry(4F,60f));
+        yValues.add(Entry(5F,50f));
+        yValues.add(Entry(6F,70f));
+
+        val set1 = LineDataSet(yValues, "Data Set:1")
+
+        set1.fillAlpha = 110
+
+        set1.color = Color.RED
+        set1.lineWidth = 3f
+        set1.valueTextSize = 10f
+
+        val dataSets: ArrayList<ILineDataSet> = ArrayList()
+        dataSets.add(set1)
+
+        val data = LineData(dataSets)
+
+        binding.linechart.data = data
     }
 
     companion object {
