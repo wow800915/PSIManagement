@@ -78,7 +78,6 @@ com/example/psimanagement/generated/callback/OnClickListener.java
 com/example/psimanagement/data/PurchaseItemDao_Impl.java
  com.example.psimanagement.data.PurchaseItemDao_Impl
  com.example.psimanagement.data.PurchaseItemDao_Impl$1
- com.example.psimanagement.data.PurchaseItemDao_Impl$10
  com.example.psimanagement.data.PurchaseItemDao_Impl$2
  com.example.psimanagement.data.PurchaseItemDao_Impl$3
  com.example.psimanagement.data.PurchaseItemDao_Impl$4

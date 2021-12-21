@@ -2,6 +2,7 @@ package com.example.psimanagement.ui.main
 
 import android.content.Context.INPUT_METHOD_SERVICE
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -99,6 +100,7 @@ class EditInventoryItemFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val id = requireArguments().getString("position")
 
+        Log.d("IANIAN","EditInventory103 id:"+id);
         viewModel.retrieveItem(Integer.parseInt(id)).observe(this.viewLifecycleOwner) { selectedItem ->
             inventoryItem = selectedItem
             bind(inventoryItem)

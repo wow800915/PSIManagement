@@ -17,11 +17,11 @@ interface PurchaseItemDao {
 //    @Query("SELECT * from purchaseItem WHERE date = :currentDate ORDER BY name ASC")
 //    fun getTodayPurchaseItems(currentDate: String): Flow<List<PurchaseItem>>
 
-    @Query("SELECT * from purchaseItem WHERE date = :currentDate ORDER BY name ASC")
-    fun getTodayPurchaseItems(currentDate: Date): Flow<List<PurchaseItem>>
+//    @Query("SELECT * from purchaseItem WHERE date = :currentDate ORDER BY name ASC")
+//    fun getTodayPurchaseItems(currentDate: Date): Flow<List<PurchaseItem>>
 
     @Query("SELECT * FROM purchaseItem WHERE date BETWEEN :from AND :to")
-    fun getWeekPurchaseItems(from: Date, to: Date): Flow<List<PurchaseItem>>
+    fun getCustomPurchaseItems(from: Date, to: Date): Flow<List<PurchaseItem>>
 
 //    @Query("SELECT * from purchaseItem WHERE date BETWEEN '20080205 00:00:00.000'and '20080205 23:59:59.999' ORDER BY name ASC")
 //    fun getWeekPurchaseItems(currentDate: String): Flow<List<PurchaseItem>>

@@ -1,6 +1,7 @@
 package com.example.psimanagement.ui.main
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -110,6 +111,7 @@ class InventoryItemDetailFragment : Fragment() {
         // Retrieve the item details using the itemId.
         // Attach an observer on the data (instead of polling for changes) and only update the
         // the UI when the data actually changes.
+        Log.d("IANIAN","InventoryItemDetailFragment113 id:"+id);
         viewModel.retrieveItem(Integer.parseInt(id)).observe(this.viewLifecycleOwner) { selectedItem ->
             inventoryItem = selectedItem
             bind(inventoryItem)

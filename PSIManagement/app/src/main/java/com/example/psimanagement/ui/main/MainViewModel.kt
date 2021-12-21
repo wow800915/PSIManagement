@@ -19,8 +19,19 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao, private val 
     val allInventoryItems: LiveData<List<InventoryItem>> = inventoryItemDao.getInventoryItems().asLiveData()
 
     val allPurchaseItems: LiveData<List<PurchaseItem>> = purchaseItemDao.getPurchaseItems().asLiveData()
-    val todayPurchaseItems: LiveData<List<PurchaseItem>> = purchaseItemDao.getTodayPurchaseItems(Date(calenderTime.year,calenderTime.month,calenderTime.date)).asLiveData()
-    val weekPurchaseItems: LiveData<List<PurchaseItem>> = purchaseItemDao.getWeekPurchaseItems(Date(calenderTime.year,calenderTime.month,calenderTime.date-7),Date(calenderTime.year,calenderTime.month,calenderTime.date)).asLiveData()
+//    val todayPurchaseItems: LiveData<List<PurchaseItem>> = purchaseItemDao.getTodayPurchaseItems(Date(calenderTime.year,calenderTime.month,calenderTime.date)).asLiveData()
+    val CustomPurchaseItems: LiveData<List<PurchaseItem>> = purchaseItemDao.getCustomPurchaseItems(Date(calenderTime.year,calenderTime.month,calenderTime.date-7),Date(calenderTime.year,calenderTime.month,calenderTime.date)).asLiveData()
+
+
+    fun todayPurchaseItems() : LiveData<List<PurchaseItem>>{
+        return purchaseItems(Date(calenderTime.year,calenderTime.month,calenderTime.date),Date(calenderTime.year,calenderTime.month,calenderTime.date))
+    }
+
+    fun purchaseItems(from:Date,to:Date): LiveData<List<PurchaseItem>> {
+        val purchaseItems: LiveData<List<PurchaseItem>> = purchaseItemDao.getCustomPurchaseItems(from,to).asLiveData()
+        Log.d("IANIAN","calenderTime.year: "+calenderTime.year +" calenderTime.month:"+calenderTime.month + " calenderTime.date:"+calenderTime.date);
+        return purchaseItems
+    }
 
 
     fun retrieveItem(id: Int): LiveData<InventoryItem> {

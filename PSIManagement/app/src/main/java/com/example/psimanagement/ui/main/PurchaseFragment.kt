@@ -2,6 +2,7 @@ package com.example.psimanagement.ui.main
 
 import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,13 +10,19 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.observe
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.psimanagement.PSIManagamentApplication
 import com.example.psimanagement.R
+import com.example.psimanagement.data.InventoryItem
+import com.example.psimanagement.data.PurchaseItem
 import com.example.psimanagement.databinding.FragmentPurchaseBinding
 import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet
+import java.text.SimpleDateFormat
+import java.time.Month
+import java.time.Year
 import java.util.*
 
 
@@ -46,6 +53,8 @@ class PurchaseFragment : Fragment() {
     private var _binding: FragmentPurchaseBinding? = null
     private val binding get() = _binding!!
 
+    lateinit var inventoryItem: InventoryItem
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -73,117 +82,95 @@ class PurchaseFragment : Fragment() {
         val adapter = PurchaseItemListAdapter {
         }
 
-        // Attach an observer on the allItems list to update the UI automatically when the data
-        // changes.
-        viewModel.todayPurchaseItems.observe(this.viewLifecycleOwner) { purchases ->
-            purchases.let {
-                adapter.submitList(it)
-            }
+        purchaseItems(adapter,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)
+
+        binding.tvRangeEnd.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(viewModel.calenderTime))
+        binding.tvRangeStart.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(Date(viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date-29)))
+
+        binding.btnRangeDay.setOnClickListener {
+            purchaseItems(adapter,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)
         }
+
+        binding.btnRangeWeek.setOnClickListener {
+            purchaseItems(adapter,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date-7,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)
+        }
+
+        binding.btnRangeMonth.setOnClickListener {
+            purchaseItems(adapter,viewModel.calenderTime.year,viewModel.calenderTime.month-1,viewModel.calenderTime.date,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)
+        }
+
+        binding.btnRangeConfirm.setOnClickListener {
+            binding.linechart.visibility = View.VISIBLE
+            binding.lvTransactionDate.visibility = View.INVISIBLE
+            linechart()
+        }
+
+
+    }
+
+    fun purchaseItems(adapter: PurchaseItemListAdapter, fromYear: Int, fromMonth: Int, fromDate: Int, toYear: Int, toMonth: Int, toDate: Int){
+        viewModel.purchaseItems(Date(fromYear,fromMonth,fromDate),Date(toYear,toMonth,toDate))
+                .observe(this.viewLifecycleOwner) { purchaseitems ->
+                    purchaseitems.let {
+                        adapter.submitList(it)
+                    }
+                }
 
         binding.lvTransactionDate.adapter = adapter
         binding.lvTransactionDate.layoutManager = LinearLayoutManager(this.context)
 
-//這邊以ＭＶＶＭ邏輯,看一下是不是放這邊是不是正常的
-        binding.btnRangeWeek.setOnClickListener {
-            viewModel.weekPurchaseItems.observe(this.viewLifecycleOwner) { purchases ->
-                purchases.let {
-                    adapter.submitList(it)
-                }
-            }
-            binding.lvTransactionDate.adapter = adapter
-            binding.lvTransactionDate.layoutManager = LinearLayoutManager(this.context)
-        }
-
-//        binding.btnRangeConfirm.setOnClickListener {
-            linechart()
-//        }
-
+        binding.lvTransactionDate.visibility = View.VISIBLE
+        binding.linechart.visibility = View.INVISIBLE
     }
-//別放這邊
+
+
+
+//1.別放這邊,放在salesFragment
     fun linechart() {
-        //            val mChart: LineChart
-//
-//            mChart = findViewById(R.id.linechart) as LineChart
 
-//        mChart.setOnChartGestureListener(MainActivity.this);
-//        mChart.setOnChartValueSelectedListener(MainActivity.this);
-
-
-//        mChart.setOnChartGestureListener(MainActivity.this);
-//        mChart.setOnChartValueSelectedListener(MainActivity.this);
         binding.linechart.isDragEnabled = true
         binding.linechart.setScaleEnabled(false)
 
-//            val yValues: ArrayList<Map.Entry<*, *>> = ArrayList()
-//
-//            yValues.add(
-//                MutableMap.MutableEntry<Any?, Any?>(
-//                    0,
-//                    60f
-//                )
-//            )
-//            yValues.add(
-//                MutableMap.MutableEntry<Any?, Any?>(
-//                    1,
-//                    50f
-//                )
-//            )
-//            yValues.add(
-//                MutableMap.MutableEntry<Any?, Any?>(
-//                    2,
-//                    70f
-//                )
-//            )
-//            yValues.add(
-//                MutableMap.MutableEntry<Any?, Any?>(
-//                    3,
-//                    30f
-//                )
-//            )
-//            yValues.add(
-//                MutableMap.MutableEntry<Any?, Any?>(
-//                    4,
-//                    50f
-//                )
-//            )
-//            yValues.add(
-//                MutableMap.MutableEntry<Any?, Any?>(
-//                    5,
-//                    60f
-//                )
-//            )
-//            yValues.add(
-//                MutableMap.MutableEntry<Any?, Any?>(
-//                    6,
-//                    65f
-//                )
-//            )
-        val yValues: ArrayList<Entry> = ArrayList()
+        //2.收得陣列放以下的裡面
+        viewModel.retrieveItem(0).observe(this.viewLifecycleOwner) {
+            selectedItem ->
+            inventoryItem = selectedItem
 
-        yValues.add(Entry(0F,50f));
-        yValues.add(Entry(1F,60f));
-        yValues.add(Entry(2F,20f));
-        yValues.add(Entry(3F,30f));
-        yValues.add(Entry(4F,60f));
-        yValues.add(Entry(5F,50f));
-        yValues.add(Entry(6F,70f));
+            val yValues: ArrayList<Entry> = ArrayList()
 
-        val set1 = LineDataSet(yValues, "Data Set:1")
+            yValues.add(Entry(0F,50F));
+            yValues.add(Entry(1F,inventoryItem.inventoryItemQuantityInStock.toFloat()));
+            yValues.add(Entry(2F,20F));
+            yValues.add(Entry(3F,30F));
+            yValues.add(Entry(4F, 0F));
+            yValues.add(Entry(5F,50F));
+            yValues.add(Entry(6F,70F));
 
-        set1.fillAlpha = 110
+            val set1 = LineDataSet(yValues, "Data Set:1")
 
-        set1.color = Color.RED
-        set1.lineWidth = 3f
-        set1.valueTextSize = 10f
+            set1.fillAlpha = 110
 
-        val dataSets: ArrayList<ILineDataSet> = ArrayList()
-        dataSets.add(set1)
+            set1.color = Color.RED
+            set1.lineWidth = 3f
+            set1.valueTextSize = 10f
 
-        val data = LineData(dataSets)
+            val dataSets: ArrayList<ILineDataSet> = ArrayList()
+            dataSets.add(set1)
 
-        binding.linechart.data = data
+            val data = LineData(dataSets)
+
+            binding.linechart.data = data
+
+
+            fun a(a:Float ,b:Float){
+                yValues.add(Entry(a,b));
+            }
+        }
+
     }
+
+
+
 
     companion object {
         /**

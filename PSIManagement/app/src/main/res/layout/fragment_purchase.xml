@@ -37,11 +37,12 @@
 
         <!-- 自訂 -->
         <Button
+            android:id="@+id/btn_range_customize"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:id="@+id/btn_range_customize"
-            android:text="customize"/>
+            android:text="customize"
+            android:textSize="9dp" />
 
     </LinearLayout>
 
@@ -128,12 +129,24 @@
 
         <!-- 確定 -->
         <Button
+            android:id="@+id/btn_range_confirm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btn_range_confirm"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="38dp"
+            android:layout_marginBottom="8dp"
+            android:text="總金額"
+            android:textStyle="bold|italic" />
 
     </RelativeLayout>
 
