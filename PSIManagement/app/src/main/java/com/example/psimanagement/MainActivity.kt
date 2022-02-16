@@ -1,12 +1,15 @@
 package com.example.psimanagement
 
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.util.Pair
 import androidx.navigation.NavController
 import com.example.psimanagement.databinding.MainActivityBinding
 import com.example.psimanagement.ui.main.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.datepicker.MaterialDatePicker
 
 class MainActivity : AppCompatActivity() {
 
@@ -35,6 +38,8 @@ class MainActivity : AppCompatActivity() {
                 .commit()
         navView.selectedItemId = R.id.navigation_inventory
         navView.setOnNavigationItemSelectedListener(listener)
+
+
     }
 
     private var listener = object : BottomNavigationView.OnNavigationItemSelectedListener {
@@ -60,6 +65,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.navigation_scrap -> {
                     val t = supportFragmentManager.beginTransaction()
                     t.replace(R.id.fragmentContainerView, MainActivity.moreFragment).commit()
+//                    pickDateRange()
                 }
 
             }

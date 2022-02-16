@@ -6,20 +6,24 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.util.Pair
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.observe
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.psimanagement.MainActivity
 import com.example.psimanagement.PSIManagamentApplication
 import com.example.psimanagement.R
 import com.example.psimanagement.data.InventoryItem
 import com.example.psimanagement.data.PurchaseItem
 import com.example.psimanagement.databinding.FragmentPurchaseBinding
+import com.example.psimanagement.databinding.MainActivityBinding
 import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet
+import com.google.android.material.datepicker.MaterialDatePicker
 import java.text.SimpleDateFormat
 import java.time.Month
 import java.time.Year
@@ -61,6 +65,15 @@ class PurchaseFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+
+//        val datePicker =
+//            MaterialDatePicker.Builder.datePicker()
+//                .setTitleText("Select date")
+//                .build()
+
+
+
+
     }
 
 
@@ -96,7 +109,12 @@ class PurchaseFragment : Fragment() {
         }
 
         binding.btnRangeMonth.setOnClickListener {
+            Log.d("IANIAN","PurchaseFragment112 viewModel.calenderTime:"+viewModel.calenderTime)
             purchaseItems(adapter,viewModel.calenderTime.year,viewModel.calenderTime.month-1,viewModel.calenderTime.date,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)
+        }
+
+        binding.btnRangeCustomize.setOnClickListener {
+            pickDateRange(adapter)
         }
 
         binding.btnRangeConfirm.setOnClickListener {
@@ -105,6 +123,34 @@ class PurchaseFragment : Fragment() {
             linechart()
         }
 
+    }
+
+    fun pickDateRange(adapter :PurchaseItemListAdapter){
+        val dateRangePicker =
+            MaterialDatePicker.Builder.dateRangePicker()
+                .setTitleText("Select dates")
+                .setSelection(
+                    Pair(
+                        MaterialDatePicker.thisMonthInUtcMilliseconds(),
+                        MaterialDatePicker.todayInUtcMilliseconds()
+                    )
+                )
+                .build()
+
+        dateRangePicker.show(requireActivity().supportFragmentManager, dateRangePicker.toString())
+
+        dateRangePicker.addOnCancelListener{
+            Log.d("IANIAN","PurchaseFragment62 Dialog was cancelled");
+        }
+
+        dateRangePicker.addOnNegativeButtonClickListener{
+            Log.d("IANIAN","PurchaseFragment66 Dialog Negative Button was clicked");
+        }
+
+        dateRangePicker.addOnPositiveButtonClickListener{
+            Log.d("IANIAN", "Date String = ${dateRangePicker.headerText}::  Date epoch values::${it.first}:: to :: ${it.second}")
+            purchaseItems(adapter,Date(it.first).year,Date(it.first).month,Date(it.first).date,Date(it.second).year,Date(it.second).month,Date(it.second).date)
+         }
 
     }
 

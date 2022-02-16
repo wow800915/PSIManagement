@@ -21,11 +21,11 @@
 
         <!-- 週 -->
         <Button
+            android:id="@+id/btn_range_week"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:id="@+id/btn_range_week"
-            android:text="weak"/>
+            android:text="week" />
 
         <!-- 月 -->
         <Button

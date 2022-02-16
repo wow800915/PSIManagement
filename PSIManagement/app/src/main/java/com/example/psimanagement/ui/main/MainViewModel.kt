@@ -1,14 +1,13 @@
 package com.example.psimanagement.ui.main
 
-import android.os.Build
 import android.util.Log
-import androidx.annotation.RequiresApi
+import androidx.core.util.Pair
+import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.*
 import com.example.psimanagement.data.*
+import com.google.android.material.datepicker.MaterialDatePicker
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
-import java.time.LocalDate
-import java.time.YearMonth
 import java.util.*
 
 //20210906這邊room開始有改
@@ -29,10 +28,9 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao, private val 
 
     fun purchaseItems(from:Date,to:Date): LiveData<List<PurchaseItem>> {
         val purchaseItems: LiveData<List<PurchaseItem>> = purchaseItemDao.getCustomPurchaseItems(from,to).asLiveData()
-        Log.d("IANIAN","calenderTime.year: "+calenderTime.year +" calenderTime.month:"+calenderTime.month + " calenderTime.date:"+calenderTime.date);
+        Log.d("IANIAN","MainViewModel36 calenderTime.year: "+calenderTime.year +" calenderTime.month:"+calenderTime.month + " calenderTime.date:"+calenderTime.date);
         return purchaseItems
     }
-
 
     fun retrieveItem(id: Int): LiveData<InventoryItem> {
         return inventoryItemDao.getInventoryItem(id).asLiveData()
@@ -207,6 +205,7 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao, private val 
     }
 
 }
+
 
 //20210906這邊room開始有改
 class MainViewModelFactory(private val inventoryItemDao: InventoryItemDao, private val salesItemDao: SalesItemDao, private val purchaseItemDao: PurchaseItemDao, private val scrapItemDao: ScrapItemDao) : ViewModelProvider.Factory {
