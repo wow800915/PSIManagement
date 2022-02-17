@@ -98,19 +98,25 @@ class PurchaseFragment : Fragment() {
         purchaseItems(adapter,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)
 
         binding.tvRangeEnd.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(viewModel.calenderTime))
-        binding.tvRangeStart.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(Date(viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date-29)))
+        binding.tvRangeStart.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(Date(viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)))
 
         binding.btnRangeDay.setOnClickListener {
             purchaseItems(adapter,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)
+            binding.tvRangeEnd.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(viewModel.calenderTime))
+            binding.tvRangeStart.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(Date(viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)))
         }
 
         binding.btnRangeWeek.setOnClickListener {
             purchaseItems(adapter,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date-7,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)
+            binding.tvRangeEnd.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(viewModel.calenderTime))
+            binding.tvRangeStart.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(Date(viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date-7)))
         }
 
         binding.btnRangeMonth.setOnClickListener {
             Log.d("IANIAN","PurchaseFragment112 viewModel.calenderTime:"+viewModel.calenderTime)
             purchaseItems(adapter,viewModel.calenderTime.year,viewModel.calenderTime.month-1,viewModel.calenderTime.date,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)
+            binding.tvRangeEnd.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(viewModel.calenderTime))
+            binding.tvRangeStart.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(Date(viewModel.calenderTime.year,viewModel.calenderTime.month-1,viewModel.calenderTime.date)))
         }
 
         binding.btnRangeCustomize.setOnClickListener {
@@ -121,6 +127,15 @@ class PurchaseFragment : Fragment() {
             binding.linechart.visibility = View.VISIBLE
             binding.lvTransactionDate.visibility = View.INVISIBLE
             linechart()
+        }
+
+        binding.floatingActionButton.setOnClickListener {
+
+            requireActivity().supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.fragmentContainerView, AddInventoryItemFragment(), null)//.replace(R.id.fragmentContainerView, AddItemFragment(), null)
+                    .commit()
+
         }
 
     }
@@ -150,7 +165,9 @@ class PurchaseFragment : Fragment() {
         dateRangePicker.addOnPositiveButtonClickListener{
             Log.d("IANIAN", "Date String = ${dateRangePicker.headerText}::  Date epoch values::${it.first}:: to :: ${it.second}")
             purchaseItems(adapter,Date(it.first).year,Date(it.first).month,Date(it.first).date,Date(it.second).year,Date(it.second).month,Date(it.second).date)
-         }
+            binding.tvRangeEnd.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(Date(Date(it.second).year,Date(it.second).month,Date(it.second).date)))
+            binding.tvRangeStart.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(Date(Date(it.first).year,Date(it.first).month,Date(it.first).date)))
+        }
 
     }
 

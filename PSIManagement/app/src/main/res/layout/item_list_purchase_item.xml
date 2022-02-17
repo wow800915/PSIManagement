@@ -4,12 +4,17 @@
     android:layout_height="48dp"
     android:descendantFocusability="blocksDescendants">
 
+
     <!-- 收款 -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="90dp"
         android:id="@+id/layout_content"
         android:background="@color/white">
+
+        <View
+            android:id="@+id/divider"
+            style="@style/Divider" />
 
         <!-- 交易代號 -->
         <TextView

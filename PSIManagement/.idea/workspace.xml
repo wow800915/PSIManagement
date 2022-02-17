@@ -35,17 +35,10 @@
     <list default="true" id="dbce781f-8825-4764-b9c0-5d2a607ac590" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/PSIManagement.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/PSIManagement.app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/navEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/psimanagement/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/psimanagement/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/psimanagement/ui/main/MainViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/psimanagement/ui/main/MainViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/psimanagement/ui/main/PurchaseFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/psimanagement/ui/main/PurchaseFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_inventory_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_inventory_item.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_purchase.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_purchase.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_list_purchase_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_list_purchase_item.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,18 +221,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2179" y="272" key="#com.intellij.ide.util.MemberChooser" timestamp="1636361327252">
-      <screen x="1440" y="25" width="1920" height="1055" />
-    </state>
-    <state x="2179" y="272" key="#com.intellij.ide.util.MemberChooser/0.25.1440.806/1440.25.1920.1055@1440.25.1920.1055" timestamp="1636361327252" />
     <state x="1540" y="125" width="1720" height="855" key="AVDManager" timestamp="1636443524957">
       <screen x="1440" y="25" width="1920" height="1055" />
     </state>
     <state x="1540" y="125" width="1720" height="855" key="AVDManager/0.25.1440.806/1440.25.1920.1055@1440.25.1920.1055" timestamp="1636443524957" />
-    <state x="1988" y="311" key="AndroidCreateResourceFileDialog" timestamp="1636358271005">
-      <screen x="1440" y="25" width="1920" height="1055" />
-    </state>
-    <state x="1988" y="311" key="AndroidCreateResourceFileDialog/0.25.1440.806/1440.25.1920.1055@1440.25.1920.1055" timestamp="1636358271005" />
     <state width="1398" height="86" key="GridCell.Tab.0.bottom" timestamp="1645004404189">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
@@ -274,13 +259,13 @@
     <state x="2092" y="261" width="789" height="582" key="find.popup/0.25.1440.806/1440.25.1920.1055@1440.25.1920.1055" timestamp="1639734008486" />
     <state x="718" y="269" width="592" height="490" key="find.popup/0.25.1440.875/-1920.25.1920.986@0.25.1440.875" timestamp="1645004651889" />
     <state x="2092" y="246" width="789" height="544" key="find.popup/0.25.1440.875/1440.25.1920.986@1440.25.1920.986" timestamp="1640162711109" />
-    <state width="465" height="252" key="javadoc.popup.new" timestamp="1645004355438">
-      <screen x="0" y="25" width="1440" height="875" />
+    <state width="622" height="283" key="javadoc.popup.new" timestamp="1645068891169">
+      <screen x="-1920" y="25" width="1920" height="986" />
     </state>
     <state width="622" height="283" key="javadoc.popup.new/0.25.1440.806/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1644979754746" />
     <state width="622" height="283" key="javadoc.popup.new/0.25.1440.806/1440.25.1920.1055@1440.25.1920.1055" timestamp="1640055194124" />
     <state width="466" height="281" key="javadoc.popup.new/0.25.1440.806@0.25.1440.806" timestamp="1636963460869" />
-    <state width="622" height="283" key="javadoc.popup.new/0.25.1440.875/-1920.25.1920.986@-1920.25.1920.986" timestamp="1644984095680" />
+    <state width="622" height="283" key="javadoc.popup.new/0.25.1440.875/-1920.25.1920.986@-1920.25.1920.986" timestamp="1645068891169" />
     <state width="465" height="252" key="javadoc.popup.new/0.25.1440.875/-1920.25.1920.986@0.25.1440.875" timestamp="1645004355438" />
   </component>
 </project>
