@@ -35,17 +35,18 @@
     <list default="true" id="dbce781f-8825-4764-b9c0-5d2a607ac590" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/PSIManagement.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/PSIManagement.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/psimanagement/ui/main/PurchaseFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/psimanagement/ui/main/PurchaseFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_purchase.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_purchase.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_list_purchase_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_list_purchase_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_more.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_more.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-zh-rTW/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-zh-rTW/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[R5CR90LV88F]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[LGH9909668867f]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -221,51 +222,39 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1540" y="125" width="1720" height="855" key="AVDManager" timestamp="1636443524957">
-      <screen x="1440" y="25" width="1920" height="1055" />
-    </state>
-    <state x="1540" y="125" width="1720" height="855" key="AVDManager/0.25.1440.806/1440.25.1920.1055@1440.25.1920.1055" timestamp="1636443524957" />
     <state width="1398" height="86" key="GridCell.Tab.0.bottom" timestamp="1645004404189">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state width="1878" height="352" key="GridCell.Tab.0.bottom/0.25.1440.806/1440.25.1920.1055@1440.25.1920.1055" timestamp="1639988926810" />
     <state width="1398" height="86" key="GridCell.Tab.0.bottom/0.25.1440.875/-1920.25.1920.986@0.25.1440.875" timestamp="1645004404189" />
-    <state width="1878" height="375" key="GridCell.Tab.0.bottom/0.25.1440.875/1440.25.1920.986@1440.25.1920.986" timestamp="1636445922667" />
     <state width="1398" height="86" key="GridCell.Tab.0.center" timestamp="1645004404186">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state width="1878" height="352" key="GridCell.Tab.0.center/0.25.1440.806/1440.25.1920.1055@1440.25.1920.1055" timestamp="1639988926810" />
     <state width="1398" height="86" key="GridCell.Tab.0.center/0.25.1440.875/-1920.25.1920.986@0.25.1440.875" timestamp="1645004404186" />
-    <state width="1878" height="375" key="GridCell.Tab.0.center/0.25.1440.875/1440.25.1920.986@1440.25.1920.986" timestamp="1636445922666" />
     <state width="1398" height="86" key="GridCell.Tab.0.left" timestamp="1645004404186">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state width="1878" height="352" key="GridCell.Tab.0.left/0.25.1440.806/1440.25.1920.1055@1440.25.1920.1055" timestamp="1639988926809" />
     <state width="1398" height="86" key="GridCell.Tab.0.left/0.25.1440.875/-1920.25.1920.986@0.25.1440.875" timestamp="1645004404186" />
-    <state width="1878" height="375" key="GridCell.Tab.0.left/0.25.1440.875/1440.25.1920.986@1440.25.1920.986" timestamp="1636445922666" />
     <state width="1398" height="86" key="GridCell.Tab.0.right" timestamp="1645004404188">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state width="1878" height="352" key="GridCell.Tab.0.right/0.25.1440.806/1440.25.1920.1055@1440.25.1920.1055" timestamp="1639988926810" />
     <state width="1398" height="86" key="GridCell.Tab.0.right/0.25.1440.875/-1920.25.1920.986@0.25.1440.875" timestamp="1645004404188" />
-    <state width="1878" height="375" key="GridCell.Tab.0.right/0.25.1440.875/1440.25.1920.986@1440.25.1920.986" timestamp="1636445922667" />
-    <state x="1971" y="128" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1636448085696">
-      <screen x="1440" y="25" width="1920" height="986" />
-    </state>
-    <state x="1971" y="128" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.25.1440.875/1440.25.1920.986@1440.25.1920.986" timestamp="1636448085696" />
-    <state x="718" y="269" width="592" height="490" key="find.popup" timestamp="1645004651889">
-      <screen x="0" y="25" width="1440" height="875" />
+    <state x="-963" y="300" width="790" height="553" key="find.popup" timestamp="1646635139078">
+      <screen x="-1920" y="25" width="1920" height="986" />
     </state>
     <state x="2092" y="261" width="789" height="582" key="find.popup/0.25.1440.806/1440.25.1920.1055@1440.25.1920.1055" timestamp="1639734008486" />
+    <state x="-963" y="300" width="790" height="553" key="find.popup/0.25.1440.875/-1920.25.1920.986@-1920.25.1920.986" timestamp="1646635139078" />
     <state x="718" y="269" width="592" height="490" key="find.popup/0.25.1440.875/-1920.25.1920.986@0.25.1440.875" timestamp="1645004651889" />
     <state x="2092" y="246" width="789" height="544" key="find.popup/0.25.1440.875/1440.25.1920.986@1440.25.1920.986" timestamp="1640162711109" />
-    <state width="622" height="283" key="javadoc.popup.new" timestamp="1645068891169">
+    <state width="622" height="283" key="javadoc.popup.new" timestamp="1645071936490">
       <screen x="-1920" y="25" width="1920" height="986" />
     </state>
     <state width="622" height="283" key="javadoc.popup.new/0.25.1440.806/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1644979754746" />
     <state width="622" height="283" key="javadoc.popup.new/0.25.1440.806/1440.25.1920.1055@1440.25.1920.1055" timestamp="1640055194124" />
-    <state width="466" height="281" key="javadoc.popup.new/0.25.1440.806@0.25.1440.806" timestamp="1636963460869" />
-    <state width="622" height="283" key="javadoc.popup.new/0.25.1440.875/-1920.25.1920.986@-1920.25.1920.986" timestamp="1645068891169" />
+    <state width="622" height="283" key="javadoc.popup.new/0.25.1440.875/-1920.25.1920.986@-1920.25.1920.986" timestamp="1645071936490" />
     <state width="465" height="252" key="javadoc.popup.new/0.25.1440.875/-1920.25.1920.986@0.25.1440.875" timestamp="1645004355438" />
   </component>
 </project>
