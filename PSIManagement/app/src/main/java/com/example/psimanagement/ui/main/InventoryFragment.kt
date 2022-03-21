@@ -29,6 +29,13 @@ class InventoryFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+//    private var isAddingButtomHided: Boolean? = null
+//
+//
+//    constructor(isAddingButtomHided : Boolean){
+//        this.isAddingButtomHided = isAddingButtomHided
+//    }
+
     private val viewModel: MainViewModel by activityViewModels {
         MainViewModelFactory(
                 (activity?.application as PSIManagamentApplication).inventoryItemDatabase.inventoryItemDao(),
@@ -93,6 +100,11 @@ class InventoryFragment : Fragment() {
                     .commit()
 
         }
+
+//        if(isAddingButtomHided==true){
+//            binding.floatingActionButton.visibility = View.INVISIBLE
+//        }
+
     }
 
     companion object {

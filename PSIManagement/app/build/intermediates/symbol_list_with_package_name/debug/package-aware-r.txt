@@ -1863,7 +1863,6 @@ id blocking
 id bottom
 id bottomNavigationView
 id bounce
-id btn_backingPropertyTest
 id btn_fastlogin
 id btn_login
 id btn_logout
@@ -1872,7 +1871,6 @@ id btn_range_customize
 id btn_range_day
 id btn_range_month
 id btn_range_week
-id btn_test
 id button
 id button3
 id button4
@@ -1911,8 +1909,6 @@ id contentPanel
 id contiguous
 id coordinator
 id cos
-id cost_of_service
-id cost_of_service_edit_text
 id counterclockwise
 id custom
 id customPanel
@@ -2234,7 +2230,6 @@ id textStart
 id textTop
 id textView
 id textView2
-id textView3
 id textView4
 id textWatcher
 id text_input_end_icon
@@ -2393,6 +2388,7 @@ layout fragment_purchase
 layout fragment_sales
 layout item_list_inventory_item
 layout item_list_purchase_item
+layout item_list_sales_item
 layout main_activity
 layout material_chip_input_combo
 layout material_clock_display

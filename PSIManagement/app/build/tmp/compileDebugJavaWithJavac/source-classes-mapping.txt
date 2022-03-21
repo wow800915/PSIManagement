@@ -3,8 +3,8 @@ com/example/psimanagement/databinding/FragmentPurchaseBinding.java
 com/example/psimanagement/data/SalesItemRoomDatabase_Impl.java
  com.example.psimanagement.data.SalesItemRoomDatabase_Impl
  com.example.psimanagement.data.SalesItemRoomDatabase_Impl$1
-com/example/psimanagement/databinding/FragmentAddInventoryItemBinding.java
- com.example.psimanagement.databinding.FragmentAddInventoryItemBinding
+com/example/psimanagement/databinding/ItemListPurchaseItemBinding.java
+ com.example.psimanagement.databinding.ItemListPurchaseItemBinding
 com/example/psimanagement/data/ScrapItemRoomDatabase_Impl.java
  com.example.psimanagement.data.ScrapItemRoomDatabase_Impl
  com.example.psimanagement.data.ScrapItemRoomDatabase_Impl$1
@@ -88,6 +88,8 @@ com/example/psimanagement/data/PurchaseItemDao_Impl.java
  com.example.psimanagement.data.PurchaseItemDao_Impl$9
 com/example/psimanagement/databinding/TestFragmentBinding.java
  com.example.psimanagement.databinding.TestFragmentBinding
+com/example/psimanagement/databinding/ItemListSalesItemBinding.java
+ com.example.psimanagement.databinding.ItemListSalesItemBinding
 com/example/psimanagement/DataBinderMapperImpl.java
  com.example.psimanagement.DataBinderMapperImpl
  com.example.psimanagement.DataBinderMapperImpl$InnerBrLookup
@@ -100,5 +102,5 @@ androidx/databinding/DataBindingComponent.java
  androidx.databinding.DataBindingComponent
 com/example/psimanagement/BuildConfig.java
  com.example.psimanagement.BuildConfig
-com/example/psimanagement/databinding/ItemListPurchaseItemBinding.java
- com.example.psimanagement.databinding.ItemListPurchaseItemBinding
+com/example/psimanagement/databinding/FragmentAddInventoryItemBinding.java
+ com.example.psimanagement.databinding.FragmentAddInventoryItemBinding

@@ -32,6 +32,13 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao, private val 
         return purchaseItems
     }
 
+    fun salesItems(from:Date,to:Date): LiveData<List<SalesItem>> {
+        val salesItems: LiveData<List<SalesItem>> = salesItemDao.getSalesItems().asLiveData()
+//        val salesItems: LiveData<List<SalesItem>> = salesItemDao.getCustomSalesItems(from,to).asLiveData()
+        Log.d("IANIAN","MainViewModel36 calenderTime.year: "+calenderTime.year +" calenderTime.month:"+calenderTime.month + " calenderTime.date:"+calenderTime.date);
+        return salesItems
+    }
+
     fun retrieveItem(id: Int): LiveData<InventoryItem> {
         return inventoryItemDao.getInventoryItem(id).asLiveData()
     }
@@ -103,7 +110,7 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao, private val 
             // Decrease the quantity by 1
             val newInventoryItem = inventoryItem.copy(inventoryItemQuantityInStock = inventoryItem.inventoryItemQuantityInStock - 1)
             updateInventoryItem(newInventoryItem)
-            add1NewSalesItem()
+            add1NewSalesItem(inventoryItem.inventoryItemName,inventoryItem.inventoryItemPrice,1)
         }
     }
 
@@ -121,8 +128,8 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao, private val 
 //        return null
 //    }
 
-    fun add1NewSalesItem() {
-        val newItem = getNewSalesItemEntry("0", "0","IanSaleItemName", "NTD", 1.0,1, "20200102","12:23:22", "IanSalesItemOther")
+    fun add1NewSalesItem(inventoryItemName: String, inventoryItemPrice: Double, inventoryItemQuantityInStock: Int) {
+        val newItem = getNewSalesItemEntry("0", "0",inventoryItemName, "NTD", inventoryItemPrice,1, "20200102","12:23:22", "IanSalesItemOther")
         insertSalesItem(newItem)
     }
 

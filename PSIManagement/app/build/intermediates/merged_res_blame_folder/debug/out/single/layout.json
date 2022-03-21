@@ -52,6 +52,10 @@
         "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/fragment_inventory_item_detail.xml"
     },
     {
+        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_list_sales_item.xml",
+        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/item_list_sales_item.xml"
+    },
+    {
         "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_profile.xml",
         "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/fragment_profile.xml"
     },

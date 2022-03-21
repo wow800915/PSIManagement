@@ -1,12 +1,22 @@
 package com.example.psimanagement.ui.main
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.observe
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.psimanagement.PSIManagamentApplication
 import com.example.psimanagement.R
+import com.example.psimanagement.data.InventoryItem
+import com.example.psimanagement.databinding.FragmentInventoryBinding
+import com.example.psimanagement.databinding.FragmentPurchaseBinding
 import com.example.psimanagement.databinding.FragmentSalesBinding
+import java.text.SimpleDateFormat
+import java.util.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -22,6 +32,20 @@ class SalesFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+
+    private val viewModel: MainViewModel by activityViewModels {
+        MainViewModelFactory(
+                (activity?.application as PSIManagamentApplication).inventoryItemDatabase.inventoryItemDao(),
+                (activity?.application as PSIManagamentApplication).salesItemDatabase.salesItemDao(),
+                (activity?.application as PSIManagamentApplication).purchaseItemDatabase.purchaseItemDao(),
+                (activity?.application as PSIManagamentApplication).scrapItemDatabase.scrapItemDao()
+        )
+    }
+
+    private var _binding: FragmentSalesBinding? = null
+    private val binding get() = _binding!!
+
+    lateinit var inventoryItem: InventoryItem
 
     var sss: String? = null
 //20210906這邊room開始有改
@@ -44,26 +68,100 @@ class SalesFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
         activity?.setTitle(R.string.title_sales)
-        val binding = FragmentSalesBinding.inflate(inflater, container, false)
-
-//        binding.btnBackingPropertyTest.setOnClickListener {
-//            binding.tvBackingPropertyTest.text = viewModel.backingPropertyTest
-//            sss = viewModel.getUser()
-//            Log.d("IANIAN",sss.toString())
-//
-//        }
-
-//        binding.btnTest.setOnClickListener(View.OnClickListener {
-//            goToLoginFragment()
-//        })
-
-
+        _binding = FragmentSalesBinding.inflate(inflater, container, false)
         return binding.root
 
 //        // Inflate the layout for this fragment
 //        return inflater.inflate(R.layout.fragment_main, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val adapter = SalesItemListAdapter {
+        }
+
+        purchaseItems(adapter,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)
+
+        binding.tvRangeEnd.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(viewModel.calenderTime))
+        binding.tvRangeStart.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(Date(viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)))
+
+        binding.btnRangeDay.setOnClickListener {
+//            purchaseItems(adapter,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)
+            binding.tvRangeEnd.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(viewModel.calenderTime))
+            binding.tvRangeStart.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(Date(viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)))
+        }
+
+        binding.btnRangeWeek.setOnClickListener {
+//            purchaseItems(adapter,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date-7,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)
+            binding.tvRangeEnd.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(viewModel.calenderTime))
+            binding.tvRangeStart.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(Date(viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date-7)))
+        }
+
+        binding.btnRangeMonth.setOnClickListener {
+            Log.d("IANIAN","PurchaseFragment112 viewModel.calenderTime:"+viewModel.calenderTime)
+//            purchaseItems(adapter,viewModel.calenderTime.year,viewModel.calenderTime.month-1,viewModel.calenderTime.date,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)
+            binding.tvRangeEnd.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(viewModel.calenderTime))
+            binding.tvRangeStart.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(Date(viewModel.calenderTime.year,viewModel.calenderTime.month-1,viewModel.calenderTime.date)))
+        }
+
+        binding.btnRangeCustomize.setOnClickListener {
+//            pickDateRange(adapter)
+        }
+
+        binding.btnRangeConfirm.setOnClickListener {
+            binding.linechart.visibility = View.VISIBLE
+            binding.lvTransactionDate.visibility = View.INVISIBLE
+//            linechart()
+        }
+
+        binding.floatingActionButton.setOnClickListener {
+
+            requireActivity().supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.fragmentContainerView, InventoryFragment(), null)//.replace(R.id.fragmentContainerView, AddItemFragment(), null)
+                    .commit()
+
+//            val adapter = InventoryItemListAdapter {
+//                val itemDetailFragment = InventoryItemDetailFragment()
+//                val bundle = Bundle()
+//                bundle.putString("position", it.inventoryItemId.toString())
+//                itemDetailFragment.setArguments(bundle)
+//
+//                requireActivity().supportFragmentManager
+//                    .beginTransaction()
+//                    .replace(R.id.fragmentContainerView, itemDetailFragment, null)//.replace(R.id.fragmentContainerView, AddItemFragment(), null)
+//                    .commit()
+//            }
+//
+//            // Attach an observer on the allItems list to update the UI automatically when the data
+//            // changes.
+//            viewModel.allInventoryItems.observe(this.viewLifecycleOwner) { inventorys ->
+//                inventorys.let {
+//                    adapter.submitList(it)
+//                }
+//            }
+//
+//            binding.recyclerView.adapter = adapter
+//            binding.recyclerView.layoutManager = LinearLayoutManager(this.context)
+        }
+
+    }
+
+    fun purchaseItems(adapter: SalesItemListAdapter, fromYear: Int, fromMonth: Int, fromDate: Int, toYear: Int, toMonth: Int, toDate: Int){
+        viewModel.salesItems(Date(fromYear,fromMonth,fromDate),Date(toYear,toMonth,toDate))
+                .observe(this.viewLifecycleOwner) { salesitems ->
+                    salesitems.let {
+                        adapter.submitList(it)
+                    }
+                }
+
+        binding.lvTransactionDate.adapter = adapter
+        binding.lvTransactionDate.layoutManager = LinearLayoutManager(this.context)
+
+        binding.lvTransactionDate.visibility = View.VISIBLE
+        binding.linechart.visibility = View.INVISIBLE
+    }
 
     companion object {
         /**
