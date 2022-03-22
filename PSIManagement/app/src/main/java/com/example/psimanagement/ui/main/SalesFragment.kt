@@ -12,8 +12,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.psimanagement.PSIManagamentApplication
 import com.example.psimanagement.R
 import com.example.psimanagement.data.InventoryItem
-import com.example.psimanagement.databinding.FragmentInventoryBinding
-import com.example.psimanagement.databinding.FragmentPurchaseBinding
 import com.example.psimanagement.databinding.FragmentSalesBinding
 import java.text.SimpleDateFormat
 import java.util.*
@@ -117,9 +115,16 @@ class SalesFragment : Fragment() {
 
         binding.floatingActionButton.setOnClickListener {
 
+            val inventoryFragment = InventoryFragment()
+
+            val args = Bundle()
+            args.putString("isAddingButtomHided", "isAddingButtomHided")
+            inventoryFragment.setArguments(args)
+
+
             requireActivity().supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.fragmentContainerView, InventoryFragment(), null)//.replace(R.id.fragmentContainerView, AddItemFragment(), null)
+                    .replace(R.id.fragmentContainerView, inventoryFragment, null)//.replace(R.id.fragmentContainerView, AddItemFragment(), null)
                     .commit()
 
 //            val adapter = InventoryItemListAdapter {

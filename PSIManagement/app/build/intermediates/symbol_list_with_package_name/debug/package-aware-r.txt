@@ -2629,6 +2629,7 @@ string title_inventory
 string title_purchase
 string title_sales
 string title_scrap
+string title_select_sales_items
 string word_count
 string yes
 style AlertDialog_AppCompat

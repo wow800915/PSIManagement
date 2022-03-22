@@ -12,6 +12,7 @@
     <string name="title_sales">銷售</string>
     <string name="title_inventory">存貨</string>
     <string name="title_scrap">更多</string>
+    <string name="title_select_sales_items">請選擇銷售商品</string>
 
     <string name="sell">Sell</string>
     <string name="quantity">Quantity in Stock:</string>

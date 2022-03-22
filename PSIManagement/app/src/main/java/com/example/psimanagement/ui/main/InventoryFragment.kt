@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.observe
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -29,12 +30,7 @@ class InventoryFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
-//    private var isAddingButtomHided: Boolean? = null
-//
-//
-//    constructor(isAddingButtomHided : Boolean){
-//        this.isAddingButtomHided = isAddingButtomHided
-//    }
+    var isAddingButtomHided: String? = null
 
     private val viewModel: MainViewModel by activityViewModels {
         MainViewModelFactory(
@@ -54,6 +50,8 @@ class InventoryFragment : Fragment() {
 //            param1 = it.getString(ARG_PARAM1)
 //            param2 = it.getString(ARG_PARAM2)
 //        }
+//        isAddingButtomHided =  getArguments().getString("isAddingButtomHided", null);
+//        getArguments()?.getString("isAddingButtomHided", null)?.let { Log.d("IANIAN", it) };
     }
 
     override fun onCreateView(
@@ -68,6 +66,12 @@ class InventoryFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        if(getArguments()?.getString("isAddingButtomHided", null).equals("isAddingButtomHided")){
+            binding.floatingActionButton.visibility= View.INVISIBLE
+            activity?.setTitle(R.string.title_select_sales_items)
+        }
+
 //
         val adapter = InventoryItemListAdapter {
             val itemDetailFragment = InventoryItemDetailFragment()
@@ -100,6 +104,7 @@ class InventoryFragment : Fragment() {
                     .commit()
 
         }
+
 
 //        if(isAddingButtomHided==true){
 //            binding.floatingActionButton.visibility = View.INVISIBLE

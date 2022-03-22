@@ -2628,8 +2628,9 @@ int string title_inventory 0x7f10009a
 int string title_purchase 0x7f10009b
 int string title_sales 0x7f10009c
 int string title_scrap 0x7f10009d
-int string word_count 0x7f10009e
-int string yes 0x7f10009f
+int string title_select_sales_items 0x7f10009e
+int string word_count 0x7f10009f
+int string yes 0x7f1000a0
 int style AlertDialog_AppCompat 0x7f110000
 int style AlertDialog_AppCompat_Light 0x7f110001
 int style AndroidThemeColorAccentYellow 0x7f110002
