@@ -5,6 +5,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.util.Pair
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.observe
@@ -13,6 +14,7 @@ import com.example.psimanagement.PSIManagamentApplication
 import com.example.psimanagement.R
 import com.example.psimanagement.data.InventoryItem
 import com.example.psimanagement.databinding.FragmentSalesBinding
+import com.google.android.material.datepicker.MaterialDatePicker
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -79,32 +81,32 @@ class SalesFragment : Fragment() {
         val adapter = SalesItemListAdapter {
         }
 
-        purchaseItems(adapter,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)
+        salesItems(adapter,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)
 
         binding.tvRangeEnd.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(viewModel.calenderTime))
         binding.tvRangeStart.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(Date(viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)))
 
         binding.btnRangeDay.setOnClickListener {
-//            purchaseItems(adapter,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)
+            salesItems(adapter,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)
             binding.tvRangeEnd.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(viewModel.calenderTime))
             binding.tvRangeStart.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(Date(viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)))
         }
 
         binding.btnRangeWeek.setOnClickListener {
-//            purchaseItems(adapter,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date-7,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)
+            salesItems(adapter,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date-7,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)
             binding.tvRangeEnd.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(viewModel.calenderTime))
             binding.tvRangeStart.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(Date(viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date-7)))
         }
 
         binding.btnRangeMonth.setOnClickListener {
             Log.d("IANIAN","PurchaseFragment112 viewModel.calenderTime:"+viewModel.calenderTime)
-//            purchaseItems(adapter,viewModel.calenderTime.year,viewModel.calenderTime.month-1,viewModel.calenderTime.date,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)
+            salesItems(adapter,viewModel.calenderTime.year,viewModel.calenderTime.month-1,viewModel.calenderTime.date,viewModel.calenderTime.year,viewModel.calenderTime.month,viewModel.calenderTime.date)
             binding.tvRangeEnd.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(viewModel.calenderTime))
             binding.tvRangeStart.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(Date(viewModel.calenderTime.year,viewModel.calenderTime.month-1,viewModel.calenderTime.date)))
         }
 
         binding.btnRangeCustomize.setOnClickListener {
-//            pickDateRange(adapter)
+            pickDateRange(adapter)
         }
 
         binding.btnRangeConfirm.setOnClickListener {
@@ -153,7 +155,40 @@ class SalesFragment : Fragment() {
 
     }
 
-    fun purchaseItems(adapter: SalesItemListAdapter, fromYear: Int, fromMonth: Int, fromDate: Int, toYear: Int, toMonth: Int, toDate: Int){
+
+    fun pickDateRange(adapter :SalesItemListAdapter){
+        val dateRangePicker =
+                MaterialDatePicker.Builder.dateRangePicker()
+                        .setTitleText("Select dates")
+                        .setSelection(
+                                Pair(
+                                        MaterialDatePicker.thisMonthInUtcMilliseconds(),
+                                        MaterialDatePicker.todayInUtcMilliseconds()
+                                )
+                        )
+                        .build()
+
+        dateRangePicker.show(requireActivity().supportFragmentManager, dateRangePicker.toString())
+
+        dateRangePicker.addOnCancelListener{
+            Log.d("IANIAN","SalesFragment62 Dialog was cancelled");
+        }
+
+        dateRangePicker.addOnNegativeButtonClickListener{
+            Log.d("IANIAN","SalesFragment66 Dialog Negative Button was clicked");
+        }
+
+        dateRangePicker.addOnPositiveButtonClickListener{
+            Log.d("IANIAN", "Date String = ${dateRangePicker.headerText}::  Date epoch values::${it.first}:: to :: ${it.second}")
+            salesItems(adapter,Date(it.first).year,Date(it.first).month,Date(it.first).date,Date(it.second).year,Date(it.second).month,Date(it.second).date)
+            binding.tvRangeEnd.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(Date(Date(it.second).year,Date(it.second).month,Date(it.second).date)))
+            binding.tvRangeStart.setText(SimpleDateFormat("yyyy/MM/dd", Locale.getDefault()).format(Date(Date(it.first).year,Date(it.first).month,Date(it.first).date)))
+        }
+
+    }
+
+
+    fun salesItems(adapter: SalesItemListAdapter, fromYear: Int, fromMonth: Int, fromDate: Int, toYear: Int, toMonth: Int, toDate: Int){
         viewModel.salesItems(Date(fromYear,fromMonth,fromDate),Date(toYear,toMonth,toDate))
                 .observe(this.viewLifecycleOwner) { salesitems ->
                     salesitems.let {

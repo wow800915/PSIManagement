@@ -20,8 +20,6 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao, private val 
     val allPurchaseItems: LiveData<List<PurchaseItem>> = purchaseItemDao.getPurchaseItems().asLiveData()
 //    val todayPurchaseItems: LiveData<List<PurchaseItem>> = purchaseItemDao.getTodayPurchaseItems(Date(calenderTime.year,calenderTime.month,calenderTime.date)).asLiveData()
     val CustomPurchaseItems: LiveData<List<PurchaseItem>> = purchaseItemDao.getCustomPurchaseItems(Date(calenderTime.year,calenderTime.month,calenderTime.date-7),Date(calenderTime.year,calenderTime.month,calenderTime.date)).asLiveData()
-
-
     fun todayPurchaseItems() : LiveData<List<PurchaseItem>>{
         return purchaseItems(Date(calenderTime.year,calenderTime.month,calenderTime.date),Date(calenderTime.year,calenderTime.month,calenderTime.date))
     }
@@ -33,8 +31,8 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao, private val 
     }
 
     fun salesItems(from:Date,to:Date): LiveData<List<SalesItem>> {
-        val salesItems: LiveData<List<SalesItem>> = salesItemDao.getSalesItems().asLiveData()
-//        val salesItems: LiveData<List<SalesItem>> = salesItemDao.getCustomSalesItems(from,to).asLiveData()
+//        val salesItems: LiveData<List<SalesItem>> = salesItemDao.getSalesItems().asLiveData()
+        val salesItems: LiveData<List<SalesItem>> = salesItemDao.getCustomSalesItems(from,to).asLiveData()
         Log.d("IANIAN","MainViewModel36 calenderTime.year: "+calenderTime.year +" calenderTime.month:"+calenderTime.month + " calenderTime.date:"+calenderTime.date);
         return salesItems
     }
@@ -43,12 +41,7 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao, private val 
         return inventoryItemDao.getInventoryItem(id).asLiveData()
     }
 
-    fun purchaseItem(inventoryItemName: String, inventoryItemPrice: Double, inventoryItemQuantityInStock: Int){
-        val newItem = getNewInventoryItemEntry("0", "0", inventoryItemName,"NTD", inventoryItemPrice, inventoryItemQuantityInStock, "20210203","11:01:01", "IanInventoryItemOther")
-        insertInventoryItem(newItem)
-        val newPurchaseItem =getNewPurchaseItemEntry("0", "0", inventoryItemName,"NTD", inventoryItemPrice, inventoryItemQuantityInStock, Date(calenderTime.year,calenderTime.month,calenderTime.date),"11:01:01", "IanInventoryItemOther")
-        insertPurchaseItem(newPurchaseItem)
-    }
+
 
 
 
@@ -105,12 +98,20 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao, private val 
         )
     }
 
-    fun sellItem(inventoryItem: InventoryItem) {
+    fun purchaseItem(inventoryItemName: String, inventoryItemPrice: Double, inventoryItemQuantityInStock: Int){
+        val newItem = getNewInventoryItemEntry("0", "0", inventoryItemName,"NTD", inventoryItemPrice, inventoryItemQuantityInStock, "20210203","11:01:01", "IanInventoryItemOther")
+        insertInventoryItem(newItem)
+        val newPurchaseItem =getNewPurchaseItemEntry("0", "0", inventoryItemName,"NTD", inventoryItemPrice, inventoryItemQuantityInStock, Date(calenderTime.year,calenderTime.month,calenderTime.date),"11:01:01", "IanInventoryItemOther")
+        insertPurchaseItem(newPurchaseItem)
+    }
+
+    fun sell1Item(inventoryItem: InventoryItem) {
         if (inventoryItem.inventoryItemQuantityInStock > 0) {
             // Decrease the quantity by 1
             val newInventoryItem = inventoryItem.copy(inventoryItemQuantityInStock = inventoryItem.inventoryItemQuantityInStock - 1)
             updateInventoryItem(newInventoryItem)
-            add1NewSalesItem(inventoryItem.inventoryItemName,inventoryItem.inventoryItemPrice,1)
+            val newItem = getNewSalesItemEntry("0", "0",inventoryItem.inventoryItemName, "NTD", inventoryItem.inventoryItemPrice,1, Date(calenderTime.year,calenderTime.month,calenderTime.date),"12:23:22", "IanSalesItemOther")
+            insertSalesItem(newItem)
         }
     }
 
@@ -128,18 +129,13 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao, private val 
 //        return null
 //    }
 
-    fun add1NewSalesItem(inventoryItemName: String, inventoryItemPrice: Double, inventoryItemQuantityInStock: Int) {
-        val newItem = getNewSalesItemEntry("0", "0",inventoryItemName, "NTD", inventoryItemPrice,1, "20200102","12:23:22", "IanSalesItemOther")
-        insertSalesItem(newItem)
-    }
-
     private fun insertSalesItem(salesItem: SalesItem) {
         viewModelScope.launch {
             salesItemDao.insert(salesItem)
         }
     }
 
-    private fun getNewSalesItemEntry(salesItemOrder: String, salesItemBarcode: String, salesItemName: String,salesItemCurrency: String, salesItemPrice: Double, salesItemQuantityInStock: Int,salesItemDate: String,  salesItemTime: String, salesItemOther: String): SalesItem {
+    private fun getNewSalesItemEntry(salesItemOrder: String, salesItemBarcode: String, salesItemName: String,salesItemCurrency: String, salesItemPrice: Double, salesItemQuantityInStock: Int,salesItemDate: Date,  salesItemTime: String, salesItemOther: String): SalesItem {
         return SalesItem(
 //                salesItemId = salesItemId,
                 salesItemOrder = salesItemOrder,
@@ -153,7 +149,6 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao, private val 
                 salesItemOther = salesItemOther
         )
     }
-
 
     private fun insertPurchaseItem(purchaseItem: PurchaseItem) {
         viewModelScope.launch {

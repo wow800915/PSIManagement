@@ -14,6 +14,9 @@ interface SalesItemDao {
     @Query("SELECT * from salesItem ORDER BY name ASC")
     fun getSalesItems(): Flow<List<SalesItem>>
 
+    @Query("SELECT * FROM salesItem WHERE date BETWEEN :from AND :to")
+    fun getCustomSalesItems(from: Date, to: Date): Flow<List<SalesItem>>
+
     //inventoryItemId不知道要不要改成ID
     @Query("SELECT * from salesItem WHERE salesItemId = :salesItemId")
     fun getSales(salesItemId: Int): Flow<SalesItem>

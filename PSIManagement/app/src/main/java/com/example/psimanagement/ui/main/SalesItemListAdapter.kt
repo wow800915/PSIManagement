@@ -40,7 +40,7 @@ class SalesItemListAdapter(private val onItemClicked: (SalesItem) -> Unit) :
 //            val dateStr: String = fromLongToDate("yyyy-MM-dd HH:mm:ss", 1568020783663L)
             binding.tvSrrn.text = item.salesItemName
             binding.tvAmt.text = item.salesItemPrice.toString()
-//            binding.tvDateTime.text = SimpleDateFormat("yyyy-MM-dd").format(Date(item.salesItemDate.time))
+            binding.tvDateTime.text = SimpleDateFormat("yyyy-MM-dd").format(Date(item.salesItemDate.time))
 //            binding.tvDateTime.text = SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(Date(item.purchaseItemDate.time))
         }
     }

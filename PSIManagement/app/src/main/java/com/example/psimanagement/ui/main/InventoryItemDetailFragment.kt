@@ -50,7 +50,7 @@ class InventoryItemDetailFragment : Fragment() {
         binding.itemPrice.text = inventoryItem.inventoryItemPrice.toString()
         binding.itemCount.text = inventoryItem.inventoryItemQuantityInStock.toString()
 //        binding.sellItem.isEnabled = viewModel.isStockAvailable(item)
-        binding.sellItem.setOnClickListener { viewModel.sellItem(inventoryItem) }
+        binding.sellItem.setOnClickListener { viewModel.sell1Item(inventoryItem) }
         binding.deleteItem.setOnClickListener { showConfirmationDialog() }
         binding.editItem.setOnClickListener { editInventoryItem() }
     }
