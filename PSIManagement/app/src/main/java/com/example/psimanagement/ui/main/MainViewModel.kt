@@ -115,6 +115,16 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao, private val 
         }
     }
 
+    fun sellMoreItem(inventoryItem: InventoryItem,amountToSale : Int) {
+        if (inventoryItem.inventoryItemQuantityInStock > 0) {
+            // Decrease the quantity by 1
+            val newInventoryItem = inventoryItem.copy(inventoryItemQuantityInStock = inventoryItem.inventoryItemQuantityInStock - amountToSale)
+            updateInventoryItem(newInventoryItem)
+            val newItem = getNewSalesItemEntry("0", "0",inventoryItem.inventoryItemName, "NTD", inventoryItem.inventoryItemPrice,amountToSale, Date(calenderTime.year,calenderTime.month,calenderTime.date),"12:23:22", "IanSalesItemOther")
+            insertSalesItem(newItem)
+        }
+    }
+
     fun deleteInventoryItem(inventoryItem: InventoryItem) {
         viewModelScope.launch {
             inventoryItemDao.delete(inventoryItem)

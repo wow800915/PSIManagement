@@ -1863,6 +1863,7 @@ id blocking
 id bottom
 id bottomNavigationView
 id bounce
+id bt_sell_items
 id btn_fastlogin
 id btn_login
 id btn_logout
@@ -1956,6 +1957,7 @@ id enterAlways
 id enterAlwaysCollapsed
 id et_accountnumber
 id et_password
+id et_sale_amount
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -2230,6 +2232,7 @@ id textStart
 id textTop
 id textView
 id textView2
+id textView3
 id textView4
 id textWatcher
 id text_input_end_icon

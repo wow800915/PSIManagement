@@ -53,6 +53,7 @@ class InventoryItemDetailFragment : Fragment() {
         binding.sellItem.setOnClickListener { viewModel.sell1Item(inventoryItem) }
         binding.deleteItem.setOnClickListener { showConfirmationDialog() }
         binding.editItem.setOnClickListener { editInventoryItem() }
+        binding.btSellItems.setOnClickListener { viewModel.sellMoreItem(inventoryItem, Integer.parseInt(binding.etSaleAmount.text.toString())) }
     }
 
     /**
