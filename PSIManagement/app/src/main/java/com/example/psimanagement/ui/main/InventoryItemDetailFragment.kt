@@ -52,6 +52,9 @@ class InventoryItemDetailFragment : Fragment() {
 //        binding.sellItem.isEnabled = viewModel.isStockAvailable(item)
         binding.sellItem.setOnClickListener { viewModel.sell1Item(inventoryItem) }
         binding.deleteItem.setOnClickListener { showConfirmationDialog() }
+        if(activity?.getTitle()?.toString()==getString(R.string.title_select_sales_items)){
+            binding.deleteItem.visibility=View.INVISIBLE
+        }
         binding.editItem.setOnClickListener { editInventoryItem() }
         binding.btSellItems.setOnClickListener { viewModel.sellMoreItem(inventoryItem, Integer.parseInt(binding.etSaleAmount.text.toString())) }
     }
@@ -102,7 +105,7 @@ class InventoryItemDetailFragment : Fragment() {
                 .beginTransaction()
                 .replace(R.id.fragmentContainerView, InventoryFragment(), null)//.replace(R.id.fragmentContainerView, AddItemFragment(), null)
                 .commit()
-        viewModel.deleteInventoryItem(inventoryItem)
+        viewModel.deleteItem(inventoryItem)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

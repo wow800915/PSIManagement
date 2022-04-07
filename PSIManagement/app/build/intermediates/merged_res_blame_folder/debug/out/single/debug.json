@@ -28,16 +28,16 @@
         "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/generated/res/pngs/debug/drawable-hdpi/ic_broken_image.png"
     },
     {
-        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png"
+        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/res/merged/debug/drawable-xxhdpi_loading_img.png.flat",
+        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/generated/res/pngs/debug/drawable-xxhdpi/loading_img.png"
     },
     {
         "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher_background.png.flat",
         "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/res/merged/debug/drawable-xxhdpi_loading_img.png.flat",
-        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/generated/res/pngs/debug/drawable-xxhdpi/loading_img.png"
+        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png"
     },
     {
         "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/res/merged/debug/layout_activity_splash.xml.flat",
@@ -76,6 +76,10 @@
         "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/generated/res/pngs/debug/drawable-ldpi/loading_img.png"
     },
     {
+        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/res/merged/debug/layout_fragment_scrap.xml.flat",
+        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/fragment_scrap.xml"
+    },
+    {
         "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_connection_error.xml.flat",
         "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_connection_error.xml"
     },
@@ -90,6 +94,10 @@
     {
         "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/res/merged/debug/layout_item_list_sales_item.xml.flat",
         "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/item_list_sales_item.xml"
+    },
+    {
+        "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/res/merged/debug/layout_item_list_scrap_item.xml.flat",
+        "source": "/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/res/layout/item_list_scrap_item.xml"
     },
     {
         "merged": "/Users/twmp-it3/PSIManagement/PSIManagement/app/build/intermediates/res/merged/debug/drawable-mdpi_loading_img.png.flat",

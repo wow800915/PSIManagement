@@ -3,6 +3,7 @@ package com.example.psimanagement.data
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import java.util.*
 
 /**
  * Entity data class represents a single row in the database.
@@ -25,7 +26,7 @@ data class ScrapItem(
         @ColumnInfo(name = "quantity")
         val scrapItemQuantityInStock: Int,
         @ColumnInfo(name = "date")
-        val scrapItemDate: String,
+        val scrapItemDate: Date,
         @ColumnInfo(name = "time")
         val scrapItemTime: String,
         @ColumnInfo(name = "other")

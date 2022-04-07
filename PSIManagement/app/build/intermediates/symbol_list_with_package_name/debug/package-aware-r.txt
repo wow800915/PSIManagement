@@ -1872,8 +1872,8 @@ id btn_range_customize
 id btn_range_day
 id btn_range_month
 id btn_range_week
+id btn_scrap
 id button
-id button3
 id button4
 id button5
 id button6
@@ -2389,9 +2389,11 @@ layout fragment_more
 layout fragment_profile
 layout fragment_purchase
 layout fragment_sales
+layout fragment_scrap
 layout item_list_inventory_item
 layout item_list_purchase_item
 layout item_list_sales_item
+layout item_list_scrap_item
 layout main_activity
 layout material_chip_input_combo
 layout material_clock_display
@@ -2629,6 +2631,7 @@ string sell
 string status_bar_notification_info_overflow
 string subtotal_price
 string title_inventory
+string title_more
 string title_purchase
 string title_sales
 string title_scrap

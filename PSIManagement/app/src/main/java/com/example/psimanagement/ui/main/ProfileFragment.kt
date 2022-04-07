@@ -36,7 +36,7 @@ class ProfileFragment : Fragment() {
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        activity?.setTitle(R.string.title_scrap)
+        activity?.setTitle(R.string.title_more)
         val binding = FragmentProfileBinding.inflate(inflater, container, false)
 
         binding.btnLogout.setOnClickListener(View.OnClickListener {

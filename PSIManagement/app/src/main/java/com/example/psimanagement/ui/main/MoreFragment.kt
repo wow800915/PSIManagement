@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.psimanagement.R
+import com.example.psimanagement.databinding.FragmentMoreBinding
+import kotlinx.coroutines.MainScope
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -22,6 +24,9 @@ class MoreFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    private var _binding: FragmentMoreBinding? = null
+    private val binding get() = _binding!!
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -34,8 +39,34 @@ class MoreFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        activity?.setTitle(R.string.title_more)
+        _binding = FragmentMoreBinding.inflate(inflater, container, false)
+        return binding.root
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_more, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.btnScrap.setOnClickListener {
+
+            val inventoryFragment = InventoryFragment()
+
+            val args = Bundle()
+            args.putString("isAddingButtomHided", "isAddingButtomHided")
+            inventoryFragment.setArguments(args)
+
+            val scrapFragment = ScrapFragment()
+
+            requireActivity().supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.fragmentContainerView, scrapFragment, null)//.replace(R.id.fragmentContainerView, AddItemFragment(), null)
+                    .commit()
+
+        }
+
     }
 
     companion object {

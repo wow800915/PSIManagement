@@ -37,6 +37,13 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao, private val 
         return salesItems
     }
 
+    fun scrapItems(from:Date,to:Date): LiveData<List<ScrapItem>> {
+//        val salesItems: LiveData<List<SalesItem>> = salesItemDao.getSalesItems().asLiveData()
+        val scrapItems: LiveData<List<ScrapItem>> = scrapItemDao.getCustomScrapItems(from,to).asLiveData()
+        Log.d("IANIAN","MainViewModel36 calenderTime.year: "+calenderTime.year +" calenderTime.month:"+calenderTime.month + " calenderTime.date:"+calenderTime.date);
+        return scrapItems
+    }
+
     fun retrieveItem(id: Int): LiveData<InventoryItem> {
         return inventoryItemDao.getInventoryItem(id).asLiveData()
     }
@@ -125,6 +132,12 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao, private val 
         }
     }
 
+    fun deleteItem(inventoryItem: InventoryItem){
+        deleteInventoryItem(inventoryItem)
+//        insertScrapItem(inventoryItem)
+        addNewScrapItem(inventoryItem)
+    }
+
     fun deleteInventoryItem(inventoryItem: InventoryItem) {
         viewModelScope.launch {
             inventoryItemDao.delete(inventoryItem)
@@ -183,18 +196,20 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao, private val 
         )
     }
 
-    fun addNewScrapItem() {
-        val newItem = getNewScrapItemEntry("0", "0", "IanScrapItemName", "NTD", 1.0, 1, "20210102","12:23:32","IanScrapItemOther")
-        insertScrapItem(newItem)
-    }
-
-    private fun insertScrapItem(scrapItem: ScrapItem) {
+    fun addNewScrapItem(inventoryItem: InventoryItem) {
+        val newItem = getNewScrapItemEntry("0", "0", inventoryItem.inventoryItemName, "NTD", inventoryItem.inventoryItemPrice, inventoryItem.inventoryItemQuantityInStock, Date(calenderTime.year,calenderTime.month,calenderTime.date),"12:23:32","IanScrapItemOther")
         viewModelScope.launch {
-            scrapItemDao.insert(scrapItem)
+            scrapItemDao.insert(newItem)
         }
     }
 
-    private fun getNewScrapItemEntry(scrapItemOrder: String, scrapItemBarcode: String, scrapItemName: String,scrapItemCurrency:String, scrapItemPrice: Double, scrapItemQuantityInStock: Int,scrapItemDate: String, scrapItemTime: String, scrapItemOther: String): ScrapItem {
+//    private fun insertScrapItem(scrapItem: ScrapItem) {
+//        viewModelScope.launch {
+//            scrapItemDao.insert(scrapItem)
+//        }
+//    }
+
+    private fun getNewScrapItemEntry(scrapItemOrder: String, scrapItemBarcode: String, scrapItemName: String,scrapItemCurrency:String, scrapItemPrice: Double, scrapItemQuantityInStock: Int,scrapItemDate: Date, scrapItemTime: String, scrapItemOther: String): ScrapItem {
         return ScrapItem(
 //                scrapItemId = scrapItemId,
                 scrapItemOrder =scrapItemOrder,

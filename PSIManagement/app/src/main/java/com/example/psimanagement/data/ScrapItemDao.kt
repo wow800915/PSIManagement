@@ -2,6 +2,7 @@ package com.example.psimanagement.data
 
 import androidx.room.*
 import kotlinx.coroutines.flow.Flow
+import java.util.*
 
 /**
  * Database access object to access the Inventory database
@@ -16,6 +17,9 @@ interface ScrapItemDao {
     //inventoryItemId不知道要不要改成ID
     @Query("SELECT * from scrapItem WHERE scrapItemId = :scrapItemId")
     fun getScrapItem(scrapItemId: Int): Flow<ScrapItem>
+
+    @Query("SELECT * FROM scrapItem WHERE date BETWEEN :from AND :to")
+    fun getCustomScrapItems(from: Date, to: Date): Flow<List<ScrapItem>>
 
     // Specify the conflict strategy as IGNORE, when the user tries to add an
     // existing Item into the database Room ignores the conflict.

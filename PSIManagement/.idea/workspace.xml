@@ -57,8 +57,9 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zh-rTW.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zh-rTW.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/layout.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/layout.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/psimanagement/MainActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/psimanagement/MainActivity.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/psimanagement/databinding/MainActivityBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/psimanagement/databinding/MainActivityBinding.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/psimanagement/ui/main/MainViewModel.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/psimanagement/ui/main/MainViewModel.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-zh-rTW_values-zh-rTW.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-zh-rTW_values-zh-rTW.arsc.flat" afterDir="false" />
@@ -67,7 +68,11 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/build-history.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-attributes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-attributes.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len" afterDir="false" />
@@ -93,9 +98,17 @@
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/package-parts.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/package-parts.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/package-parts.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/package-parts.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/package-parts.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/package-parts.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/package-parts.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/package-parts.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" afterDir="false" />
@@ -103,11 +116,7 @@
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len" afterDir="false" />
@@ -116,7 +125,11 @@
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/counters.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/counters.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" afterDir="false" />
@@ -132,11 +145,16 @@
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/last-build.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/psimanagement/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/psimanagement/MainActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/psimanagement/ui/main/MainViewModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/psimanagement/ui/main/MainViewModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/psimanagement/data/ScrapItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/psimanagement/data/ScrapItem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/psimanagement/data/ScrapItemDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/psimanagement/data/ScrapItemDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/psimanagement/data/ScrapItemRoomDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/psimanagement/data/ScrapItemRoomDatabase.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/psimanagement/ui/main/InventoryItemDetailFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/psimanagement/ui/main/InventoryItemDetailFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/psimanagement/ui/main/MainViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/psimanagement/ui/main/MainViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_inventory_item_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_inventory_item_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/psimanagement/ui/main/MoreFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/psimanagement/ui/main/MoreFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/psimanagement/ui/main/ProfileFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/psimanagement/ui/main/ProfileFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_more.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_more.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values-zh-rTW/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-zh-rTW/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
@@ -186,9 +204,10 @@
         <option value="Kotlin Interface" />
         <option value="resourceFile" />
         <option value="valueResourceFile" />
-        <option value="layoutResourceFile" />
-        <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -216,10 +235,9 @@
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
-      <recent name="C:\Users\Ian\PSIManagement\PSIManagement\app\src\main\res\values-night" />
-      <recent name="C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\res\drawable" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/example/psimanagement/ui/main" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="com.example.psimanagement.ui.main" />
@@ -230,8 +248,10 @@
     <key name="android.template.845067301">
       <recent name="com.example.psimanagement" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+      <recent name="C:\Users\Ian\PSIManagement\PSIManagement\app\src\main\res\values-night" />
+      <recent name="C:\Users\Ian\AndroidStudioProjects\PSIManagement_project\PSIManagement\app\src\main\res\drawable" />
     </key>
   </component>
   <component name="RunManager">
@@ -331,56 +351,59 @@
       <screen x="-1920" y="25" width="1920" height="986" />
     </state>
     <state x="-1261" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.875/-1920.25.1920.986@-1920.25.1920.986" timestamp="1647930235128" />
-    <state width="1878" height="263" key="GridCell.Tab.0.bottom" timestamp="1647930392932">
+    <state x="-1222" y="303" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1649305491241">
+      <screen x="-1920" y="25" width="1920" height="1055" />
+    </state>
+    <state x="-1222" y="303" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.806/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1649305491241" />
+    <state x="-1372" y="292" key="AndroidCreateResourceFileDialog" timestamp="1649321549477">
+      <screen x="-1920" y="25" width="1920" height="986" />
+    </state>
+    <state x="-1372" y="311" key="AndroidCreateResourceFileDialog/0.25.1440.806/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1649303704798" />
+    <state x="-1372" y="292" key="AndroidCreateResourceFileDialog/0.25.1440.875/-1920.25.1920.986@-1920.25.1920.986" timestamp="1649321549477" />
+    <state width="1878" height="274" key="GridCell.Tab.0.bottom" timestamp="1649321945646">
       <screen x="-1920" y="25" width="1920" height="986" />
     </state>
     <state width="1878" height="273" key="GridCell.Tab.0.bottom/0.25.1440.806/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1647915465752" />
-    <state width="1878" height="352" key="GridCell.Tab.0.bottom/0.25.1440.806/1440.25.1920.1055@1440.25.1920.1055" timestamp="1639988926810" />
-    <state width="1878" height="263" key="GridCell.Tab.0.bottom/0.25.1440.875/-1920.25.1920.986@-1920.25.1920.986" timestamp="1647930392932" />
+    <state width="1878" height="274" key="GridCell.Tab.0.bottom/0.25.1440.875/-1920.25.1920.986@-1920.25.1920.986" timestamp="1649321945646" />
     <state width="1398" height="86" key="GridCell.Tab.0.bottom/0.25.1440.875/-1920.25.1920.986@0.25.1440.875" timestamp="1645004404189" />
-    <state width="1878" height="263" key="GridCell.Tab.0.center" timestamp="1647930392931">
+    <state width="1878" height="274" key="GridCell.Tab.0.center" timestamp="1649321945644">
       <screen x="-1920" y="25" width="1920" height="986" />
     </state>
     <state width="1878" height="273" key="GridCell.Tab.0.center/0.25.1440.806/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1647915465752" />
-    <state width="1878" height="352" key="GridCell.Tab.0.center/0.25.1440.806/1440.25.1920.1055@1440.25.1920.1055" timestamp="1639988926810" />
-    <state width="1878" height="263" key="GridCell.Tab.0.center/0.25.1440.875/-1920.25.1920.986@-1920.25.1920.986" timestamp="1647930392931" />
+    <state width="1878" height="274" key="GridCell.Tab.0.center/0.25.1440.875/-1920.25.1920.986@-1920.25.1920.986" timestamp="1649321945644" />
     <state width="1398" height="86" key="GridCell.Tab.0.center/0.25.1440.875/-1920.25.1920.986@0.25.1440.875" timestamp="1645004404186" />
-    <state width="1878" height="263" key="GridCell.Tab.0.left" timestamp="1647930392931">
+    <state width="1878" height="274" key="GridCell.Tab.0.left" timestamp="1649321945643">
       <screen x="-1920" y="25" width="1920" height="986" />
     </state>
     <state width="1878" height="273" key="GridCell.Tab.0.left/0.25.1440.806/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1647915465751" />
-    <state width="1878" height="352" key="GridCell.Tab.0.left/0.25.1440.806/1440.25.1920.1055@1440.25.1920.1055" timestamp="1639988926809" />
-    <state width="1878" height="263" key="GridCell.Tab.0.left/0.25.1440.875/-1920.25.1920.986@-1920.25.1920.986" timestamp="1647930392931" />
+    <state width="1878" height="274" key="GridCell.Tab.0.left/0.25.1440.875/-1920.25.1920.986@-1920.25.1920.986" timestamp="1649321945643" />
     <state width="1398" height="86" key="GridCell.Tab.0.left/0.25.1440.875/-1920.25.1920.986@0.25.1440.875" timestamp="1645004404186" />
-    <state width="1878" height="263" key="GridCell.Tab.0.right" timestamp="1647930392931">
+    <state width="1878" height="274" key="GridCell.Tab.0.right" timestamp="1649321945646">
       <screen x="-1920" y="25" width="1920" height="986" />
     </state>
     <state width="1878" height="273" key="GridCell.Tab.0.right/0.25.1440.806/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1647915465752" />
-    <state width="1878" height="352" key="GridCell.Tab.0.right/0.25.1440.806/1440.25.1920.1055@1440.25.1920.1055" timestamp="1639988926810" />
-    <state width="1878" height="263" key="GridCell.Tab.0.right/0.25.1440.875/-1920.25.1920.986@-1920.25.1920.986" timestamp="1647930392931" />
+    <state width="1878" height="274" key="GridCell.Tab.0.right/0.25.1440.875/-1920.25.1920.986@-1920.25.1920.986" timestamp="1649321945646" />
     <state width="1398" height="86" key="GridCell.Tab.0.right/0.25.1440.875/-1920.25.1920.986@0.25.1440.875" timestamp="1645004404188" />
-    <state x="0" y="25" width="1440" height="838" maximized="true" key="dock-window-1" timestamp="1647932222601">
+    <state x="0" y="25" width="1440" height="839" maximized="true" key="dock-window-1" timestamp="1649321163386">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="0" y="25" width="1440" height="838" maximized="true" key="dock-window-1/0.25.1440.875/-1920.25.1920.986@-1920.25.1920.986" timestamp="1647932222601" />
+    <state x="17" y="33" width="1440" height="806" key="dock-window-1/0.25.1440.806/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1649311700055" />
+    <state x="0" y="25" width="1440" height="839" maximized="true" key="dock-window-1/0.25.1440.875/-1920.25.1920.986@-1920.25.1920.986" timestamp="1649321163386" />
     <state x="0" y="25" width="1440" height="826" maximized="true" key="dock-window-2" timestamp="1647932222601">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="0" y="25" width="1440" height="826" maximized="true" key="dock-window-2/0.25.1440.875/-1920.25.1920.986@-1920.25.1920.986" timestamp="1647932222601" />
-    <state x="-963" y="300" width="790" height="553" key="find.popup" timestamp="1647934874075">
+    <state x="-963" y="300" width="790" height="553" key="find.popup" timestamp="1649321057857">
       <screen x="-1920" y="25" width="1920" height="986" />
     </state>
-    <state x="-963" y="319" width="790" height="592" key="find.popup/0.25.1440.806/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1647915593780" />
-    <state x="2092" y="261" width="789" height="582" key="find.popup/0.25.1440.806/1440.25.1920.1055@1440.25.1920.1055" timestamp="1639734008486" />
-    <state x="-963" y="300" width="790" height="553" key="find.popup/0.25.1440.875/-1920.25.1920.986@-1920.25.1920.986" timestamp="1647934874075" />
+    <state x="-963" y="319" width="790" height="592" key="find.popup/0.25.1440.806/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1649299321678" />
+    <state x="-963" y="300" width="790" height="553" key="find.popup/0.25.1440.875/-1920.25.1920.986@-1920.25.1920.986" timestamp="1649321057857" />
     <state x="718" y="269" width="592" height="490" key="find.popup/0.25.1440.875/-1920.25.1920.986@0.25.1440.875" timestamp="1645004651889" />
-    <state x="2092" y="246" width="789" height="544" key="find.popup/0.25.1440.875/1440.25.1920.986@1440.25.1920.986" timestamp="1640162711109" />
-    <state width="622" height="277" key="javadoc.popup.new" timestamp="1647935259806">
+    <state width="622" height="277" key="javadoc.popup.new" timestamp="1649324449846">
       <screen x="-1920" y="25" width="1920" height="986" />
     </state>
-    <state width="622" height="283" key="javadoc.popup.new/0.25.1440.806/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1647915750800" />
-    <state width="622" height="283" key="javadoc.popup.new/0.25.1440.806/1440.25.1920.1055@1440.25.1920.1055" timestamp="1640055194124" />
-    <state width="622" height="277" key="javadoc.popup.new/0.25.1440.875/-1920.25.1920.986@-1920.25.1920.986" timestamp="1647935259806" />
+    <state width="556" height="211" key="javadoc.popup.new/0.25.1440.806/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1649311137843" />
+    <state width="622" height="277" key="javadoc.popup.new/0.25.1440.875/-1920.25.1920.986@-1920.25.1920.986" timestamp="1649324449846" />
     <state width="465" height="252" key="javadoc.popup.new/0.25.1440.875/-1920.25.1920.986@0.25.1440.875" timestamp="1645004355438" />
     <state x="-1295" y="259" width="670" height="676" key="search.everywhere.popup" timestamp="1647914172759">
       <screen x="-1920" y="25" width="1920" height="1055" />

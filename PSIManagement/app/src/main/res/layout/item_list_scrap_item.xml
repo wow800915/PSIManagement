@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:descendantFocusability="blocksDescendants">
+
+
+    <!-- 收款 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/layout_content"
+        android:background="@color/white">
+
+        <View
+            android:id="@+id/divider"
+            style="@style/Divider" />
+
+        <!-- 交易代號 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_srrn"
+            android:text="123"
+            android:gravity="center_vertical"/>
+
+        <!-- 交易金額 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_amt"
+            android:layout_toRightOf="@id/tv_srrn"
+            android:layout_alignParentRight="true"
+            android:text="$ 500"
+            android:gravity="center_vertical|right"/>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="33dp" />
+
+        <ImageView
+            android:id="@+id/iv_entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+        <!-- 收款交易時間 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_date_time"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"/>
+
+        <!-- 收款 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_get"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"/>
+
+        <!-- 收款金額 -->
+        <TextView
+            android:id="@+id/tv_get_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/tv_get"
+            android:layout_toRightOf="@id/tv_date_time"
+            android:gravity="center_vertical|right" />
+
+        <!-- 交易失敗 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_fail"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"/>
+
+    </RelativeLayout>
+
+    <!-- 退款 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/layout_refund"
+        android:layout_below="@+id/layout_content">
+
+        <!-- 退款交易時間 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_refund_date_time"
+            android:layout_centerVertical="true"/>
+
+        <!-- 退款 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_refund"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+        <!-- 退款金額 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_refund_amt"
+            android:layout_toRightOf="@id/tv_refund_date_time"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_refund"
+            android:gravity="center_vertical|right"/>
+
+    </RelativeLayout>
+
+    <!-- 取消 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/layout_cancel"
+        android:layout_below="@+id/layout_content">
+
+        <!-- 取消交易時間 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_cancel_date_time"
+            android:layout_centerVertical="true"/>
+
+        <!-- 取消 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_cancel"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+        <!-- 取消金額 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_cancel_amt"
+            android:layout_toRightOf="@id/tv_cancel_date_time"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_cancel"
+            android:gravity="center_vertical|right"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
