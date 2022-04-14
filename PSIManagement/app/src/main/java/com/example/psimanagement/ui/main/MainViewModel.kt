@@ -132,6 +132,19 @@ class MainViewModel(private val inventoryItemDao: InventoryItemDao, private val 
         }
     }
 
+    fun scrapMoreItem(inventoryItem: InventoryItem,amountToScrap : Int){
+        if (inventoryItem.inventoryItemQuantityInStock > 0) {
+            // Decrease the quantity by 1
+            val newInventoryItem = inventoryItem.copy(inventoryItemQuantityInStock = inventoryItem.inventoryItemQuantityInStock - amountToScrap)
+            updateInventoryItem(newInventoryItem)
+            val newItem = getNewScrapItemEntry("0", "0",inventoryItem.inventoryItemName, "NTD", inventoryItem.inventoryItemPrice,amountToScrap, Date(calenderTime.year,calenderTime.month,calenderTime.date),"12:23:22", "IanSalesItemOther")
+           viewModelScope.launch {
+                scrapItemDao.insert(newItem)
+            }
+
+        }
+    }
+
     fun deleteItem(inventoryItem: InventoryItem){
         deleteInventoryItem(inventoryItem)
 //        insertScrapItem(inventoryItem)

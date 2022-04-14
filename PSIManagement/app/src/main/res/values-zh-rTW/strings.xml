@@ -14,6 +14,7 @@
     <string name="title_more">更多</string>
     <string name="title_scrap">報廢</string>
     <string name="title_select_sales_items">請選擇銷售商品及數量</string>
+    <string name="title_select_scrap_items">請選擇報廢商品及數量</string>
 
     <string name="sell">Sell</string>
     <string name="quantity">Quantity in Stock:</string>

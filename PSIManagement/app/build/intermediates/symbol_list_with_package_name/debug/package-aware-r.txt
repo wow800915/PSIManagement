@@ -1863,6 +1863,7 @@ id blocking
 id bottom
 id bottomNavigationView
 id bounce
+id bt_scrap_items
 id bt_sell_items
 id btn_fastlogin
 id btn_login
@@ -1958,6 +1959,7 @@ id enterAlwaysCollapsed
 id et_accountnumber
 id et_password
 id et_sale_amount
+id et_scrap_amount
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -2038,6 +2040,8 @@ id linear
 id linechart
 id listMode
 id list_item
+id ll_sale_items
+id ll_scrap_items
 id lv_transaction_date
 id main
 id main_navigation
@@ -2636,6 +2640,7 @@ string title_purchase
 string title_sales
 string title_scrap
 string title_select_sales_items
+string title_select_scrap_items
 string word_count
 string yes
 style AlertDialog_AppCompat

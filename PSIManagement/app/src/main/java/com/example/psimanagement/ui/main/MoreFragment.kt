@@ -55,7 +55,7 @@ class MoreFragment : Fragment() {
             val inventoryFragment = InventoryFragment()
 
             val args = Bundle()
-            args.putString("isAddingButtomHided", "isAddingButtomHided")
+            args.putString("isAddingButtomHidedFromSalesFragment", "isAddingButtomHidedFromSalesFragment")
             inventoryFragment.setArguments(args)
 
             val scrapFragment = ScrapFragment()

@@ -52,11 +52,16 @@ class InventoryItemDetailFragment : Fragment() {
 //        binding.sellItem.isEnabled = viewModel.isStockAvailable(item)
         binding.sellItem.setOnClickListener { viewModel.sell1Item(inventoryItem) }
         binding.deleteItem.setOnClickListener { showConfirmationDialog() }
-        if(activity?.getTitle()?.toString()==getString(R.string.title_select_sales_items)){
-            binding.deleteItem.visibility=View.INVISIBLE
-        }
-        binding.editItem.setOnClickListener { editInventoryItem() }
+//        binding.editItem.setOnClickListener { editInventoryItem() }
         binding.btSellItems.setOnClickListener { viewModel.sellMoreItem(inventoryItem, Integer.parseInt(binding.etSaleAmount.text.toString())) }
+        binding.btScrapItems.setOnClickListener { viewModel.scrapMoreItem(inventoryItem, Integer.parseInt(binding.etScrapAmount.text.toString())) }
+        if(activity?.getTitle()?.toString()==getString(R.string.title_select_sales_items)){
+            binding.llScrapItems.visibility=View.GONE
+            binding.deleteItem.visibility=View.GONE
+        }else if(activity?.getTitle()?.toString()==getString(R.string.title_select_scrap_items)){
+            binding.llSaleItems.visibility=View.GONE
+            binding.sellItem.visibility=View.GONE
+        }
     }
 
     /**

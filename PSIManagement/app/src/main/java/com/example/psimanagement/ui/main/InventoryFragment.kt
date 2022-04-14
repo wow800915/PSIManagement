@@ -50,8 +50,8 @@ class InventoryFragment : Fragment() {
 //            param1 = it.getString(ARG_PARAM1)
 //            param2 = it.getString(ARG_PARAM2)
 //        }
-//        isAddingButtomHided =  getArguments().getString("isAddingButtomHided", null);
-//        getArguments()?.getString("isAddingButtomHided", null)?.let { Log.d("IANIAN", it) };
+//        isAddingButtomHidedFromSalesFragment =  getArguments().getString("isAddingButtomHidedFromSalesFragment", null);
+//        getArguments()?.getString("isAddingButtomHidedFromSalesFragment", null)?.let { Log.d("IANIAN", it) };
     }
 
     override fun onCreateView(
@@ -67,9 +67,12 @@ class InventoryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        if(getArguments()?.getString("isAddingButtomHided", null).equals("isAddingButtomHided")){
+        if(getArguments()?.getString("isAddingButtomHided", null).equals("isAddingButtomHidedFromSalesFragment")){
             binding.floatingActionButton.visibility= View.INVISIBLE
             activity?.setTitle(R.string.title_select_sales_items)
+        }else if(getArguments()?.getString("isAddingButtomHided", null).equals("isAddingButtomHidedFromScrapFragment")){
+            binding.floatingActionButton.visibility= View.INVISIBLE
+            activity?.setTitle(R.string.title_select_scrap_items)
         }
 
 //
@@ -106,7 +109,7 @@ class InventoryFragment : Fragment() {
         }
 
 
-//        if(isAddingButtomHided==true){
+//        if(isAddingButtomHidedFromSalesFragment==true){
 //            binding.floatingActionButton.visibility = View.INVISIBLE
 //        }
 

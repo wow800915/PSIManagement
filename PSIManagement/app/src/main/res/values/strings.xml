@@ -17,7 +17,8 @@
     <string name="title_inventory">inventory</string>
     <string name="title_more">more</string>
     <string name="title_scrap">scrap</string>
-    <string name="title_select_sales_items">Please select item and amount</string>
+    <string name="title_select_sales_items">Please select item and amount to sale</string>
+    <string name="title_select_scrap_items">Please select item and amount to scrap</string>
 
     <string name="sell">Sell</string>
     <string name="quantity">Quantity in Stock:</string>

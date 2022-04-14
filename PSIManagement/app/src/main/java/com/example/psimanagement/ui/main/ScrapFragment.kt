@@ -121,19 +121,20 @@ class ScrapFragment : Fragment() {
 ////            linechart()
 //        }
 //
-//        binding.floatingActionButton.setOnClickListener {
-//
-//            val inventoryFragment = InventoryFragment()
-//
-//            val args = Bundle()
-//            args.putString("isAddingButtomHided", "isAddingButtomHided")
-//            inventoryFragment.setArguments(args)
-//
-//
-//            requireActivity().supportFragmentManager
-//                .beginTransaction()
-//                .replace(R.id.fragmentContainerView, inventoryFragment, null)//.replace(R.id.fragmentContainerView, AddItemFragment(), null)
-//                .commit()
+        binding.floatingActionButton.setOnClickListener {
+
+            val inventoryFragment = InventoryFragment()
+
+            val args = Bundle()
+            args.putString("isAddingButtomHided", "isAddingButtomHidedFromScrapFragment")
+            inventoryFragment.setArguments(args)
+
+
+            requireActivity().supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.fragmentContainerView, inventoryFragment, null)//.replace(R.id.fragmentContainerView, AddItemFragment(), null)
+                    .commit()
+
 //
 ////            val adapter = InventoryItemListAdapter {
 ////                val itemDetailFragment = InventoryItemDetailFragment()
@@ -157,7 +158,7 @@ class ScrapFragment : Fragment() {
 ////
 ////            binding.recyclerView.adapter = adapter
 ////            binding.recyclerView.layoutManager = LinearLayoutManager(this.context)
-//        }
+        }
 
     }
 
