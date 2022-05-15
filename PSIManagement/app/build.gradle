@@ -53,6 +53,9 @@ repositories {
     maven { url 'https://jitpack.io' }
 }
 
+//20220515 煩死！ Mac1要加的這行 ：apply plugin: 'kotlin-kapt',本來是完全不用加的
+apply plugin: 'kotlin-kapt'
+
 dependencies {
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
@@ -101,6 +104,7 @@ dependencies {
     implementation "androidx.room:room-runtime:$room_version"
     kapt "androidx.room:room-compiler:$room_version"
     implementation "androidx.room:room-ktx:$room_version"
+
     // Ktlint
     ktlint "com.pinterest:ktlint:0.40.0"
 }
