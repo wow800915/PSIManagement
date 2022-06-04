@@ -2,6 +2,7 @@ package com.example.psimanagement
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Window
 import androidx.appcompat.app.AppCompatActivity
 import com.example.psimanagement.databinding.ActivityLoginBinding
 
@@ -14,7 +15,13 @@ class LoginActivity : AppCompatActivity() {
 //        setContentView(R.layout.activity_login)
 
         super.onCreate(savedInstanceState)
+
+        if (getSupportActionBar() != null){
+            getSupportActionBar()?.hide();
+        }
+
         binding = ActivityLoginBinding.inflate(layoutInflater)
+
         setContentView(binding.root)
 
 //        binding.button.setOnClickListener {

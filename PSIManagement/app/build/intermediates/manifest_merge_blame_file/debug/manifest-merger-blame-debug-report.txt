@@ -6,116 +6,116 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="16"
-8-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
+8-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="30" />
-9-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
+9-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:5:5-67
-11-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:5:22-64
+11-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:5:22-64
 12
 13    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 14    <!-- <uses-sdk android:minSdkVersion="14"/> -->
 15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-15-->[com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:25:5-79
-15-->[com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:25:22-76
+15-->[com.google.firebase:firebase-database:20.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/c6b176de83f2fd60b6383d63a2da274c/transformed/firebase-database-20.0.1/AndroidManifest.xml:25:5-79
+15-->[com.google.firebase:firebase-database:20.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/c6b176de83f2fd60b6383d63a2da274c/transformed/firebase-database-20.0.1/AndroidManifest.xml:25:22-76
 16
 17    <application
-17-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:7:5-25:19
+17-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:7:5-25:19
 18        android:name="com.example.psimanagement.PSIManagamentApplication"
-18-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:8:9-49
+18-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:8:9-49
 19        android:allowBackup="true"
-19-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:9:9-35
+19-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:9:9-35
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-20-->[androidx.core:core:1.5.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/022cee4c9f5718635f98a55ac637ed56/core-1.5.0/AndroidManifest.xml:24:18-86
+20-->[androidx.core:core:1.5.0] /Users/wei-you_chen/.gradle/caches/transforms-3/1be10e00d9b92b6303ee68189355295d/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
 21        android:debuggable="true"
 22        android:icon="@mipmap/ic_launcher"
-22-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:10:9-43
+22-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:10:9-43
 23        android:label="@string/app_name"
-23-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:11:9-41
+23-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:11:9-41
 24        android:roundIcon="@mipmap/ic_launcher_round"
-24-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:12:9-54
+24-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:12:9-54
 25        android:supportsRtl="true"
-25-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:13:9-35
+25-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:13:9-35
 26        android:testOnly="true"
 27        android:theme="@style/Theme.PSIManagement" >
-27-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:14:9-51
+27-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:14:9-51
 28        <activity android:name="com.example.psimanagement.TestActivity" />
-28-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:15:9-59
-28-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:15:19-47
+28-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:15:9-59
+28-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:15:19-47
 29        <activity android:name="com.example.psimanagement.LoginActivity" />
-29-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:16:9-51
-29-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:16:19-48
+29-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:16:9-50
+29-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:16:19-48
 30        <activity android:name="com.example.psimanagement.MainActivity" />
-30-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:17:9-50
-30-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:17:19-47
+30-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:17:9-49
+30-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:17:19-47
 31        <activity android:name="com.example.psimanagement.SplashActivity" >
-31-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:18:9-24:20
-31-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:18:19-49
+31-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:18:9-24:20
+31-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:18:19-49
 32            <intent-filter>
-32-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:19:13-23:29
+32-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:19:13-23:29
 33                <action android:name="android.intent.action.MAIN" />
-33-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:20:17-69
-33-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:20:25-66
+33-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:20:17-69
+33-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:20:25-66
 34
 35                <category android:name="android.intent.category.LAUNCHER" />
-35-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:22:17-77
-35-->/Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:22:27-74
+35-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:22:17-77
+35-->/Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:22:27-74
 36            </intent-filter>
 37        </activity>
 38
 39        <service
-39-->[com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:29:9-35:19
+39-->[com.google.firebase:firebase-database:20.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/c6b176de83f2fd60b6383d63a2da274c/transformed/firebase-database-20.0.1/AndroidManifest.xml:29:9-35:19
 40            android:name="com.google.firebase.components.ComponentDiscoveryService"
-40-->[com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:30:13-84
+40-->[com.google.firebase:firebase-database:20.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/c6b176de83f2fd60b6383d63a2da274c/transformed/firebase-database-20.0.1/AndroidManifest.xml:30:13-84
 41            android:directBootAware="true"
-41-->[com.google.firebase:firebase-common:20.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/1c4082aeb9ca22cfe54f52180c206f0c/firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+41-->[com.google.firebase:firebase-common:20.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e7affceb1dadf2f2bdc50dab48c3c597/transformed/firebase-common-20.0.0/AndroidManifest.xml:35:13-43
 42            android:exported="false" >
-42-->[com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:31:13-37
+42-->[com.google.firebase:firebase-database:20.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/c6b176de83f2fd60b6383d63a2da274c/transformed/firebase-database-20.0.1/AndroidManifest.xml:31:13-37
 43            <meta-data
-43-->[com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:32:13-34:85
+43-->[com.google.firebase:firebase-database:20.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/c6b176de83f2fd60b6383d63a2da274c/transformed/firebase-database-20.0.1/AndroidManifest.xml:32:13-34:85
 44                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-44-->[com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:33:17-109
+44-->[com.google.firebase:firebase-database:20.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/c6b176de83f2fd60b6383d63a2da274c/transformed/firebase-database-20.0.1/AndroidManifest.xml:33:17-109
 45                android:value="com.google.firebase.components.ComponentRegistrar" />
-45-->[com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:34:17-82
+45-->[com.google.firebase:firebase-database:20.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/c6b176de83f2fd60b6383d63a2da274c/transformed/firebase-database-20.0.1/AndroidManifest.xml:34:17-82
 46        </service>
 47        <service
-47-->[androidx.room:room-runtime:2.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/31fb6842569cab1572c52cb70a5f4a21/room-runtime-2.3.0/AndroidManifest.xml:25:9-28:40
+47-->[androidx.room:room-runtime:2.4.0-alpha03] /Users/wei-you_chen/.gradle/caches/transforms-3/92acdfca1bfe50935bed65c32a959eec/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:25:9-28:40
 48            android:name="androidx.room.MultiInstanceInvalidationService"
-48-->[androidx.room:room-runtime:2.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/31fb6842569cab1572c52cb70a5f4a21/room-runtime-2.3.0/AndroidManifest.xml:26:13-74
+48-->[androidx.room:room-runtime:2.4.0-alpha03] /Users/wei-you_chen/.gradle/caches/transforms-3/92acdfca1bfe50935bed65c32a959eec/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:26:13-74
 49            android:directBootAware="true"
-49-->[androidx.room:room-runtime:2.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/31fb6842569cab1572c52cb70a5f4a21/room-runtime-2.3.0/AndroidManifest.xml:27:13-43
+49-->[androidx.room:room-runtime:2.4.0-alpha03] /Users/wei-you_chen/.gradle/caches/transforms-3/92acdfca1bfe50935bed65c32a959eec/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:27:13-43
 50            android:exported="false" />
-50-->[androidx.room:room-runtime:2.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/31fb6842569cab1572c52cb70a5f4a21/room-runtime-2.3.0/AndroidManifest.xml:28:13-37
+50-->[androidx.room:room-runtime:2.4.0-alpha03] /Users/wei-you_chen/.gradle/caches/transforms-3/92acdfca1bfe50935bed65c32a959eec/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:28:13-37
 51
 52        <provider
-52-->[com.google.firebase:firebase-common:20.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/1c4082aeb9ca22cfe54f52180c206f0c/firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+52-->[com.google.firebase:firebase-common:20.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e7affceb1dadf2f2bdc50dab48c3c597/transformed/firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
 53            android:name="com.google.firebase.provider.FirebaseInitProvider"
-53-->[com.google.firebase:firebase-common:20.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/1c4082aeb9ca22cfe54f52180c206f0c/firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+53-->[com.google.firebase:firebase-common:20.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e7affceb1dadf2f2bdc50dab48c3c597/transformed/firebase-common-20.0.0/AndroidManifest.xml:27:13-77
 54            android:authorities="com.example.psimanagement.firebaseinitprovider"
-54-->[com.google.firebase:firebase-common:20.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/1c4082aeb9ca22cfe54f52180c206f0c/firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+54-->[com.google.firebase:firebase-common:20.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e7affceb1dadf2f2bdc50dab48c3c597/transformed/firebase-common-20.0.0/AndroidManifest.xml:28:13-72
 55            android:directBootAware="true"
-55-->[com.google.firebase:firebase-common:20.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/1c4082aeb9ca22cfe54f52180c206f0c/firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+55-->[com.google.firebase:firebase-common:20.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e7affceb1dadf2f2bdc50dab48c3c597/transformed/firebase-common-20.0.0/AndroidManifest.xml:29:13-43
 56            android:exported="false"
-56-->[com.google.firebase:firebase-common:20.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/1c4082aeb9ca22cfe54f52180c206f0c/firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+56-->[com.google.firebase:firebase-common:20.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e7affceb1dadf2f2bdc50dab48c3c597/transformed/firebase-common-20.0.0/AndroidManifest.xml:30:13-37
 57            android:initOrder="100" />
-57-->[com.google.firebase:firebase-common:20.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/1c4082aeb9ca22cfe54f52180c206f0c/firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+57-->[com.google.firebase:firebase-common:20.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e7affceb1dadf2f2bdc50dab48c3c597/transformed/firebase-common-20.0.0/AndroidManifest.xml:31:13-36
 58
 59        <activity
-59-->[com.google.android.gms:play-services-base:17.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/974dda9811c1f83c6894487762b205c4/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+59-->[com.google.android.gms:play-services-base:17.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/4861f4fbd60284a376f8056538d8cc4a/transformed/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
 60            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-60-->[com.google.android.gms:play-services-base:17.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/974dda9811c1f83c6894487762b205c4/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+60-->[com.google.android.gms:play-services-base:17.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/4861f4fbd60284a376f8056538d8cc4a/transformed/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
 61            android:exported="false"
-61-->[com.google.android.gms:play-services-base:17.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/974dda9811c1f83c6894487762b205c4/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+61-->[com.google.android.gms:play-services-base:17.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/4861f4fbd60284a376f8056538d8cc4a/transformed/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
 62            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-62-->[com.google.android.gms:play-services-base:17.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/974dda9811c1f83c6894487762b205c4/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+62-->[com.google.android.gms:play-services-base:17.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/4861f4fbd60284a376f8056538d8cc4a/transformed/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
 63
 64        <meta-data
-64-->[com.google.android.gms:play-services-basement:17.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/08c6616e304a9921090621e2b9cf2c02/play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+64-->[com.google.android.gms:play-services-basement:17.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/7f90350eae081f1b7419bab2dad87fc6/transformed/play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
 65            android:name="com.google.android.gms.version"
-65-->[com.google.android.gms:play-services-basement:17.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/08c6616e304a9921090621e2b9cf2c02/play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+65-->[com.google.android.gms:play-services-basement:17.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/7f90350eae081f1b7419bab2dad87fc6/transformed/play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
 66            android:value="@integer/google_play_services_version" />
-66-->[com.google.android.gms:play-services-basement:17.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/08c6616e304a9921090621e2b9cf2c02/play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+66-->[com.google.android.gms:play-services-basement:17.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/7f90350eae081f1b7419bab2dad87fc6/transformed/play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
 67    </application>
 68
 69</manifest>

@@ -1,395 +1,395 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:2:1-27:12
-MERGED from [androidx.databinding:databinding-adapters:4.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/67689766c6722503eb6ecb012e89428e/databinding-adapters-4.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.databinding:databinding-runtime:4.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/6b229b66d3711d13598071e4a8bc8902/databinding-runtime-4.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.databinding:viewbinding:4.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/3fffa739df256bba9ebf26839f97e952/viewbinding-4.1.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.multidex:multidex:2.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/d5249284fafec7d46d2eb3c2622aeca7/multidex-2.0.1/AndroidManifest.xml:17:1-22:12
-MERGED from [io.coil-kt:coil:1.1.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/04b8b1d6060a8196586bb8a5e1b48a92/coil-1.1.1/AndroidManifest.xml:2:1-9:12
-MERGED from [io.coil-kt:coil-base:1.1.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/7cf03fc6420957365a6598d28e4fa7dd/coil-base-1.1.1/AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/0f2df75cb746edb1c887fcd9962b11b1/navigation-fragment-ktx-2.3.5/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.fragment:fragment-ktx:1.2.4] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/2b261e7b2e5bb508978edf7adae1194c/fragment-ktx-1.2.4/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.navigation:navigation-ui-ktx:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/9cd0aaa69a383848803c72edcd6d3947/navigation-ui-ktx-2.3.5/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/24531e50a4d70a3fbf4ec729c7b10e74/navigation-runtime-ktx-2.3.5/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.navigation:navigation-common-ktx:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/7998cfe1241790590c66acb5c0496ff8/navigation-common-ktx-2.3.5/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.activity:activity-ktx:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/d7ae75faa5e024c5aae41e2d317c7bd4/activity-ktx-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core-ktx:1.5.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/72714c00f374d6a1574dfd84bc70ba3d/core-ktx-1.5.0/AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/7c91e03467ebc58355bb11c54dc5c12c/lifecycle-livedata-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/6994ed5ee95559e699144d1abc6a5512/lifecycle-viewmodel-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.room:room-ktx:2.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/6cdf817d898192243a06ca222bf31401/room-ktx-2.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/e1805cb69a025d0592c098d20692ea2d/lifecycle-livedata-core-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/8f345d3ccdd9b05c25d28f41905ff40e/lifecycle-runtime-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.navigation:navigation-ui:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/5e22374343ceafd8b89e38538811c9d3/navigation-ui-2.3.5/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.material:material:1.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/37aa68a6d69124a52588553a39bb2bcd/material-1.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/2f171f5f5b502c60af18f101efa47d4a/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/bf0357cffc1f318b86b072384c97d9e5/appcompat-1.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.navigation:navigation-fragment:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/87ae5e520ca54225b4b3bc1c75b3b91d/navigation-fragment-2.3.5/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/0dd5ec2ec6fc6ff6a1c43e99b0a4c277/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:15:1-38:12
-MERGED from [androidx.room:room-runtime:2.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/31fb6842569cab1572c52cb70a5f4a21/room-runtime-2.3.0/AndroidManifest.xml:17:1-31:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/aec8f38001aff896534a846cdcd04d87/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b2f8d81b8e3d65a9878b2544ca75a6b2/firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:15:1-26:12
-MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/06779df1e9d417b61e3f148cc06b2a04/firebase-auth-interop-19.0.2/AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/1c4082aeb9ca22cfe54f52180c206f0c/firebase-common-20.0.0/AndroidManifest.xml:15:1-40:12
-MERGED from [com.google.firebase:firebase-database-collection:18.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/ee69f411a2d82616e4315d34f7c9d31c/firebase-database-collection-18.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/974dda9811c1f83c6894487762b205c4/play-services-base-17.1.0/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/3c16e3ee0c5d33553e807c492adbbc11/play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/08c6616e304a9921090621e2b9cf2c02/play-services-basement-17.0.0/AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.fragment:fragment:1.3.4] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/a58b45a3969934f8037556d01f8440e2/fragment-1.3.4/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.navigation:navigation-runtime:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/123f990e3c811087732df547c53d4ca6/navigation-runtime-2.3.5/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.activity:activity:1.2.3] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/d80abaac7f700fed281814abd55ef46f/activity-1.2.3/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/9be9c930982127850bfdd20474af9dd0/appcompat-resources-1.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/ac74f2a89561af0db04a1b49fb217464/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/a4ad0b254e8d6f55206ab357f8c44980/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/48dedf07d9a1e074627903184b2095c8/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/2259838e4383a9d48a33ea618b67f1fa/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/f3a6c47fc500f7f290b2d1df59e4dbb1/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.media:media:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/deabea6be04936aea4a3d355c763b4e1/media-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/5892d0e349258d605fa9c1e7d723fc10/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/fd2bdc3440fe57384a6c874078484c23/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/3528a39dafc22a3e181669643de1e67d/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/e82626334bf967754d9105bcea6b190c/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/d30ba42bd46b7893af54b1c4ef767835/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/d3e87d10d61bedf4511ff67fb5cf443d/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/f93e19871cd67074d37a6771642bb29b/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/47558a97866681a13dbd9e45ddcd34a2/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b415bdd2d626cb1be948a5ea77b6ead4/customview-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.transition:transition:1.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/76e51b9b84e84454e35b3392e6c4b74e/transition-1.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.navigation:navigation-common:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/393115a9d5c7b9568454987865860530/navigation-common-2.3.5/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core:1.5.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/022cee4c9f5718635f98a55ac637ed56/core-1.5.0/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/3d0782af7ba42664d8cddef8b39ba45c/lifecycle-runtime-2.3.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/e7927fcaccb16157826f0cbf0cfbfaca/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/e8ce772081ab7a1198b7455ef91fa8ed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/7e726aeb8aeeb9e4f23ee49444f8f128/savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/f47668f7707aadfcab532190d57cb8a0/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/4221c2becf5c70fabfd832a39b500d9a/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/3375c48fa1a8f125181b487faf7995e7/firebase-components-17.0.0/AndroidManifest.xml:15:1-23:12
-MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/e5cf18fa5199a807396b0af3f788b7fd/sqlite-framework-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.sqlite:sqlite:2.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/7b508df7a3aa2179f337d8de61983664/sqlite-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/4a1af4dab914b27f904ea93af99cb603/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/a3b5d19e11ed10c7e16628731d4915c3/lifecycle-livedata-2.3.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/31443d5a0e4b9093d02e7b7325089d7e/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/49225340d61315ebbb11319c43d40221/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.tracing:tracing:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/2135adde6f11db28bb0037dcea0c1474/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/416b78a7a6b377245e6eea5f798c51b2/exifinterface-1.3.2/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/7ae0a70a5ef59485ab8b3f54187fb774/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/6249698cf1ff70ee04b9336ee7e7e1e2/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/96de1f919131961c2de966ea889d6390/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/e1c1a420717185cf0036b9b38c501442/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/63ee7ecaf40fcbeeee7be5ea5fe01307/annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:2:1-27:12
+ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:2:1-27:12
+MERGED from [androidx.databinding:databinding-adapters:4.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/aeef61517d5ba394a4bb4d4071266912/transformed/databinding-adapters-4.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:databinding-runtime:4.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/92d413fc71ff39cdf550f9756b08c953/transformed/databinding-runtime-4.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:viewbinding:4.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/613b1c63321b98436df945675ae83328/transformed/viewbinding-4.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.multidex:multidex:2.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/7d13227ac7607482961d2baf6c75678f/transformed/multidex-2.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [io.coil-kt:coil:1.1.1] /Users/wei-you_chen/.gradle/caches/transforms-3/7b5c6c7e73de6caaa1c6365c4462adb4/transformed/coil-1.1.1/AndroidManifest.xml:2:1-9:12
+MERGED from [io.coil-kt:coil-base:1.1.1] /Users/wei-you_chen/.gradle/caches/transforms-3/3144cd0337cbc62216606e70914f2bd3/transformed/coil-base-1.1.1/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/8de6034f2606865ef670a403148342a6/transformed/navigation-fragment-ktx-2.3.5/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.2.4] /Users/wei-you_chen/.gradle/caches/transforms-3/d9a94257ae1c04eb7d6732497ca9f14b/transformed/fragment-ktx-1.2.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/82de8b954d866e6a73f8073180cdab30/transformed/navigation-ui-ktx-2.3.5/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/e5cbeea0facb306b98d3a76703c48a3c/transformed/navigation-runtime-ktx-2.3.5/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/b80053bfd94f909bbe9cb719619c749a/transformed/navigation-common-ktx-2.3.5/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/ee5d98d3baccd08c28a7fbfca9abb170/transformed/activity-ktx-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.5.0] /Users/wei-you_chen/.gradle/caches/transforms-3/50232b61ddcdc6289d4a0823ba6d20c6/transformed/core-ktx-1.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/66261bcc1c80f0cb94e49a04a517c26f/transformed/lifecycle-livedata-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/391807b5c6a4cec1ddfc28a557079a7a/transformed/lifecycle-viewmodel-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.room:room-ktx:2.4.0-alpha03] /Users/wei-you_chen/.gradle/caches/transforms-3/2740254c9df3d67dbb184f92afc10c65/transformed/room-ktx-2.4.0-alpha03/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/36909383b4a11346ef6ded3889e19052/transformed/lifecycle-livedata-core-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] /Users/wei-you_chen/.gradle/caches/transforms-3/2f5a0826b6e0748b5193a555ca4cd562/transformed/lifecycle-runtime-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/252d9b81f678c5415fd2bebef7ba9542/transformed/navigation-ui-2.3.5/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.3.0] /Users/wei-you_chen/.gradle/caches/transforms-3/a5ea6dc7afeeff8b6e58bfd30f2720fb/transformed/material-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/wei-you_chen/.gradle/caches/transforms-3/c3134199e14b558489cec383157953ce/transformed/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e0a8336e1fa6580802592979745cd28d/transformed/appcompat-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/17f5b4f65e9b1e23c82fbe7f7d38a72c/transformed/navigation-fragment-2.3.5/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/472ad7b0f483d5bcaa4ac70708754a8a/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-database:20.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/c6b176de83f2fd60b6383d63a2da274c/transformed/firebase-database-20.0.1/AndroidManifest.xml:15:1-38:12
+MERGED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/wei-you_chen/.gradle/caches/transforms-3/92acdfca1bfe50935bed65c32a959eec/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/9a72894e04ba37d50e890f12f3df6da1/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /Users/wei-you_chen/.gradle/caches/transforms-3/f01d9e348fc0505bc5c55db71bbd4ac2/transformed/firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:15:1-26:12
+MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] /Users/wei-you_chen/.gradle/caches/transforms-3/b2be617a3e9449a1848473081f15bf70/transformed/firebase-auth-interop-19.0.2/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e7affceb1dadf2f2bdc50dab48c3c597/transformed/firebase-common-20.0.0/AndroidManifest.xml:15:1-40:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/1988f0925e11fe941a91db9fbf5db05e/transformed/firebase-database-collection-18.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/4861f4fbd60284a376f8056538d8cc4a/transformed/play-services-base-17.1.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/7398f68a34bcf25883f8b4616474b599/transformed/play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/7f90350eae081f1b7419bab2dad87fc6/transformed/play-services-basement-17.0.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.3.4] /Users/wei-you_chen/.gradle/caches/transforms-3/7ade03b23e5f8d7b6f079913f3a93bd4/transformed/fragment-1.3.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/0ed8f0bcd8f4050b7b275ab9013d9fc7/transformed/navigation-runtime-2.3.5/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.3] /Users/wei-you_chen/.gradle/caches/transforms-3/fd2c277ea1da3928fbf3b31fffb96589/transformed/activity-1.2.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /Users/wei-you_chen/.gradle/caches/transforms-3/116bffdb1d70062e74ef97e6967a8c6d/transformed/appcompat-resources-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/348f1743538cb7851c9d73fcbcbba479/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/cb39836e7859e48ad2a57703fe9ef13f/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/1d342a6bbc891282561ccce5bf9da1d6/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/c7ca6173543fa306b55018369995f953/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/cef7fed7421c3bea2c79a89c6fd2ee4f/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/4fa8e26e6aba6edb55f4ea4176094699/transformed/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e70012b2dd3da208ac8a0f529f8cc4b0/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/c2c81dd9c9821cb37e60fcf47dd5c6af/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/4335e7931a997100f4e85a268d251917/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/00ad7a7f90ae1aec10a55abb52959425/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/f246492cd6dbf145330826856510fc09/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/4aab26a1d65676dd2ea607356eca6fa6/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/91f247c77c7aec9ecccce79df0ee84ae/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/wei-you_chen/.gradle/caches/transforms-3/4bc2bbf7cf4e2c085701ad57829f00b6/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/dbec494ff527e92854e7e012d67f365e/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.3.0] /Users/wei-you_chen/.gradle/caches/transforms-3/446f20be63ac71315ce2d0040e0d5d7b/transformed/transition-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/e6b54bb50b87f1377d4497775849db36/transformed/navigation-common-2.3.5/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.5.0] /Users/wei-you_chen/.gradle/caches/transforms-3/1be10e00d9b92b6303ee68189355295d/transformed/core-1.5.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/b75ec5cef2d3e2fdec2eeda3ae6a8869/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/c2a87d14b413103eb692290d2303c2ae/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/877f99a3c76fd64744305f3e7b298f83/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/58a69546682c1a4207a66fd7dcd77e4f/transformed/savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/05b309475f6008d8463330bfe69992eb/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/0e9de41660cf0db57de3075b5df57b7a/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/920ddec7ffd0cca8a92ee722aba9f12d/transformed/firebase-components-17.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.sqlite:sqlite-framework:2.2.0-alpha01] /Users/wei-you_chen/.gradle/caches/transforms-3/927fd2efb4f494c4915bf95b615cbafb/transformed/sqlite-framework-2.2.0-alpha01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite:2.2.0-alpha01] /Users/wei-you_chen/.gradle/caches/transforms-3/f14b8a4aca722e4150e78202e60b9d28/transformed/sqlite-2.2.0-alpha01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/wei-you_chen/.gradle/caches/transforms-3/d9abf037e9dc902b2cf637cb079bf4ee/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/62044fef18b884c148e6dc0a7eb1c7cf/transformed/lifecycle-livedata-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/042943902aac1a10c10b8121e215d03d/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/b0fd4a02462f5732f1bc909b13288ea6/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/99e6f1b662b45a1888589c8d0951e3ea/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/wei-you_chen/.gradle/caches/transforms-3/d187e8351a5241ec48b40024f0efd6f2/transformed/exifinterface-1.3.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/b648ae1a6e88bf61ef7ba759549d28c1/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/175848ae825f72608e397167cc3420d9/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/04e79baec108cf213d2f4e288f521f60/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/1ef3af5a72610db6acdfd8ad4b466a94/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0-rc01] /Users/wei-you_chen/.gradle/caches/transforms-3/be6a6d95d159a80cb151803e6143a623/transformed/annotation-experimental-1.1.0-rc01/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:2:1-27:12
 	package
-		ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:3:5-40
-		INJECTED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
+		ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:3:5-40
+		INJECTED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
-		ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:2:1-27:12
-		INJECTED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
+		ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:2:1-27:12
+		INJECTED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
-		ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:2:1-27:12
-		INJECTED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
+		ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:2:1-27:12
+		INJECTED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:5:5-67
-MERGED from [com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:26:5-67
-MERGED from [com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:26:5-67
+ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:5:5-67
+MERGED from [com.google.firebase:firebase-database:20.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/c6b176de83f2fd60b6383d63a2da274c/transformed/firebase-database-20.0.1/AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-database:20.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/c6b176de83f2fd60b6383d63a2da274c/transformed/firebase-database-20.0.1/AndroidManifest.xml:26:5-67
 	android:name
-		ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:7:5-25:19
-MERGED from [com.google.android.material:material:1.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/37aa68a6d69124a52588553a39bb2bcd/material-1.3.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/37aa68a6d69124a52588553a39bb2bcd/material-1.3.0/AndroidManifest.xml:22:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/2f171f5f5b502c60af18f101efa47d4a/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/2f171f5f5b502c60af18f101efa47d4a/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
-MERGED from [com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:28:5-36:19
-MERGED from [com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:28:5-36:19
-MERGED from [androidx.room:room-runtime:2.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/31fb6842569cab1572c52cb70a5f4a21/room-runtime-2.3.0/AndroidManifest.xml:24:5-29:19
-MERGED from [androidx.room:room-runtime:2.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/31fb6842569cab1572c52cb70a5f4a21/room-runtime-2.3.0/AndroidManifest.xml:24:5-29:19
-MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b2f8d81b8e3d65a9878b2544ca75a6b2/firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:24:5-20
-MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b2f8d81b8e3d65a9878b2544ca75a6b2/firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:24:5-20
-MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/06779df1e9d417b61e3f148cc06b2a04/firebase-auth-interop-19.0.2/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/06779df1e9d417b61e3f148cc06b2a04/firebase-auth-interop-19.0.2/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/1c4082aeb9ca22cfe54f52180c206f0c/firebase-common-20.0.0/AndroidManifest.xml:25:5-38:19
-MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/1c4082aeb9ca22cfe54f52180c206f0c/firebase-common-20.0.0/AndroidManifest.xml:25:5-38:19
-MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/974dda9811c1f83c6894487762b205c4/play-services-base-17.1.0/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/974dda9811c1f83c6894487762b205c4/play-services-base-17.1.0/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/3c16e3ee0c5d33553e807c492adbbc11/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/3c16e3ee0c5d33553e807c492adbbc11/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/08c6616e304a9921090621e2b9cf2c02/play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/08c6616e304a9921090621e2b9cf2c02/play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.core:core:1.5.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/022cee4c9f5718635f98a55ac637ed56/core-1.5.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.5.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/022cee4c9f5718635f98a55ac637ed56/core-1.5.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/4a1af4dab914b27f904ea93af99cb603/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/4a1af4dab914b27f904ea93af99cb603/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:7:5-25:19
+MERGED from [com.google.android.material:material:1.3.0] /Users/wei-you_chen/.gradle/caches/transforms-3/a5ea6dc7afeeff8b6e58bfd30f2720fb/transformed/material-1.3.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.3.0] /Users/wei-you_chen/.gradle/caches/transforms-3/a5ea6dc7afeeff8b6e58bfd30f2720fb/transformed/material-1.3.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/wei-you_chen/.gradle/caches/transforms-3/c3134199e14b558489cec383157953ce/transformed/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/wei-you_chen/.gradle/caches/transforms-3/c3134199e14b558489cec383157953ce/transformed/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-database:20.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/c6b176de83f2fd60b6383d63a2da274c/transformed/firebase-database-20.0.1/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-database:20.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/c6b176de83f2fd60b6383d63a2da274c/transformed/firebase-database-20.0.1/AndroidManifest.xml:28:5-36:19
+MERGED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/wei-you_chen/.gradle/caches/transforms-3/92acdfca1bfe50935bed65c32a959eec/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:24:5-29:19
+MERGED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/wei-you_chen/.gradle/caches/transforms-3/92acdfca1bfe50935bed65c32a959eec/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:24:5-29:19
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /Users/wei-you_chen/.gradle/caches/transforms-3/f01d9e348fc0505bc5c55db71bbd4ac2/transformed/firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:24:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /Users/wei-you_chen/.gradle/caches/transforms-3/f01d9e348fc0505bc5c55db71bbd4ac2/transformed/firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:24:5-20
+MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] /Users/wei-you_chen/.gradle/caches/transforms-3/b2be617a3e9449a1848473081f15bf70/transformed/firebase-auth-interop-19.0.2/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] /Users/wei-you_chen/.gradle/caches/transforms-3/b2be617a3e9449a1848473081f15bf70/transformed/firebase-auth-interop-19.0.2/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e7affceb1dadf2f2bdc50dab48c3c597/transformed/firebase-common-20.0.0/AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e7affceb1dadf2f2bdc50dab48c3c597/transformed/firebase-common-20.0.0/AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/4861f4fbd60284a376f8056538d8cc4a/transformed/play-services-base-17.1.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/4861f4fbd60284a376f8056538d8cc4a/transformed/play-services-base-17.1.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/7398f68a34bcf25883f8b4616474b599/transformed/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/7398f68a34bcf25883f8b4616474b599/transformed/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/7f90350eae081f1b7419bab2dad87fc6/transformed/play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/7f90350eae081f1b7419bab2dad87fc6/transformed/play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.5.0] /Users/wei-you_chen/.gradle/caches/transforms-3/1be10e00d9b92b6303ee68189355295d/transformed/core-1.5.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.5.0] /Users/wei-you_chen/.gradle/caches/transforms-3/1be10e00d9b92b6303ee68189355295d/transformed/core-1.5.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/wei-you_chen/.gradle/caches/transforms-3/d9abf037e9dc902b2cf637cb079bf4ee/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/wei-you_chen/.gradle/caches/transforms-3/d9abf037e9dc902b2cf637cb079bf4ee/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.5.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/022cee4c9f5718635f98a55ac637ed56/core-1.5.0/AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.5.0] /Users/wei-you_chen/.gradle/caches/transforms-3/1be10e00d9b92b6303ee68189355295d/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:11:9-41
+		ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:12:9-54
+		ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:10:9-43
+		ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:14:9-51
+		ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:14:9-51
 	android:name
-		ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:8:9-49
+		ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:8:9-49
 activity#com.example.psimanagement.TestActivity
-ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:15:9-59
+ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:15:9-59
 	android:name
-		ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:15:19-47
+		ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:15:19-47
 activity#com.example.psimanagement.LoginActivity
-ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:16:9-51
+ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:16:9-50
 	android:name
-		ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:16:19-48
+		ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:16:19-48
 activity#com.example.psimanagement.MainActivity
-ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:17:9-50
+ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:17:9-49
 	android:name
-		ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:17:19-47
+		ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:17:19-47
 activity#com.example.psimanagement.SplashActivity
-ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:18:9-24:20
+ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:18:9-24:20
 	android:name
-		ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:18:19-49
+		ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:18:19-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:19:13-23:29
+ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
-ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:20:17-69
+ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:20:25-66
+		ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:22:17-77
+ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:22:27-74
+		ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml:22:27-74
 uses-sdk
-INJECTED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
-INJECTED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
-MERGED from [androidx.databinding:databinding-adapters:4.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/67689766c6722503eb6ecb012e89428e/databinding-adapters-4.1.0/AndroidManifest.xml:22:5-44
-MERGED from [androidx.databinding:databinding-adapters:4.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/67689766c6722503eb6ecb012e89428e/databinding-adapters-4.1.0/AndroidManifest.xml:22:5-44
-MERGED from [androidx.databinding:databinding-runtime:4.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/6b229b66d3711d13598071e4a8bc8902/databinding-runtime-4.1.0/AndroidManifest.xml:22:5-44
-MERGED from [androidx.databinding:databinding-runtime:4.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/6b229b66d3711d13598071e4a8bc8902/databinding-runtime-4.1.0/AndroidManifest.xml:22:5-44
-MERGED from [androidx.databinding:viewbinding:4.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/3fffa739df256bba9ebf26839f97e952/viewbinding-4.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.databinding:viewbinding:4.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/3fffa739df256bba9ebf26839f97e952/viewbinding-4.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.multidex:multidex:2.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/d5249284fafec7d46d2eb3c2622aeca7/multidex-2.0.1/AndroidManifest.xml:20:5-43
-MERGED from [androidx.multidex:multidex:2.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/d5249284fafec7d46d2eb3c2622aeca7/multidex-2.0.1/AndroidManifest.xml:20:5-43
-MERGED from [io.coil-kt:coil:1.1.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/04b8b1d6060a8196586bb8a5e1b48a92/coil-1.1.1/AndroidManifest.xml:5:5-7:41
-MERGED from [io.coil-kt:coil:1.1.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/04b8b1d6060a8196586bb8a5e1b48a92/coil-1.1.1/AndroidManifest.xml:5:5-7:41
-MERGED from [io.coil-kt:coil-base:1.1.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/7cf03fc6420957365a6598d28e4fa7dd/coil-base-1.1.1/AndroidManifest.xml:5:5-7:41
-MERGED from [io.coil-kt:coil-base:1.1.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/7cf03fc6420957365a6598d28e4fa7dd/coil-base-1.1.1/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/0f2df75cb746edb1c887fcd9962b11b1/navigation-fragment-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/0f2df75cb746edb1c887fcd9962b11b1/navigation-fragment-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment-ktx:1.2.4] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/2b261e7b2e5bb508978edf7adae1194c/fragment-ktx-1.2.4/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment-ktx:1.2.4] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/2b261e7b2e5bb508978edf7adae1194c/fragment-ktx-1.2.4/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-ui-ktx:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/9cd0aaa69a383848803c72edcd6d3947/navigation-ui-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-ui-ktx:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/9cd0aaa69a383848803c72edcd6d3947/navigation-ui-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/24531e50a4d70a3fbf4ec729c7b10e74/navigation-runtime-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/24531e50a4d70a3fbf4ec729c7b10e74/navigation-runtime-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-common-ktx:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/7998cfe1241790590c66acb5c0496ff8/navigation-common-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-common-ktx:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/7998cfe1241790590c66acb5c0496ff8/navigation-common-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity-ktx:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/d7ae75faa5e024c5aae41e2d317c7bd4/activity-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity-ktx:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/d7ae75faa5e024c5aae41e2d317c7bd4/activity-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core-ktx:1.5.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/72714c00f374d6a1574dfd84bc70ba3d/core-ktx-1.5.0/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.core:core-ktx:1.5.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/72714c00f374d6a1574dfd84bc70ba3d/core-ktx-1.5.0/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/7c91e03467ebc58355bb11c54dc5c12c/lifecycle-livedata-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/7c91e03467ebc58355bb11c54dc5c12c/lifecycle-livedata-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/6994ed5ee95559e699144d1abc6a5512/lifecycle-viewmodel-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/6994ed5ee95559e699144d1abc6a5512/lifecycle-viewmodel-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.room:room-ktx:2.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/6cdf817d898192243a06ca222bf31401/room-ktx-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.room:room-ktx:2.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/6cdf817d898192243a06ca222bf31401/room-ktx-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/e1805cb69a025d0592c098d20692ea2d/lifecycle-livedata-core-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/e1805cb69a025d0592c098d20692ea2d/lifecycle-livedata-core-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/8f345d3ccdd9b05c25d28f41905ff40e/lifecycle-runtime-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/8f345d3ccdd9b05c25d28f41905ff40e/lifecycle-runtime-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-ui:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/5e22374343ceafd8b89e38538811c9d3/navigation-ui-2.3.5/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-ui:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/5e22374343ceafd8b89e38538811c9d3/navigation-ui-2.3.5/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.material:material:1.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/37aa68a6d69124a52588553a39bb2bcd/material-1.3.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/37aa68a6d69124a52588553a39bb2bcd/material-1.3.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/2f171f5f5b502c60af18f101efa47d4a/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/2f171f5f5b502c60af18f101efa47d4a/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/bf0357cffc1f318b86b072384c97d9e5/appcompat-1.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/bf0357cffc1f318b86b072384c97d9e5/appcompat-1.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-fragment:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/87ae5e520ca54225b4b3bc1c75b3b91d/navigation-fragment-2.3.5/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-fragment:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/87ae5e520ca54225b4b3bc1c75b3b91d/navigation-fragment-2.3.5/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/0dd5ec2ec6fc6ff6a1c43e99b0a4c277/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/0dd5ec2ec6fc6ff6a1c43e99b0a4c277/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:19:5-21:41
-MERGED from [androidx.room:room-runtime:2.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/31fb6842569cab1572c52cb70a5f4a21/room-runtime-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.room:room-runtime:2.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/31fb6842569cab1572c52cb70a5f4a21/room-runtime-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/aec8f38001aff896534a846cdcd04d87/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/aec8f38001aff896534a846cdcd04d87/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b2f8d81b8e3d65a9878b2544ca75a6b2/firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b2f8d81b8e3d65a9878b2544ca75a6b2/firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/06779df1e9d417b61e3f148cc06b2a04/firebase-auth-interop-19.0.2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/06779df1e9d417b61e3f148cc06b2a04/firebase-auth-interop-19.0.2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/1c4082aeb9ca22cfe54f52180c206f0c/firebase-common-20.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/1c4082aeb9ca22cfe54f52180c206f0c/firebase-common-20.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.firebase:firebase-database-collection:18.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/ee69f411a2d82616e4315d34f7c9d31c/firebase-database-collection-18.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.firebase:firebase-database-collection:18.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/ee69f411a2d82616e4315d34f7c9d31c/firebase-database-collection-18.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/974dda9811c1f83c6894487762b205c4/play-services-base-17.1.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/974dda9811c1f83c6894487762b205c4/play-services-base-17.1.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/3c16e3ee0c5d33553e807c492adbbc11/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/3c16e3ee0c5d33553e807c492adbbc11/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/08c6616e304a9921090621e2b9cf2c02/play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/08c6616e304a9921090621e2b9cf2c02/play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.3.4] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/a58b45a3969934f8037556d01f8440e2/fragment-1.3.4/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.3.4] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/a58b45a3969934f8037556d01f8440e2/fragment-1.3.4/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-runtime:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/123f990e3c811087732df547c53d4ca6/navigation-runtime-2.3.5/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-runtime:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/123f990e3c811087732df547c53d4ca6/navigation-runtime-2.3.5/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.2.3] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/d80abaac7f700fed281814abd55ef46f/activity-1.2.3/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.2.3] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/d80abaac7f700fed281814abd55ef46f/activity-1.2.3/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/9be9c930982127850bfdd20474af9dd0/appcompat-resources-1.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/9be9c930982127850bfdd20474af9dd0/appcompat-resources-1.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/ac74f2a89561af0db04a1b49fb217464/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/ac74f2a89561af0db04a1b49fb217464/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/a4ad0b254e8d6f55206ab357f8c44980/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/a4ad0b254e8d6f55206ab357f8c44980/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/48dedf07d9a1e074627903184b2095c8/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/48dedf07d9a1e074627903184b2095c8/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/2259838e4383a9d48a33ea618b67f1fa/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/2259838e4383a9d48a33ea618b67f1fa/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/f3a6c47fc500f7f290b2d1df59e4dbb1/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/f3a6c47fc500f7f290b2d1df59e4dbb1/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.media:media:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/deabea6be04936aea4a3d355c763b4e1/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/deabea6be04936aea4a3d355c763b4e1/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/5892d0e349258d605fa9c1e7d723fc10/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/5892d0e349258d605fa9c1e7d723fc10/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/fd2bdc3440fe57384a6c874078484c23/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/fd2bdc3440fe57384a6c874078484c23/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/3528a39dafc22a3e181669643de1e67d/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/3528a39dafc22a3e181669643de1e67d/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/e82626334bf967754d9105bcea6b190c/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/e82626334bf967754d9105bcea6b190c/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/d30ba42bd46b7893af54b1c4ef767835/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/d30ba42bd46b7893af54b1c4ef767835/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/d3e87d10d61bedf4511ff67fb5cf443d/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/d3e87d10d61bedf4511ff67fb5cf443d/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/f93e19871cd67074d37a6771642bb29b/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/f93e19871cd67074d37a6771642bb29b/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/47558a97866681a13dbd9e45ddcd34a2/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/47558a97866681a13dbd9e45ddcd34a2/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b415bdd2d626cb1be948a5ea77b6ead4/customview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b415bdd2d626cb1be948a5ea77b6ead4/customview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/76e51b9b84e84454e35b3392e6c4b74e/transition-1.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/76e51b9b84e84454e35b3392e6c4b74e/transition-1.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-common:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/393115a9d5c7b9568454987865860530/navigation-common-2.3.5/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-common:2.3.5] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/393115a9d5c7b9568454987865860530/navigation-common-2.3.5/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.5.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/022cee4c9f5718635f98a55ac637ed56/core-1.5.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.5.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/022cee4c9f5718635f98a55ac637ed56/core-1.5.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/3d0782af7ba42664d8cddef8b39ba45c/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/3d0782af7ba42664d8cddef8b39ba45c/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/e7927fcaccb16157826f0cbf0cfbfaca/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/e7927fcaccb16157826f0cbf0cfbfaca/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/e8ce772081ab7a1198b7455ef91fa8ed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/e8ce772081ab7a1198b7455ef91fa8ed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/7e726aeb8aeeb9e4f23ee49444f8f128/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/7e726aeb8aeeb9e4f23ee49444f8f128/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/f47668f7707aadfcab532190d57cb8a0/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/f47668f7707aadfcab532190d57cb8a0/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/4221c2becf5c70fabfd832a39b500d9a/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/4221c2becf5c70fabfd832a39b500d9a/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/3375c48fa1a8f125181b487faf7995e7/firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/3375c48fa1a8f125181b487faf7995e7/firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
-MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/e5cf18fa5199a807396b0af3f788b7fd/sqlite-framework-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/e5cf18fa5199a807396b0af3f788b7fd/sqlite-framework-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.sqlite:sqlite:2.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/7b508df7a3aa2179f337d8de61983664/sqlite-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.sqlite:sqlite:2.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/7b508df7a3aa2179f337d8de61983664/sqlite-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/4a1af4dab914b27f904ea93af99cb603/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/4a1af4dab914b27f904ea93af99cb603/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/a3b5d19e11ed10c7e16628731d4915c3/lifecycle-livedata-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/a3b5d19e11ed10c7e16628731d4915c3/lifecycle-livedata-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/31443d5a0e4b9093d02e7b7325089d7e/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/31443d5a0e4b9093d02e7b7325089d7e/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/49225340d61315ebbb11319c43d40221/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/49225340d61315ebbb11319c43d40221/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/2135adde6f11db28bb0037dcea0c1474/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/2135adde6f11db28bb0037dcea0c1474/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/416b78a7a6b377245e6eea5f798c51b2/exifinterface-1.3.2/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/416b78a7a6b377245e6eea5f798c51b2/exifinterface-1.3.2/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/7ae0a70a5ef59485ab8b3f54187fb774/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/7ae0a70a5ef59485ab8b3f54187fb774/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/6249698cf1ff70ee04b9336ee7e7e1e2/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/6249698cf1ff70ee04b9336ee7e7e1e2/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/96de1f919131961c2de966ea889d6390/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/96de1f919131961c2de966ea889d6390/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/e1c1a420717185cf0036b9b38c501442/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/e1c1a420717185cf0036b9b38c501442/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/63ee7ecaf40fcbeeee7be5ea5fe01307/annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/63ee7ecaf40fcbeeee7be5ea5fe01307/annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
-INJECTED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
-INJECTED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
+INJECTED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
+INJECTED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:databinding-adapters:4.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/aeef61517d5ba394a4bb4d4071266912/transformed/databinding-adapters-4.1.0/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-adapters:4.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/aeef61517d5ba394a4bb4d4071266912/transformed/databinding-adapters-4.1.0/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:4.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/92d413fc71ff39cdf550f9756b08c953/transformed/databinding-runtime-4.1.0/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:4.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/92d413fc71ff39cdf550f9756b08c953/transformed/databinding-runtime-4.1.0/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:viewbinding:4.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/613b1c63321b98436df945675ae83328/transformed/viewbinding-4.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:4.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/613b1c63321b98436df945675ae83328/transformed/viewbinding-4.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.multidex:multidex:2.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/7d13227ac7607482961d2baf6c75678f/transformed/multidex-2.0.1/AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/7d13227ac7607482961d2baf6c75678f/transformed/multidex-2.0.1/AndroidManifest.xml:20:5-43
+MERGED from [io.coil-kt:coil:1.1.1] /Users/wei-you_chen/.gradle/caches/transforms-3/7b5c6c7e73de6caaa1c6365c4462adb4/transformed/coil-1.1.1/AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil:1.1.1] /Users/wei-you_chen/.gradle/caches/transforms-3/7b5c6c7e73de6caaa1c6365c4462adb4/transformed/coil-1.1.1/AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil-base:1.1.1] /Users/wei-you_chen/.gradle/caches/transforms-3/3144cd0337cbc62216606e70914f2bd3/transformed/coil-base-1.1.1/AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil-base:1.1.1] /Users/wei-you_chen/.gradle/caches/transforms-3/3144cd0337cbc62216606e70914f2bd3/transformed/coil-base-1.1.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/8de6034f2606865ef670a403148342a6/transformed/navigation-fragment-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/8de6034f2606865ef670a403148342a6/transformed/navigation-fragment-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.2.4] /Users/wei-you_chen/.gradle/caches/transforms-3/d9a94257ae1c04eb7d6732497ca9f14b/transformed/fragment-ktx-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.2.4] /Users/wei-you_chen/.gradle/caches/transforms-3/d9a94257ae1c04eb7d6732497ca9f14b/transformed/fragment-ktx-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/82de8b954d866e6a73f8073180cdab30/transformed/navigation-ui-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/82de8b954d866e6a73f8073180cdab30/transformed/navigation-ui-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/e5cbeea0facb306b98d3a76703c48a3c/transformed/navigation-runtime-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/e5cbeea0facb306b98d3a76703c48a3c/transformed/navigation-runtime-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/b80053bfd94f909bbe9cb719619c749a/transformed/navigation-common-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/b80053bfd94f909bbe9cb719619c749a/transformed/navigation-common-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/ee5d98d3baccd08c28a7fbfca9abb170/transformed/activity-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/ee5d98d3baccd08c28a7fbfca9abb170/transformed/activity-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.5.0] /Users/wei-you_chen/.gradle/caches/transforms-3/50232b61ddcdc6289d4a0823ba6d20c6/transformed/core-ktx-1.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.5.0] /Users/wei-you_chen/.gradle/caches/transforms-3/50232b61ddcdc6289d4a0823ba6d20c6/transformed/core-ktx-1.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/66261bcc1c80f0cb94e49a04a517c26f/transformed/lifecycle-livedata-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/66261bcc1c80f0cb94e49a04a517c26f/transformed/lifecycle-livedata-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/391807b5c6a4cec1ddfc28a557079a7a/transformed/lifecycle-viewmodel-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/391807b5c6a4cec1ddfc28a557079a7a/transformed/lifecycle-viewmodel-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-ktx:2.4.0-alpha03] /Users/wei-you_chen/.gradle/caches/transforms-3/2740254c9df3d67dbb184f92afc10c65/transformed/room-ktx-2.4.0-alpha03/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-ktx:2.4.0-alpha03] /Users/wei-you_chen/.gradle/caches/transforms-3/2740254c9df3d67dbb184f92afc10c65/transformed/room-ktx-2.4.0-alpha03/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/36909383b4a11346ef6ded3889e19052/transformed/lifecycle-livedata-core-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/36909383b4a11346ef6ded3889e19052/transformed/lifecycle-livedata-core-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] /Users/wei-you_chen/.gradle/caches/transforms-3/2f5a0826b6e0748b5193a555ca4cd562/transformed/lifecycle-runtime-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] /Users/wei-you_chen/.gradle/caches/transforms-3/2f5a0826b6e0748b5193a555ca4cd562/transformed/lifecycle-runtime-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/252d9b81f678c5415fd2bebef7ba9542/transformed/navigation-ui-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/252d9b81f678c5415fd2bebef7ba9542/transformed/navigation-ui-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.3.0] /Users/wei-you_chen/.gradle/caches/transforms-3/a5ea6dc7afeeff8b6e58bfd30f2720fb/transformed/material-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.3.0] /Users/wei-you_chen/.gradle/caches/transforms-3/a5ea6dc7afeeff8b6e58bfd30f2720fb/transformed/material-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/wei-you_chen/.gradle/caches/transforms-3/c3134199e14b558489cec383157953ce/transformed/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/wei-you_chen/.gradle/caches/transforms-3/c3134199e14b558489cec383157953ce/transformed/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e0a8336e1fa6580802592979745cd28d/transformed/appcompat-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e0a8336e1fa6580802592979745cd28d/transformed/appcompat-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/17f5b4f65e9b1e23c82fbe7f7d38a72c/transformed/navigation-fragment-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/17f5b4f65e9b1e23c82fbe7f7d38a72c/transformed/navigation-fragment-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/472ad7b0f483d5bcaa4ac70708754a8a/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/472ad7b0f483d5bcaa4ac70708754a8a/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database:20.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/c6b176de83f2fd60b6383d63a2da274c/transformed/firebase-database-20.0.1/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-database:20.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/c6b176de83f2fd60b6383d63a2da274c/transformed/firebase-database-20.0.1/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/wei-you_chen/.gradle/caches/transforms-3/92acdfca1bfe50935bed65c32a959eec/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/wei-you_chen/.gradle/caches/transforms-3/92acdfca1bfe50935bed65c32a959eec/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/9a72894e04ba37d50e890f12f3df6da1/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/9a72894e04ba37d50e890f12f3df6da1/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /Users/wei-you_chen/.gradle/caches/transforms-3/f01d9e348fc0505bc5c55db71bbd4ac2/transformed/firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /Users/wei-you_chen/.gradle/caches/transforms-3/f01d9e348fc0505bc5c55db71bbd4ac2/transformed/firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] /Users/wei-you_chen/.gradle/caches/transforms-3/b2be617a3e9449a1848473081f15bf70/transformed/firebase-auth-interop-19.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] /Users/wei-you_chen/.gradle/caches/transforms-3/b2be617a3e9449a1848473081f15bf70/transformed/firebase-auth-interop-19.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e7affceb1dadf2f2bdc50dab48c3c597/transformed/firebase-common-20.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e7affceb1dadf2f2bdc50dab48c3c597/transformed/firebase-common-20.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/1988f0925e11fe941a91db9fbf5db05e/transformed/firebase-database-collection-18.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/1988f0925e11fe941a91db9fbf5db05e/transformed/firebase-database-collection-18.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/4861f4fbd60284a376f8056538d8cc4a/transformed/play-services-base-17.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/4861f4fbd60284a376f8056538d8cc4a/transformed/play-services-base-17.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/7398f68a34bcf25883f8b4616474b599/transformed/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/7398f68a34bcf25883f8b4616474b599/transformed/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/7f90350eae081f1b7419bab2dad87fc6/transformed/play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/7f90350eae081f1b7419bab2dad87fc6/transformed/play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.3.4] /Users/wei-you_chen/.gradle/caches/transforms-3/7ade03b23e5f8d7b6f079913f3a93bd4/transformed/fragment-1.3.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.4] /Users/wei-you_chen/.gradle/caches/transforms-3/7ade03b23e5f8d7b6f079913f3a93bd4/transformed/fragment-1.3.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/0ed8f0bcd8f4050b7b275ab9013d9fc7/transformed/navigation-runtime-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/0ed8f0bcd8f4050b7b275ab9013d9fc7/transformed/navigation-runtime-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.3] /Users/wei-you_chen/.gradle/caches/transforms-3/fd2c277ea1da3928fbf3b31fffb96589/transformed/activity-1.2.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.3] /Users/wei-you_chen/.gradle/caches/transforms-3/fd2c277ea1da3928fbf3b31fffb96589/transformed/activity-1.2.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /Users/wei-you_chen/.gradle/caches/transforms-3/116bffdb1d70062e74ef97e6967a8c6d/transformed/appcompat-resources-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /Users/wei-you_chen/.gradle/caches/transforms-3/116bffdb1d70062e74ef97e6967a8c6d/transformed/appcompat-resources-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/348f1743538cb7851c9d73fcbcbba479/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/348f1743538cb7851c9d73fcbcbba479/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/cb39836e7859e48ad2a57703fe9ef13f/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/cb39836e7859e48ad2a57703fe9ef13f/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/1d342a6bbc891282561ccce5bf9da1d6/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/1d342a6bbc891282561ccce5bf9da1d6/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/c7ca6173543fa306b55018369995f953/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/c7ca6173543fa306b55018369995f953/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/cef7fed7421c3bea2c79a89c6fd2ee4f/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/cef7fed7421c3bea2c79a89c6fd2ee4f/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/4fa8e26e6aba6edb55f4ea4176094699/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/4fa8e26e6aba6edb55f4ea4176094699/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e70012b2dd3da208ac8a0f529f8cc4b0/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e70012b2dd3da208ac8a0f529f8cc4b0/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/c2c81dd9c9821cb37e60fcf47dd5c6af/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/c2c81dd9c9821cb37e60fcf47dd5c6af/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/4335e7931a997100f4e85a268d251917/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/4335e7931a997100f4e85a268d251917/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/00ad7a7f90ae1aec10a55abb52959425/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/00ad7a7f90ae1aec10a55abb52959425/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/f246492cd6dbf145330826856510fc09/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/f246492cd6dbf145330826856510fc09/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/4aab26a1d65676dd2ea607356eca6fa6/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/4aab26a1d65676dd2ea607356eca6fa6/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/91f247c77c7aec9ecccce79df0ee84ae/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/91f247c77c7aec9ecccce79df0ee84ae/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/wei-you_chen/.gradle/caches/transforms-3/4bc2bbf7cf4e2c085701ad57829f00b6/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/wei-you_chen/.gradle/caches/transforms-3/4bc2bbf7cf4e2c085701ad57829f00b6/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/dbec494ff527e92854e7e012d67f365e/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/dbec494ff527e92854e7e012d67f365e/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.3.0] /Users/wei-you_chen/.gradle/caches/transforms-3/446f20be63ac71315ce2d0040e0d5d7b/transformed/transition-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.3.0] /Users/wei-you_chen/.gradle/caches/transforms-3/446f20be63ac71315ce2d0040e0d5d7b/transformed/transition-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/e6b54bb50b87f1377d4497775849db36/transformed/navigation-common-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.3.5] /Users/wei-you_chen/.gradle/caches/transforms-3/e6b54bb50b87f1377d4497775849db36/transformed/navigation-common-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0] /Users/wei-you_chen/.gradle/caches/transforms-3/1be10e00d9b92b6303ee68189355295d/transformed/core-1.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0] /Users/wei-you_chen/.gradle/caches/transforms-3/1be10e00d9b92b6303ee68189355295d/transformed/core-1.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/b75ec5cef2d3e2fdec2eeda3ae6a8869/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/b75ec5cef2d3e2fdec2eeda3ae6a8869/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/c2a87d14b413103eb692290d2303c2ae/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/c2a87d14b413103eb692290d2303c2ae/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/877f99a3c76fd64744305f3e7b298f83/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/877f99a3c76fd64744305f3e7b298f83/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/58a69546682c1a4207a66fd7dcd77e4f/transformed/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/58a69546682c1a4207a66fd7dcd77e4f/transformed/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/05b309475f6008d8463330bfe69992eb/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/05b309475f6008d8463330bfe69992eb/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/0e9de41660cf0db57de3075b5df57b7a/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/0e9de41660cf0db57de3075b5df57b7a/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/920ddec7ffd0cca8a92ee722aba9f12d/transformed/firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/920ddec7ffd0cca8a92ee722aba9f12d/transformed/firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.sqlite:sqlite-framework:2.2.0-alpha01] /Users/wei-you_chen/.gradle/caches/transforms-3/927fd2efb4f494c4915bf95b615cbafb/transformed/sqlite-framework-2.2.0-alpha01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.2.0-alpha01] /Users/wei-you_chen/.gradle/caches/transforms-3/927fd2efb4f494c4915bf95b615cbafb/transformed/sqlite-framework-2.2.0-alpha01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.2.0-alpha01] /Users/wei-you_chen/.gradle/caches/transforms-3/f14b8a4aca722e4150e78202e60b9d28/transformed/sqlite-2.2.0-alpha01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.2.0-alpha01] /Users/wei-you_chen/.gradle/caches/transforms-3/f14b8a4aca722e4150e78202e60b9d28/transformed/sqlite-2.2.0-alpha01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/wei-you_chen/.gradle/caches/transforms-3/d9abf037e9dc902b2cf637cb079bf4ee/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/wei-you_chen/.gradle/caches/transforms-3/d9abf037e9dc902b2cf637cb079bf4ee/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/62044fef18b884c148e6dc0a7eb1c7cf/transformed/lifecycle-livedata-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/62044fef18b884c148e6dc0a7eb1c7cf/transformed/lifecycle-livedata-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/042943902aac1a10c10b8121e215d03d/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/wei-you_chen/.gradle/caches/transforms-3/042943902aac1a10c10b8121e215d03d/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/b0fd4a02462f5732f1bc909b13288ea6/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/b0fd4a02462f5732f1bc909b13288ea6/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/99e6f1b662b45a1888589c8d0951e3ea/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/99e6f1b662b45a1888589c8d0951e3ea/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/wei-you_chen/.gradle/caches/transforms-3/d187e8351a5241ec48b40024f0efd6f2/transformed/exifinterface-1.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/wei-you_chen/.gradle/caches/transforms-3/d187e8351a5241ec48b40024f0efd6f2/transformed/exifinterface-1.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/b648ae1a6e88bf61ef7ba759549d28c1/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/b648ae1a6e88bf61ef7ba759549d28c1/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/175848ae825f72608e397167cc3420d9/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/175848ae825f72608e397167cc3420d9/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/04e79baec108cf213d2f4e288f521f60/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/04e79baec108cf213d2f4e288f521f60/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/1ef3af5a72610db6acdfd8ad4b466a94/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/1ef3af5a72610db6acdfd8ad4b466a94/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0-rc01] /Users/wei-you_chen/.gradle/caches/transforms-3/be6a6d95d159a80cb151803e6143a623/transformed/annotation-experimental-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0-rc01] /Users/wei-you_chen/.gradle/caches/transforms-3/be6a6d95d159a80cb151803e6143a623/transformed/annotation-experimental-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
+INJECTED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
-		ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
+		ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
-		ADDED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/twmp-it3/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
+		ADDED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/wei-you_chen/PSIManagement/PSIManagement/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:25:5-79
+ADDED from [com.google.firebase:firebase-database:20.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/c6b176de83f2fd60b6383d63a2da274c/transformed/firebase-database-20.0.1/AndroidManifest.xml:25:5-79
 	android:name
-		ADDED from [com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:25:22-76
+		ADDED from [com.google.firebase:firebase-database:20.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/c6b176de83f2fd60b6383d63a2da274c/transformed/firebase-database-20.0.1/AndroidManifest.xml:25:22-76
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:29:9-35:19
-MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/1c4082aeb9ca22cfe54f52180c206f0c/firebase-common-20.0.0/AndroidManifest.xml:33:9-37:35
-MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/1c4082aeb9ca22cfe54f52180c206f0c/firebase-common-20.0.0/AndroidManifest.xml:33:9-37:35
+ADDED from [com.google.firebase:firebase-database:20.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/c6b176de83f2fd60b6383d63a2da274c/transformed/firebase-database-20.0.1/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e7affceb1dadf2f2bdc50dab48c3c597/transformed/firebase-common-20.0.0/AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e7affceb1dadf2f2bdc50dab48c3c597/transformed/firebase-common-20.0.0/AndroidManifest.xml:33:9-37:35
 	android:exported
-		ADDED from [com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:31:13-37
+		ADDED from [com.google.firebase:firebase-database:20.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/c6b176de83f2fd60b6383d63a2da274c/transformed/firebase-database-20.0.1/AndroidManifest.xml:31:13-37
 	tools:targetApi
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/1c4082aeb9ca22cfe54f52180c206f0c/firebase-common-20.0.0/AndroidManifest.xml:37:13-32
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e7affceb1dadf2f2bdc50dab48c3c597/transformed/firebase-common-20.0.0/AndroidManifest.xml:37:13-32
 	android:directBootAware
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/1c4082aeb9ca22cfe54f52180c206f0c/firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e7affceb1dadf2f2bdc50dab48c3c597/transformed/firebase-common-20.0.0/AndroidManifest.xml:35:13-43
 	android:name
-		ADDED from [com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:30:13-84
+		ADDED from [com.google.firebase:firebase-database:20.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/c6b176de83f2fd60b6383d63a2da274c/transformed/firebase-database-20.0.1/AndroidManifest.xml:30:13-84
 meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
-ADDED from [com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:32:13-34:85
+ADDED from [com.google.firebase:firebase-database:20.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/c6b176de83f2fd60b6383d63a2da274c/transformed/firebase-database-20.0.1/AndroidManifest.xml:32:13-34:85
 	android:value
-		ADDED from [com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:34:17-82
+		ADDED from [com.google.firebase:firebase-database:20.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/c6b176de83f2fd60b6383d63a2da274c/transformed/firebase-database-20.0.1/AndroidManifest.xml:34:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-database:20.0.1] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/b4735c37cc14cfd92d9547524ecdf60a/firebase-database-20.0.1/AndroidManifest.xml:33:17-109
+		ADDED from [com.google.firebase:firebase-database:20.0.1] /Users/wei-you_chen/.gradle/caches/transforms-3/c6b176de83f2fd60b6383d63a2da274c/transformed/firebase-database-20.0.1/AndroidManifest.xml:33:17-109
 service#androidx.room.MultiInstanceInvalidationService
-ADDED from [androidx.room:room-runtime:2.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/31fb6842569cab1572c52cb70a5f4a21/room-runtime-2.3.0/AndroidManifest.xml:25:9-28:40
+ADDED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/wei-you_chen/.gradle/caches/transforms-3/92acdfca1bfe50935bed65c32a959eec/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:25:9-28:40
 	android:exported
-		ADDED from [androidx.room:room-runtime:2.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/31fb6842569cab1572c52cb70a5f4a21/room-runtime-2.3.0/AndroidManifest.xml:28:13-37
+		ADDED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/wei-you_chen/.gradle/caches/transforms-3/92acdfca1bfe50935bed65c32a959eec/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:28:13-37
 	android:directBootAware
-		ADDED from [androidx.room:room-runtime:2.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/31fb6842569cab1572c52cb70a5f4a21/room-runtime-2.3.0/AndroidManifest.xml:27:13-43
+		ADDED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/wei-you_chen/.gradle/caches/transforms-3/92acdfca1bfe50935bed65c32a959eec/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:27:13-43
 	android:name
-		ADDED from [androidx.room:room-runtime:2.3.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/31fb6842569cab1572c52cb70a5f4a21/room-runtime-2.3.0/AndroidManifest.xml:26:13-74
+		ADDED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/wei-you_chen/.gradle/caches/transforms-3/92acdfca1bfe50935bed65c32a959eec/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:26:13-74
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/1c4082aeb9ca22cfe54f52180c206f0c/firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e7affceb1dadf2f2bdc50dab48c3c597/transformed/firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/1c4082aeb9ca22cfe54f52180c206f0c/firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e7affceb1dadf2f2bdc50dab48c3c597/transformed/firebase-common-20.0.0/AndroidManifest.xml:28:13-72
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/1c4082aeb9ca22cfe54f52180c206f0c/firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e7affceb1dadf2f2bdc50dab48c3c597/transformed/firebase-common-20.0.0/AndroidManifest.xml:30:13-37
 	android:directBootAware
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/1c4082aeb9ca22cfe54f52180c206f0c/firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e7affceb1dadf2f2bdc50dab48c3c597/transformed/firebase-common-20.0.0/AndroidManifest.xml:29:13-43
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/1c4082aeb9ca22cfe54f52180c206f0c/firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e7affceb1dadf2f2bdc50dab48c3c597/transformed/firebase-common-20.0.0/AndroidManifest.xml:31:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/1c4082aeb9ca22cfe54f52180c206f0c/firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/e7affceb1dadf2f2bdc50dab48c3c597/transformed/firebase-common-20.0.0/AndroidManifest.xml:27:13-77
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:17.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/974dda9811c1f83c6894487762b205c4/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:17.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/4861f4fbd60284a376f8056538d8cc4a/transformed/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:17.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/974dda9811c1f83c6894487762b205c4/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/4861f4fbd60284a376f8056538d8cc4a/transformed/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:17.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/974dda9811c1f83c6894487762b205c4/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/4861f4fbd60284a376f8056538d8cc4a/transformed/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:17.1.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/974dda9811c1f83c6894487762b205c4/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /Users/wei-you_chen/.gradle/caches/transforms-3/4861f4fbd60284a376f8056538d8cc4a/transformed/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/08c6616e304a9921090621e2b9cf2c02/play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/7f90350eae081f1b7419bab2dad87fc6/transformed/play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/08c6616e304a9921090621e2b9cf2c02/play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/7f90350eae081f1b7419bab2dad87fc6/transformed/play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/twmp-it3/.gradle/caches/transforms-2/files-2.1/08c6616e304a9921090621e2b9cf2c02/play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/wei-you_chen/.gradle/caches/transforms-3/7f90350eae081f1b7419bab2dad87fc6/transformed/play-services-basement-17.0.0/AndroidManifest.xml:24:13-58

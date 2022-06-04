@@ -13,8 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PSIManagement">
         <activity android:name=".TestActivity"></activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".MainActivity"/>
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

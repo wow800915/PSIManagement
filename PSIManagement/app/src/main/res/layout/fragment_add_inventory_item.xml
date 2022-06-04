@@ -53,8 +53,7 @@
             android:hint="item_price_req"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/item_name_label"
-            app:prefixText="currency_symbol">
+            app:layout_constraintTop_toBottomOf="@+id/item_name_label">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/item_price"

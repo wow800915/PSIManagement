@@ -1724,13 +1724,17 @@ drawable ic_broken_image
 drawable ic_clock_black_24dp
 drawable ic_connection_error
 drawable ic_edit
+drawable ic_i
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_m
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_p
+drawable ic_s
 drawable loading_animation
 drawable loading_img
 drawable material_cursor_drawable
@@ -1828,15 +1832,11 @@ id action_container
 id action_context_bar
 id action_divider
 id action_image
-id action_mainFragment_to_loginFragment
-id action_mainFragment_to_profileFragment
 id action_menu_divider
 id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
-id action_profileFragment_to_purchaseFragment
-id action_testFragment_to_salesFragment
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1865,9 +1865,6 @@ id bottomNavigationView
 id bounce
 id bt_scrap_items
 id bt_sell_items
-id btn_fastlogin
-id btn_login
-id btn_logout
 id btn_range_confirm
 id btn_range_customize
 id btn_range_day
@@ -1879,7 +1876,6 @@ id button4
 id button5
 id button6
 id buttonPanel
-id button_fastlogin
 id cache_measures
 id cancel_action
 id cancel_button
@@ -1888,7 +1884,6 @@ id center_horizontal
 id center_vertical
 id chain
 id chains
-id checkBox2
 id checkbox
 id checked
 id chip
@@ -1956,8 +1951,6 @@ id endToStart
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
-id et_accountnumber
-id et_password
 id et_sale_amount
 id et_scrap_amount
 id exitUntilCollapsed
@@ -1996,11 +1989,7 @@ id icon_only
 id ifRoom
 id ignore
 id ignoreRequest
-id ilayout_accountnumber
-id ilayout_password
 id image
-id imageView
-id imageView2
 id info
 id invisible
 id inward
@@ -2043,8 +2032,6 @@ id list_item
 id ll_sale_items
 id ll_scrap_items
 id lv_transaction_date
-id main
-id main_navigation
 id masked
 id material_clock_display
 id material_clock_face
@@ -2134,7 +2121,6 @@ id percent
 id pin
 id position
 id postLayout
-id profileFragment
 id progress_circular
 id progress_horizontal
 id radio
@@ -2148,7 +2134,6 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
-id salesFragment
 id save_action
 id save_non_transition_alpha
 id save_overlay_view
@@ -2222,7 +2207,6 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
-id testFragment
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
@@ -2235,7 +2219,6 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
-id textView2
 id textView3
 id textView4
 id textWatcher
@@ -2265,13 +2248,11 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tv_amt
-id tv_backingPropertyTest
 id tv_cancel
 id tv_cancel_amt
 id tv_cancel_date_time
 id tv_date_time
 id tv_fail
-id tv_forgotaccountnumberandpassword
 id tv_get
 id tv_get_amt
 id tv_range
@@ -2281,9 +2262,7 @@ id tv_range_start
 id tv_refund
 id tv_refund_amt
 id tv_refund_date_time
-id tv_register
 id tv_srrn
-id tv_test
 id unchecked
 id uniform
 id unlabeled
@@ -2368,7 +2347,6 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_login
 layout activity_splash
-layout activity_test
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2390,7 +2368,6 @@ layout fragment_edit_inventory_item
 layout fragment_inventory
 layout fragment_inventory_item_detail
 layout fragment_more
-layout fragment_profile
 layout fragment_purchase
 layout fragment_sales
 layout fragment_scrap
@@ -2464,7 +2441,6 @@ layout test_action_chip
 layout test_chip_zero_corner_radius
 layout test_design_checkbox
 layout test_design_radiobutton
-layout test_fragment
 layout test_reflow_chipgroup
 layout test_toolbar
 layout test_toolbar_custom_background
@@ -2478,7 +2454,6 @@ layout text_view_without_line_height
 menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
-navigation main_navigation
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description

@@ -14,10 +14,9 @@ import com.google.android.material.datepicker.MaterialDatePicker
 class MainActivity : AppCompatActivity() {
 
     companion object {
-        var testFragment = TestFragment()
+//        var testFragment = TestFragment()
         val purchaseFragment = PurchaseFragment()
         val salesFragment = SalesFragment()
-        val profileFragemnt = ProfileFragment()
         val inventoryFragment = InventoryFragment()
         val moreFragment = MoreFragment()
     }
@@ -38,6 +37,7 @@ class MainActivity : AppCompatActivity() {
                 .commit()
         navView.selectedItemId = R.id.navigation_inventory
         navView.setOnNavigationItemSelectedListener(listener)
+        navView.itemIconTintList = null
 
 
     }
