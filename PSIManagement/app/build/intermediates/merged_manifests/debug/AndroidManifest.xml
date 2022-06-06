@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.psimanagement"
+    package="com.weiyou.psimanagement"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -10,12 +10,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-    <!-- <uses-sdk android:minSdkVersion="14"/> -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <application
-        android:name="com.example.psimanagement.PSIManagamentApplication"
+        android:name="com.weiyou.psimanagement.PSIManagamentApplication"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -25,10 +21,10 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.PSIManagement" >
-        <activity android:name="com.example.psimanagement.TestActivity" />
-        <activity android:name="com.example.psimanagement.LoginActivity" />
-        <activity android:name="com.example.psimanagement.MainActivity" />
-        <activity android:name="com.example.psimanagement.SplashActivity" >
+        <activity android:name="com.weiyou.psimanagement.TestActivity" />
+        <activity android:name="com.weiyou.psimanagement.LoginActivity" />
+        <activity android:name="com.weiyou.psimanagement.MainActivity" />
+        <activity android:name="com.weiyou.psimanagement.SplashActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,33 +33,9 @@
         </activity>
 
         <service
-            android:name="com.google.firebase.components.ComponentDiscoveryService"
-            android:directBootAware="true"
-            android:exported="false" >
-            <meta-data
-                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-                android:value="com.google.firebase.components.ComponentRegistrar" />
-        </service>
-        <service
             android:name="androidx.room.MultiInstanceInvalidationService"
             android:directBootAware="true"
             android:exported="false" />
-
-        <provider
-            android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.example.psimanagement.firebaseinitprovider"
-            android:directBootAware="true"
-            android:exported="false"
-            android:initOrder="100" />
-
-        <activity
-            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>
