@@ -15,7 +15,7 @@
             android:id="@+id/btn_scrap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="存貨調整及報廢" />
+            android:text="@string/inventory_adjustment_and_scrap" />
 
         <Button
             android:id="@+id/button4"

@@ -7,6 +7,8 @@
     <string name="login">登入</string>
     <string name="fastlogin">快速登入</string>
     <string name="offlinelogin">不用網路登入</string>
+    <string name="click_to_enter">請點選進入</string>
+    <string name="click">點選</string>
 
     <string name="title_purchase">進貨</string>
     <string name="title_sales">銷售</string>
@@ -35,5 +37,8 @@
     <string name="currency_symbol">$</string>
     <string name="edit_item">Edit Item</string>
     <string name="add_new_item">Add new item</string>
+    <string name="total_amount">總金額</string>
+    <string name="scrap_all">全部報廢</string>
+    <string name="inventory_adjustment_and_scrap">存貨調整及報廢</string>
 
 </resources>
