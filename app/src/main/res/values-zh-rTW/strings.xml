@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PSIManagement</string>
+    <string name="memorise_account_id">記住帳號</string>
+    <string name="forgot_account_and_password">忘記帳號密碼</string>
+    <string name="register">註冊</string>
+    <string name="login">登入</string>
+    <string name="fastlogin">快速登入</string>
+    <string name="offlinelogin">不用網路登入</string>
+    <string name="click_to_enter">請點選進入</string>
+    <string name="click">點選</string>
+
+    <string name="title_purchase">進貨</string>
+    <string name="title_sales">銷售</string>
+    <string name="title_inventory">存貨</string>
+    <string name="title_more">更多</string>
+    <string name="title_scrap">報廢</string>
+    <string name="title_select_sales_items">請選擇銷售商品及數量</string>
+    <string name="title_select_scrap_items">請選擇報廢商品及數量</string>
+
+    <string name="sell">Sell</string>
+    <string name="quantity">Quantity in Stock:</string>
+    <string name="quantity_req">Quantity in Stock <font color='#FF0000'>*</font></string>
+    <string name="item_name_req">Item Name <font color='#FF0000'>*</font></string>
+    <string name="item_price_req">Item Price <font color='#FF0000'>*</font></string>
+    <string name="save_action">Save</string>
+    <string name="item_detail_fragment_title">Item Details</string>
+    <string name="add_fragment_title">Add Item</string>
+    <string name="edit_fragment_title">Edit Item</string>
+    <string name="price">Price</string>
+    <string name="quantity_in_stock">Quantity\nIn Stock</string>
+    <string name="item">Item</string>
+    <string name="delete">Delete</string>
+    <string name="delete_question">Are you sure you want to delete?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="currency_symbol">$</string>
+    <string name="edit_item">Edit Item</string>
+    <string name="add_new_item">Add new item</string>
+    <string name="total_amount">總金額</string>
+    <string name="scrap_all">全部報廢</string>
+    <string name="inventory_adjustment_and_scrap">存貨調整及報廢</string>
+
+</resources>

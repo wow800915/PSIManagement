@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.PurchaseFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/layout_range_title"
+        android:background="@color/white">
+
+        <!-- 日 -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/btn_range_day"
+            android:text="day"/>
+
+        <!-- 週 -->
+        <Button
+            android:id="@+id/btn_range_week"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="week" />
+
+        <!-- 月 -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/btn_range_month"
+            android:text="month"/>
+
+        <!-- 自訂 -->
+        <Button
+            android:id="@+id/btn_range_customize"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="customize"
+            android:textSize="9dp" />
+
+    </LinearLayout>
+
+    <!-- 分隔線1 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view_range_line"
+        android:layout_below="@+id/layout_range_title"/>
+
+    <!-- 固定區間 -->
+    <TextView
+        android:id="@+id/tv_range"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/view_range_line"
+        android:background="@color/white"
+        android:gravity="center_vertical" />
+
+    <!-- 自訂區間 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/layout_range_customize"
+        android:layout_below="@+id/view_range_line"
+        android:background="@color/white">
+
+        <!-- 起日 -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:id="@+id/layout_range_start"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_range_start"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"/>
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:id="@+id/iv_range_start"
+                android:layout_toRightOf="@+id/tv_range_start"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <!-- 連接號 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_range_dash"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/layout_range_start"
+            android:text="-"
+            android:gravity="center"/>
+
+        <!-- 迄日 -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:id="@+id/layout_range_end"
+            android:layout_toRightOf="@+id/tv_range_dash"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_range_end"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"/>
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:id="@+id/iv_range_end"
+                android:layout_toRightOf="@+id/tv_range_end"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <!-- 確定 -->
+        <Button
+            android:id="@+id/btn_range_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="38dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/total_amount"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+    <!-- 分隔線2 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view_range_line2"
+        android:layout_below="@+id/tv_range"/>
+
+
+    <!-- 日資料畫面 - 清單 -->
+ <!--   <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_sRefresh_transaction_week"
+        android:layout_below="@+id/view_range_line2">
+-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lv_transaction_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_range_line2"
+        android:dividerHeight="1dp" />
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_range_line2"
+        android:id="@+id/linechart">
+
+    </com.github.mikephil.charting.charts.LineChart>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="72dp"
+        android:contentDescription="add_new_item"
+        android:src="@android:drawable/ic_input_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@android:color/white" />
+
+    <!--    </android.support.v4.widget.SwipeRefreshLayout>
+    -->
+
+</RelativeLayout>
