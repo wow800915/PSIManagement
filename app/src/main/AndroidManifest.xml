@@ -15,10 +15,11 @@
         <activity android:name=".TestActivity"></activity>
         <activity android:name="com.weiyou.psimanagement.LoginActivity"/>
         <activity android:name="com.weiyou.psimanagement.MainActivity"/>
-        <activity android:name="com.weiyou.psimanagement.SplashActivity">
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
