@@ -3,11 +3,11 @@ buildscript {
 
     //20210906這邊room開始有改
     ext {
-        ext.kotlin_version = "1.6.0"
+        ext.kotlin_version = "1.9.22"
 
 //        room_version = '2.4.2'
 //20220515 煩死！ Mac1要加的這行 ：room_version = "2.4.0-alpha03" 本來是room_version = '2.3.0'
-        room_version = "2.4.0-alpha03"
+        room_version = "2.6.1"
     }
     repositories {
         google()
@@ -17,7 +17,7 @@ buildscript {
     }
     dependencies {
 //        classpath 'com.android.tools.build:gradle:4.1.0'
-        classpath 'com.android.tools.build:gradle:7.1.2'
+        classpath 'com.android.tools.build:gradle:8.2.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 //        classpath 'com.google.gms:google-services:4.3.10'
         // NOTE: Do not place your application dependencies here; they belong
